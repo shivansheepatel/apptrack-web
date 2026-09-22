@@ -1,0 +1,12 @@
+services:
+  apptrack:
+    build: .
+    image: apptrack-web:local
+    container_name: shivanshee-apptrack
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: "3000"
+    ports:
+      - "192.168.2.31:8082:3000"
