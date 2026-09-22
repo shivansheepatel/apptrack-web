@@ -1,0 +1,49 @@
+name: Deploy VM201
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: apptrack-vm201-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: [self-hosted, Linux, X64, apptrack-vm201]
+    timeout-minutes: 30
+    steps:
+      - name: Update and rebuild AppTrack
+        shell: bash
+        env:
+          CI_SHA: ${{ github.event.workflow_run.head_sha }}
+          GIT_SSH_COMMAND: ssh -i /home/homelabadmin/.ssh/apptrack_deploy -o IdentitiesOnly=yes
+        run: |
+          set -euo pipefail
+          cd /srv/projects/shivanshee/apptrack
+          test -z "$(git status --porcelain)"
+          git fetch --no-tags origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$CI_SHA"
+          git merge --ff-only FETCH_HEAD
+          docker compose up -d --build
+          for attempt in {1..30}; do
+            if curl -fsS -o /dev/null http://192.168.2.31:8082/; then
+              curl -fsS -o /dev/null http://192.168.2.31:8082/explore
+              docker compose ps
+              echo "Deployed $CI_SHA"
+              exit 0
+            fi
+            sleep 2
+          done
+          docker compose logs --tail=80 apptrack
+          exit 1
