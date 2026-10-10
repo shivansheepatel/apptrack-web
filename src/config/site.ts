@@ -35,7 +35,7 @@ export const SITE = {
    * ⚠️ CHANGE THIS before launch. The default is a placeholder domain nobody
    * owns, so every message a student sends will bounce.
    */
-  contactEmail: "hello@ontariostudentopportunities.ca",
+  contactEmail: "contact@docdelivery.info",
 
   /** Grade levels this deployment serves. Drives the quiz and the filters. */
   grades: [9, 10, 11, 12] as const,
