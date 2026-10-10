@@ -51,7 +51,16 @@ export function getAdminSession() {
     maxAge: SESSION_MAX_AGE_SECONDS,
     cookie: {
       httpOnly: true,
-      secure: process.env["NODE_ENV"] === "production",
+      // Secure cookies are only sent by the browser over an encrypted https://
+      // connection. VM201 is served over plain http:// on the home network, so
+      // a strict NODE_ENV === "production" check here would silently throw the
+      // session cookie away after every login. ADMIN_COOKIE_SECURE=0 opts a
+      // specific deployment out of the Secure flag; leave it unset once this is
+      // served over https (e.g. app.docdelivery.info) so the flag stays on.
+      secure:
+        process.env["ADMIN_COOKIE_SECURE"] === "0"
+          ? false
+          : process.env["NODE_ENV"] === "production",
       sameSite: "lax",
       path: "/",
     },
