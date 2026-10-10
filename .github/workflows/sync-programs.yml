@@ -1,9 +1,12 @@
 name: Sync programs
 
-# The data engine. Three jobs on two cadences:
+# The data engine. Four jobs on three cadences:
 #
-#   link-health  daily   — no model calls, no cost. Catches dead links fast.
-#   crawl        weekly  — re-verify known programs + discover new ones.
+#   link-health  daily      — no model calls, no cost. Catches dead links fast.
+#   crawl        weekly     — re-verify known programs + discover new ones.
+#   sheet-sync   every 2h   — reads the Master Tracker Google Sheet. No model
+#                             calls either — it's a human's own direct input,
+#                             not a page to interpret, so it's free to run often.
 #   apply        on demand — write what a human approved in /admin/review.
 #
 # Nothing here ever pushes to the default branch. Every run opens or updates a
@@ -16,13 +19,16 @@ on:
     - cron: "0 11 * * *"
     # 12:00 UTC Monday — the weekly crawl.
     - cron: "0 12 * * 1"
+    # Every 2 hours — the sheet sync has no model cost and nothing to re-render,
+    # so there's no reason to make it wait for the weekly crawl.
+    - cron: "0 */2 * * *"
   workflow_dispatch:
     inputs:
       mode:
         description: "What to run"
         type: choice
         default: verify
-        options: [links, verify, discover, all, seeds, apply]
+        options: [links, verify, discover, all, seeds, apply, sheet]
       limit:
         description: "Max pages to extract (cost control)"
         default: "60"
@@ -191,6 +197,58 @@ jobs:
             src/data/programs.ts
             data/review-queue.json
             data/crawl-state.json
+            data/engine-report.md
+
+      - name: Summary
+        if: always()
+        run: cat data/engine-report.md >> "$GITHUB_STEP_SUMMARY" || true
+
+  # ---------------------------------------------------------- every 2h --
+  sheet-sync:
+    # The 2-hourly schedule, or an explicit "sheet" dispatch.
+    if: >
+      github.event.schedule == '0 */2 * * *' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'sheet')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+
+      - name: Sync from the Master Tracker Google Sheet
+        env:
+          GOOGLE_SHEET_ID: ${{ vars.GOOGLE_SHEET_ID }}
+          GOOGLE_SHEET_GID: ${{ vars.GOOGLE_SHEET_GID }}
+        run: npm run engine -- --mode=sheet
+
+      - name: Format what the sync wrote
+        run: npx prettier --write src/data/programs.ts data/review-queue.json || true
+
+      # If the sync corrupted programs.ts, that must never reach a PR.
+      - name: Typecheck and build
+        run: |
+          npm run typecheck
+          npm run check:engine
+
+      - name: Open or update the pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: engine/sheet-sync
+          base: main
+          commit-message: "data: sheet sync ${{ github.run_number }}"
+          title: "Sheet sync — ${{ github.run_number }}"
+          body-path: data/engine-report.md
+          labels: data-engine
+          delete-branch: false
+          add-paths: |
+            src/data/programs.ts
+            data/review-queue.json
             data/engine-report.md
 
       - name: Summary
