@@ -14,11 +14,12 @@
  * file for you to commit. Either way `npm run engine:apply` is what turns a
  * decision into a change in programs.ts — nothing here edits the catalogue.
  */
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, redirect, useRouter } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { SITE } from "@/config/site";
+import { requireAdmin, isAdminAuthenticated, adminLogout } from "@/lib/admin-auth";
 
 /* ------------------------------------------------------------------ types */
 
@@ -92,7 +93,16 @@ interface DecisionRecord {
 
 /* ---------------------------------------------------------- server access */
 
+const checkAdmin = createServerFn({ method: "GET" }).handler(async () => {
+  return { authed: await isAdminAuthenticated() };
+});
+
+const logoutFn = createServerFn({ method: "POST" }).handler(async () => {
+  await adminLogout();
+});
+
 const loadQueue = createServerFn({ method: "GET" }).handler(async (): Promise<QueueFile> => {
+  await requireAdmin();
   try {
     const { readFile } = await import("node:fs/promises");
     return JSON.parse(await readFile("data/review-queue.json", "utf8")) as QueueFile;
@@ -104,6 +114,7 @@ const loadQueue = createServerFn({ method: "GET" }).handler(async (): Promise<Qu
 const saveDecisions = createServerFn({ method: "POST" })
   .validator((d: DecisionRecord[]) => d)
   .handler(async ({ data }): Promise<{ written: boolean; reason?: string }> => {
+    await requireAdmin();
     try {
       const { writeFile, mkdir } = await import("node:fs/promises");
       await mkdir("data", { recursive: true });
@@ -121,6 +132,12 @@ const saveDecisions = createServerFn({ method: "POST" })
 
 export const Route = createFileRoute("/admin/review")({
   component: ReviewQueue,
+  beforeLoad: async () => {
+    const { authed } = await checkAdmin();
+    if (!authed) {
+      throw redirect({ to: "/admin/login" });
+    }
+  },
   loader: () => loadQueue(),
   head: () => ({
     meta: [
@@ -207,6 +224,12 @@ function ConfidenceMeter({ score, band }: { score: number; band: string }) {
 function ReviewQueue() {
   const queue = Route.useLoaderData();
   const reduce = useReducedMotion();
+  const router = useRouter();
+
+  async function logout() {
+    await logoutFn();
+    await router.navigate({ to: "/admin/login" });
+  }
 
   const items = useMemo(
     () =>
@@ -328,6 +351,13 @@ function ReviewQueue() {
             <span className="text-xs opacity-70 hidden sm:inline">
               A approve · R reject · E edit · J/K move · U undo
             </span>
+            <button
+              type="button"
+              onClick={logout}
+              className="sticker sticker-press tap bg-white px-3 min-h-11 text-sm font-bold"
+            >
+              Sign out
+            </button>
             <button
               type="button"
               onClick={save}
