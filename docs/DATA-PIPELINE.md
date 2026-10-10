@@ -422,6 +422,14 @@ Create two labels so the automation can file things tidily: `data-engine` and `l
 Schedules run in UTC. `0 11 * * *` is 07:00 ET in winter, 06:00 in summer — GitHub does not adjust
 for DST, and scheduled runs can be delayed by several minutes under load. Neither matters here.
 
+The sheet sync (§12) needs two more things, but as **repository variables**, not secrets — the sheet
+ID isn't sensitive, it's already shared "anyone with the link can view":
+
+**Settings → Secrets and variables → Actions → Variables tab → New repository variable:**
+
+- `GOOGLE_SHEET_ID` — see `.env.example` for the value, or the sheet's own URL.
+- `GOOGLE_SHEET_GID` — likewise.
+
 ### 9.5 Supabase — optional, not wired up
 
 Only needed if you move off the git sink (see §11). Create a project at <https://supabase.com>
@@ -507,3 +515,42 @@ arbitrary program URLs, and it has no Anthropic key. So:
 - **`SITE.contactEmail` is still `hello@ontariostudentopportunities.ca`**, a domain nobody owns. The
   crawler sends it in its User-Agent so site owners can contact you, which is the polite convention
   and currently a dead end. Worth fixing before the first real crawl.
+
+
+---
+
+## 12. The Google Sheet sync (a second source)
+
+The engine has a second way for a listing to arrive, alongside the crawler: `scripts/engine/sheet.mts`
+reads the project's own Master Tracker Google Sheet (the same spreadsheet the Discord bot already
+syncs from) and turns each row into exactly the same `Proposal` shape a crawled page produces — same
+confidence gate, same `NEVER_AUTO` date rule, same `/admin/review` queue. A sheet row is a human
+stating something on purpose, not a page a model has to interpret, so there are no model calls and no
+cost; it's wired to run every two hours (`npm run engine:sheet` / `--mode=sheet`), and that cadence can
+be tightened freely since nothing here is metered.
+
+**Column mapping**, for the sheet as it exists today (`Category, Program, About the Program, Format,
+Eligibility, Additional Eligibility Requirements, Applications Open, Deadline, Program Date, Status,
+Priority, Official Link, Planning Note`):
+
+- `Program` → title, `Official Link` → the application link.
+- `Category` is matched by keyword to one of the site's six tracks (`STEM`, `Business`, `Medicine`,
+  `Law & Civics`, `Leadership`, `Arts`); an unconfident guess is flagged in the proposal's notes rather
+  than silently applied.
+- There is no organisation column, so it's guessed from the application link's domain — also flagged.
+- `Applications Open` / `Deadline` / `Program Date` are read as `yyyy-mm-dd` substrings (same trick
+  `sheet_sync.py` already uses for the bot) and treated as `labelled` evidence — a notch below a page's
+  own structured markup, a notch above prose, because a human typed it under a named column on
+  purpose. Dates still never auto-publish; see §6.
+- `Format` in this sheet means the *kind* of opportunity (volunteering, competition, …), which is a
+  different axis from the site's own `format` field (delivery mode: in-person/online/hybrid — see
+  `classifyDelivery()` in `program-schema.ts`). Rather than mis-filing it, the sync folds it into the
+  summary text and leaves delivery mode `Unknown` — honest, and it still helps `classifyCommitment()`'s
+  own keyword matching.
+- `Status` is shown to the reviewer as a cross-check note only. The website computes its own live
+  lifecycle phase from the dates on every render (§2), so nothing from this column is ever written.
+- `Priority` / `Planning Note` are Discord-bot-only fields and are not carried over.
+
+The sheet sync's queue write is additive, not destructive: it merges with whatever the crawler already
+queued, since the two run on independent schedules and neither should be able to silently drop the
+other's pending review items.
