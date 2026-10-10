@@ -18,6 +18,7 @@
     "engine:discover": "npm run engine -- --mode=discover",
     "engine:links": "npm run engine -- --mode=links",
     "engine:seeds": "npm run engine -- --mode=seeds",
+    "engine:sheet": "npm run engine -- --mode=sheet",
     "engine:verify": "npm run engine -- --mode=verify",
     "format": "prettier --write .",
     "lint": "eslint .",
