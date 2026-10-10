@@ -10,6 +10,8 @@
  *   verify    Weekly. Re-crawl known program URLs, detect changes.
  *   discover  Weekly. Hub crawl + search API, extract anything new.
  *   all       verify + discover.
+ *   sheet     On demand (or scheduled). Reads the Master Tracker Google
+ *             Sheet (see sheet.mts). No LLM calls — free to run often.
  *
  * Flags
  *   --limit=N     stop after N extractions (cost control; default 60)
@@ -26,7 +28,8 @@ import { triage, extract, usage, estimateCostUsd } from "./extract.mts";
 import { fingerprint, fingerprintId, findDuplicate, dedupeBatch } from "./dedupe.mts";
 import { scoreProposal, decide, diffFields } from "./confidence.mts";
 import { checkLinks, checkOne } from "./linkcheck.mts";
-import { applyAuto, writeQueue, prBody } from "./sink-git.mts";
+import { applyAuto, writeQueue, readQueue, prBody } from "./sink-git.mts";
+import * as sheetSource from "./sheet.mts";
 import type { Proposal, ExtractedProgram } from "./types.mts";
 
 const STATE_PATH = "data/crawl-state.json";
@@ -371,6 +374,57 @@ async function runCrawl(mode: "verify" | "discover" | "all"): Promise<void> {
   console.log(`Report: ${REPORT_PATH}`);
 }
 
+/* --------------------------------------------------------- sheet sync */
+
+/**
+ * Second source, same gate. A sheet row is a human's direct statement, not a
+ * page to interpret, so there are no model calls here at all — this mode is
+ * free to run as often as you like. See sheet.mts for the full reasoning.
+ */
+async function runSheet(): Promise<void> {
+  if (!sheetSource.isConfigured()) {
+    console.error("GOOGLE_SHEET_ID is not set. See .env.example.");
+    process.exitCode = 1;
+    return;
+  }
+
+  console.log("Reading the Master Tracker Google Sheet…");
+  const rows = await sheetSource.fetchSheetRows();
+  console.log(`  ${rows.length} row(s) read.`);
+
+  const known = [...PROGRAMS];
+  const proposals = await sheetSource.buildProposals(rows, known);
+  const apply = DRY ? { applied: [], demoted: [] } : await applyAuto(proposals);
+
+  // Merge with whatever is already queued (e.g. from the crawler) instead of
+  // overwriting it — the crawl and the sheet sync run on independent
+  // schedules, and each must leave the other's pending review items alone.
+  const existing = await readQueue();
+  const incomingIds = new Set(proposals.map((p) => p.id));
+  const stillLive = existing.items.filter((p) => !incomingIds.has(p.id));
+  const merged = [...stillLive, ...proposals.filter((p) => p.disposition !== "unchanged")];
+  await writeQueue(merged, RUN_ID);
+
+  const needs = proposals.filter((p) => p.disposition === "needs-review").length;
+  console.log(
+    `\nSheet sync ${RUN_ID}: ${rows.length} rows · ${apply.applied.length} auto-applied · ${needs} queued for review`,
+  );
+  if (DRY) console.log("(dry run — programs.ts was not written)");
+
+  const body = prBody({
+    runId: RUN_ID,
+    proposals,
+    apply,
+    crawled: rows.length,
+    llmCalls: 0,
+    costUsd: 0,
+    discoveryLog: [`Google Sheet sync: ${rows.length} row(s) read, no model calls.`],
+    deadLinks: [],
+  });
+  await writeFile(REPORT_PATH, body);
+  console.log(`Report: ${REPORT_PATH}`);
+}
+
 switch (MODE) {
   case "seeds":
     await runSeeds();
@@ -378,12 +432,15 @@ switch (MODE) {
   case "links":
     await runLinks();
     break;
+  case "sheet":
+    await runSheet();
+    break;
   case "verify":
   case "discover":
   case "all":
     await runCrawl(MODE);
     break;
   default:
-    console.error(`Unknown --mode=${MODE}. Use seeds | links | verify | discover | all.`);
+    console.error(`Unknown --mode=${MODE}. Use seeds | links | sheet | verify | discover | all.`);
     process.exitCode = 1;
 }
