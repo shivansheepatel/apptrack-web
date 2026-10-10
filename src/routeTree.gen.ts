@@ -14,6 +14,7 @@ import { Route as CounselorsRouteImport } from './routes/counselors'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as RoadmapRouteImport } from './routes/roadmap'
+import { Route as AdminLoginRouteImport } from './routes/admin.login'
 import { Route as AdminReviewRouteImport } from './routes/admin.review'
 import { Route as ProgramProgramIdRouteImport } from './routes/program.$programId'
 
@@ -42,6 +43,11 @@ const RoadmapRoute = RoadmapRouteImport.update({
   path: '/roadmap',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminLoginRoute = AdminLoginRouteImport.update({
+  id: '/admin/login',
+  path: '/admin/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminReviewRoute = AdminReviewRouteImport.update({
   id: '/admin/review',
   path: '/admin/review',
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/dashboard': typeof DashboardRoute
   '/explore': typeof ExploreRoute
   '/roadmap': typeof RoadmapRoute
+  '/admin/login': typeof AdminLoginRoute
   '/admin/review': typeof AdminReviewRoute
   '/program/$programId': typeof ProgramProgramIdRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/dashboard': typeof DashboardRoute
   '/explore': typeof ExploreRoute
   '/roadmap': typeof RoadmapRoute
+  '/admin/login': typeof AdminLoginRoute
   '/admin/review': typeof AdminReviewRoute
   '/program/$programId': typeof ProgramProgramIdRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/dashboard': typeof DashboardRoute
   '/explore': typeof ExploreRoute
   '/roadmap': typeof RoadmapRoute
+  '/admin/login': typeof AdminLoginRoute
   '/admin/review': typeof AdminReviewRoute
   '/program/$programId': typeof ProgramProgramIdRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/explore'
     | '/roadmap'
+    | '/admin/login'
     | '/admin/review'
     | '/program/$programId'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/explore'
     | '/roadmap'
+    | '/admin/login'
     | '/admin/review'
     | '/program/$programId'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/explore'
     | '/roadmap'
+    | '/admin/login'
     | '/admin/review'
     | '/program/$programId'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   DashboardRoute: typeof DashboardRoute
   ExploreRoute: typeof ExploreRoute
   RoadmapRoute: typeof RoadmapRoute
+  AdminLoginRoute: typeof AdminLoginRoute
   AdminReviewRoute: typeof AdminReviewRoute
   ProgramProgramIdRoute: typeof ProgramProgramIdRoute
 }
@@ -158,6 +171,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RoadmapRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/login': {
+      id: '/admin/login'
+      path: '/admin/login'
+      fullPath: '/admin/login'
+      preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/review': {
       id: '/admin/review'
       path: '/admin/review'
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   DashboardRoute: DashboardRoute,
   ExploreRoute: ExploreRoute,
   RoadmapRoute: RoadmapRoute,
+  AdminLoginRoute: AdminLoginRoute,
   AdminReviewRoute: AdminReviewRoute,
   ProgramProgramIdRoute: ProgramProgramIdRoute,
 }
