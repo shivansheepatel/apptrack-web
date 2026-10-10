@@ -216,7 +216,10 @@ export function crawlable(url: string): boolean {
 
 /** Strip trackers and fragments so two links to the same page hash alike. */
 export function canonicalUrl(url: string): string {
-  const u = new URL(url);
+  // Sheet-sourced links often omit the scheme (e.g. "www.example.com").
+  // `new URL()` throws on those, so assume https when none is given.
+  const withScheme = /^[a-z][a-z0-9+.-]*:\/\//i.test(url) ? url : `https://${url}`;
+  const u = new URL(withScheme);
   u.hash = "";
   for (const k of [...u.searchParams.keys()]) {
     if (/^(utm_|fbclid|gclid|mc_cid|mc_eid|ref|source)/i.test(k)) u.searchParams.delete(k);
