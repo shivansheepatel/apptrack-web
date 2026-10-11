@@ -135,10 +135,15 @@ check(
   (commitments["unknown"] ?? 0) < all.length * 0.35,
   `${commitments["unknown"] ?? 0}/${all.length}`,
 );
+// Only listings that actually state a format can show the parser giving up.
+// A format of "Unknown" (or blank) is the data honestly saying so — common for
+// listings the sheet sync adds — and is not a classifier failure.
+const statedFormat = all.filter((p) => p.format.trim() !== "" && !/^unknown$/i.test(p.format.trim()));
+const deliveryGaveUp = statedFormat.filter((p) => p.delivery === "unknown").length;
 check(
-  "delivery: 'unknown' stays under 35%",
-  (deliveries["unknown"] ?? 0) < all.length * 0.35,
-  `${deliveries["unknown"] ?? 0}/${all.length}`,
+  "delivery: 'unknown' stays under 35% of listings that state a format",
+  deliveryGaveUp < statedFormat.length * 0.35,
+  `${deliveryGaveUp}/${statedFormat.length}`,
 );
 
 section("Skill tagging is evidence-based");
@@ -158,7 +163,12 @@ check(
 section("Deadline state");
 check(
   "nothing past its deadline is shown as open",
-  !all.some((p) => p.status !== "closed" && (p.daysRemaining ?? 0) < 0),
+  // A program that is running ('in-session') is past its deadline by design —
+  // the lifecycle checks below assert exactly that — and is labelled "Running",
+  // not open.
+  !all.some(
+    (p) => p.status !== "closed" && p.status !== "in-session" && (p.daysRemaining ?? 0) < 0,
+  ),
 );
 check(
   "every listing has an urgency label",
