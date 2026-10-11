@@ -2,10 +2,7 @@
   "decisions": [
     {
       "proposalId": "bd6a0a1d7f8fc191",
-      "action": "approve",
-      "edits": {
-        "program_end_date": "2027-03-07"
-      },
+      "action": "reject",
       "decidedAt": "2026-10-11T00:53:32.344Z"
     },
     {
@@ -63,7 +60,7 @@
     },
     {
       "proposalId": "33702fa0e09ad522",
-      "action": "approve",
+      "action": "reject",
       "decidedAt": "2026-10-11T01:20:14.949Z"
     },
     {
@@ -148,7 +145,7 @@
     },
     {
       "proposalId": "56f13ebbcdd9aeb3",
-      "action": "approve",
+      "action": "reject",
       "decidedAt": "2026-10-11T01:20:31.956Z"
     },
     {
@@ -257,7 +254,7 @@
     },
     {
       "proposalId": "2744f4b217735cac",
-      "action": "approve",
+      "action": "reject",
       "decidedAt": "2026-10-11T01:21:27.956Z"
     },
     {
@@ -297,7 +294,7 @@
     },
     {
       "proposalId": "6b503b098a56ca0f",
-      "action": "approve",
+      "action": "reject",
       "decidedAt": "2026-10-11T01:19:30.958Z"
     },
     {
@@ -352,7 +349,7 @@
     },
     {
       "proposalId": "2fc4b4fc869bcf38",
-      "action": "approve",
+      "action": "reject",
       "decidedAt": "2026-10-11T01:19:41.945Z"
     },
     {
