@@ -68,6 +68,20 @@
   --color-mascot: var(--mascot);
   --color-mascot-deep: var(--mascot-deep);
 
+  /* The eight anchors themselves, exposed directly so `bg-cobalt`,
+     `text-tomato`, `ring-pine`, etc. resolve. Several admin screens already
+     used these utility names before Tailwind had a token to back them with,
+     which silently dropped the background/text color (e.g. a white-on-white
+     "Approve" button that still worked, just couldn't be read). */
+  --color-paper: var(--arcade-paper);
+  --color-ink: var(--arcade-ink);
+  --color-cobalt: var(--arcade-cobalt);
+  --color-mustard: var(--arcade-mustard);
+  --color-tomato: var(--arcade-tomato);
+  --color-pine: var(--arcade-pine);
+  --color-grape: var(--arcade-grape);
+  --color-cyan: var(--arcade-cyan);
+
   /* Application lifecycle — one colour per phase, used on badges and rails. */
   --color-phase-soon: var(--phase-soon);
   --color-phase-open: var(--phase-open);
