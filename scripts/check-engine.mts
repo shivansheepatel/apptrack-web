@@ -138,7 +138,9 @@ check(
 // Only listings that actually state a format can show the parser giving up.
 // A format of "Unknown" (or blank) is the data honestly saying so — common for
 // listings the sheet sync adds — and is not a classifier failure.
-const statedFormat = all.filter((p) => p.format.trim() !== "" && !/^unknown$/i.test(p.format.trim()));
+const statedFormat = all.filter(
+  (p) => p.format.trim() !== "" && !/^unknown$/i.test(p.format.trim()),
+);
 const deliveryGaveUp = statedFormat.filter((p) => p.delivery === "unknown").length;
 check(
   "delivery: 'unknown' stays under 35% of listings that state a format",
