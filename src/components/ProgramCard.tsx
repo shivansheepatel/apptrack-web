@@ -32,6 +32,7 @@ import { Link } from "@tanstack/react-router";
 
 import { FEATURES } from "@/config/site";
 import { CATEGORY_META } from "@/lib/category";
+import { COUNTRY_META } from "@/lib/country";
 import { formatDate, formatRange, formatShort, usualMonth } from "@/lib/dates";
 import { COST_LABELS, type NormalizedProgram } from "@/lib/program-schema";
 import { cn } from "@/lib/utils";
@@ -73,6 +74,7 @@ export function ProgramCard({
   const { hasAlert, toggleAlert, stepsFor, hydrated } = useOnboarding();
   const meta = CATEGORY_META[program.category];
   const Icon = meta.icon;
+  const country = COUNTRY_META[program.country];
 
   const closed = program.phase === "closed";
   const urgent = program.phase === "open" && program.urgency === "closing-soon";
@@ -92,6 +94,13 @@ export function ProgramCard({
       >
         <Icon className="size-3.5" aria-hidden />
         {program.category}
+      </span>
+      <span
+        className="inline-flex items-center gap-1 rounded-full border-2 border-rule bg-secondary px-2.5 py-1 text-xs font-bold text-muted-foreground"
+        title={country.label}
+      >
+        <span aria-hidden>{country.flag}</span>
+        {country.short}
       </span>
       <span className="rounded-full border-2 border-rule bg-secondary px-2.5 py-1 text-xs font-bold text-muted-foreground">
         Gr {program.grades.join(", ")}
@@ -275,7 +284,8 @@ export function ProgramCard({
             </Link>
           </h3>
           <p className="text-xs text-muted-foreground">
-            {program.org} · {program.category} · Gr {program.grades.join(", ")}
+            <span aria-hidden>{COUNTRY_META[program.country].flag}</span> {program.org} ·{" "}
+            {program.category} · Gr {program.grades.join(", ")}
           </p>
         </div>
         <span className="text-xs font-bold text-muted-foreground">
