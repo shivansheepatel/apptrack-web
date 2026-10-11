@@ -1,5 +1,453 @@
 {
-  "generatedAt": "2026-10-11T00:38:22.348Z",
-  "runId": "2026-10-11-3d2fc070",
-  "items": []
+  "generatedAt": "2026-10-11T21:21:52.512Z",
+  "runId": "2026-10-11-ab96e5ab",
+  "items": [
+    {
+      "id": "e18d4ee987253d18",
+      "fingerprint": "ontario prosper|org prosperontario|prosperontario.org",
+      "url": "https://prosperontario.org/",
+      "domain": "prosperontario.org",
+      "contentHash": "6f2ddeb06104cbedf2e483e5f51803323bd18568a802107c5181b63a7eec9382",
+      "fetchedAt": "2026-10-11T21:20:50.001Z",
+      "extracted": {
+        "title": "Prosper Ontario",
+        "organization": "prosperontario.org",
+        "category": "Business",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.prosperontario.org/",
+        "summary": "Business case competition. Prosper is Canada's largest high school student organized youth business conference, providing Canadian youths an opportunity to interact with the business world and connect with other like-minded students.",
+        "eligibility": "High-school teams, usually up to 5 Typically requires a high-school team and may require a teacher advisor. Confirm team size, Ontario residency, and school affiliation for the current cycle.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"prosperontario.org\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Business case competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Spring 2027 expected\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "prosper-ontario-case-competition",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Prosper Ontario Case Competition\" — title 100% similar, same domain."
+      ]
+    },
+    {
+      "id": "3c579308d496a8fd",
+      "fingerprint": "academy business excellence schulich|ca yorku|yorku.ca",
+      "url": "https://schulich.yorku.ca/future-students/business-excellence-academy",
+      "domain": "yorku.ca",
+      "contentHash": "eeb1b1283d8d89d8db6ef1ed610942c22a9bc594720596b26224e77fb5c9e64e",
+      "fetchedAt": "2026-10-11T21:20:52.461Z",
+      "extracted": {
+        "title": "Schulich Business Excellence Academy",
+        "organization": "yorku.ca",
+        "category": "Business",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://schulich.yorku.ca/future-students/business-excellence-academy/",
+        "summary": "Business academy + case competition. A business-enrichment academy offering workshops, mentorship, campus exposure, and a case competition for students from equity-deserving communities.",
+        "eligibility": "Ontario Grades 10-12; equity-deserving groups Applicants must meet the grade requirement and may need strong academics, extracurricular involvement, and written application responses. Travel to York University may be required.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"yorku.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Business academy + case competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "schulich-summer-business-academy",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Schulich Summer Business Academy\" — title 100% similar, same domain."
+      ]
+    },
+    {
+      "id": "dcb5b62667f98caa",
+      "fingerprint": "f ivey john leadership wood|ca uwo|uwo.ca",
+      "url": "https://ivey.uwo.ca/summerleadership",
+      "domain": "uwo.ca",
+      "contentHash": "e3d82dfc7ce1d9beaca58e3dddb88162877854cdecf3334141ad6b5f989b11e8",
+      "fetchedAt": "2026-10-11T21:20:52.857Z",
+      "extracted": {
+        "title": "Ivey John F. Wood Summer Leadership Program",
+        "organization": "uwo.ca",
+        "category": "Business",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.ivey.uwo.ca/summerleadership/",
+        "summary": "Residential leadership/business program. The John F. Wood Summer Leadership Program (SLP) is an academic experience for high school students who want to build leadership skills, explore new ideas, and experience life at Ivey Business School and Western University. Students learn through hands-on activities, case based discussions, and team challenges that help them think critically and collaborate with confidence.",
+        "eligibility": "High school students currently in Grades 9, 10, and 11 who are curious, motivated, and excited to learn about leadership, business, and innovation. Must be a current high-school student in the specified grades. Selection may consider leadership involvement, written responses, and ability to attend the full residential program.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"uwo.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Residential leadership/business program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Summer 2027 (TBA)\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "ivey-summer-leadership-program",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Ivey Summer Leadership Program\" — title 100% similar, same domain."
+      ]
+    },
+    {
+      "id": "322b7acc24a22773",
+      "fingerprint": "initiative psychology research sprint|com google|google.com",
+      "url": "https://sites.google.com/view/uoftsprint",
+      "domain": "google.com",
+      "contentHash": "1b225fc4420441af6381c67ca77841d6d143b124b48fbcbef506cd128c79f267",
+      "fetchedAt": "2026-10-11T21:21:01.542Z",
+      "extracted": {
+        "title": "SPRINT — Summer Psychology Research Initiative",
+        "organization": "google.com",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://sites.google.com/view/uoftsprint",
+        "summary": "Psychology research program. A research-focused program introducing students to psychology studies, research methods, data analysis, and academic mentorship.",
+        "eligibility": "Ontario high-school students; upper years prioritized (Indigenous, Black, racialized and other underrepresented groups prioritized) Eligibility not fully verified. Confirm grade, location, research-interest requirements, and whether the program prioritizes students from underrepresented groups.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"google.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"Psychology research program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Late Jul 2027 (2026 ran Jul 20-31), U of T St. George; expanding to UTSC\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "sprint-summer-psychology-research-initiative",
+      "changes": [
+        {
+          "field": "category",
+          "before": "Medicine",
+          "after": "STEM",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
+      "reasons": [
+        "Changes needing review: category.",
+        "Confidence 70/100.",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "3d836f933769121f",
+      "fingerprint": "stanford sumac|edu stanford|stanford.edu",
+      "url": "https://sumac.spcs.stanford.edu/sumac-admissions",
+      "domain": "stanford.edu",
+      "contentHash": "be860038596b1d9a4d26ddc99c003da7aa76e02f04ca041301e00fcb75e3fe63",
+      "fetchedAt": "2026-10-11T21:21:02.181Z",
+      "extracted": {
+        "title": "Stanford SUMaC",
+        "organization": "stanford.edu",
+        "category": "STEM",
+        "country": "US",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://sumac.spcs.stanford.edu/sumac-admissions",
+        "summary": "Advanced mathematics camp. A highly selective mathematics program where students study advanced topics, write proofs, solve challenging problems, and work with university instructors.",
+        "eligibility": "Grades 10-11 at application; age 15+ during program Applicants worldwide may apply, but advanced mathematical maturity is required. Application includes proof-based math questions, transcript, recommendation, and English proficiency where applicable.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"stanford.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"Advanced mathematics camp\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "stanford-university-mathematics-camp-sumac",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Stanford University Mathematics Camp (SUMaC)\" — title 100% similar, same domain."
+      ]
+    },
+    {
+      "id": "b655a5845f8d7562",
+      "fingerprint": "energymag internships|energymag net|energymag.net",
+      "url": "https://energymag.net/internships",
+      "domain": "energymag.net",
+      "contentHash": "cdad324d0b0d22c98a4eb42e8b404fb6e8a4e28585918a6d4c9e81a0b0b7bfb2",
+      "fetchedAt": "2026-10-11T21:21:04.694Z",
+      "extracted": {
+        "title": "EnergyMag internships",
+        "organization": "energymag.net",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://energymag.net/internships/",
+        "summary": "Internship directory. EnergyMag offers virtual internships to college and high school students who want to make the world a better place by increasing the share of renewable energy in the world, learn about the energy storage industry, and get work experience.",
+        "eligibility": "College students: GPA above 3.0; High school students: sophomores, juniors, and seniors with at least one honors science or honors English class (exceptions made in appropriate cases) and a GPA over 3.25 Requirements vary by employer. Confirm country, age, work authorization, paid/unpaid status, remote eligibility, and whether the listing accepts high-school students.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Could not confidently map the sheet's Category (\"Jobs / Remote\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
+          "Organization guessed from the application link's domain (\"energymag.net\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"Internship directory\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Needs verification\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Varies\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "energymag-internship-directory",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"EnergyMag Internship Directory\" — title 76% similar, same domain."
+      ]
+    },
+    {
+      "id": "91edbccb5af26d65",
+      "fingerprint": "deca ontario|ca deca|deca.ca",
+      "url": "https://deca.ca/",
+      "domain": "deca.ca",
+      "contentHash": "f88e30a3b5653feaa1dbd9cab5aa7138f12906c803792f76fccd850b7cec5a97",
+      "fetchedAt": "2026-10-11T21:21:25.721Z",
+      "extracted": {
+        "title": "DECA Ontario High School Program",
+        "organization": "deca.ca",
+        "category": "Business",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": {
+          "value": "2026-12-07",
+          "evidence": "labelled",
+          "quote": "2026-12-07 (Provincials registration/payment)"
+        },
+        "program_start_date": {
+          "value": "2027-02-04",
+          "evidence": "labelled",
+          "quote": "Regionals Nov 8-22, 2026; Provincials 2027-02-04 to 2027-02-06 (Sheraton, Toronto)"
+        },
+        "program_end_date": {
+          "value": "2027-02-06",
+          "evidence": "labelled",
+          "quote": "Regionals Nov 8-22, 2026; Provincials 2027-02-04 to 2027-02-06 (Sheraton, Toronto)"
+        },
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://deca.ca/",
+        "summary": "School club + competition. In just over 48 years, Ontario has grown to be the largest international association in the world. In this time, we have built our networks of members, alumni, educators, school administrators, and business professionals, developing a community and creating mentorships that matter. Our programmes and activities have innovated over time offering opportunities to explore new career paths and technologies as they apply to the world of work.",
+        "eligibility": "Ontario high-school students at a registered DECA chapter — Must join through a participating school chapter and pay membership/conference fees. Advancement requires success at regional and provincial levels.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"deca.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"School club + competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Annual\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "confirmed",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "deca-ontario-provincials",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"DECA Ontario Provincials\" — title 100% similar, same domain, identical deadline."
+      ]
+    },
+    {
+      "id": "2beef496c34dedc9",
+      "fingerprint": "award canada duke edinburgh international s|dukeofed org|dukeofed.org",
+      "url": "https://dukeofed.org/",
+      "domain": "dukeofed.org",
+      "contentHash": "f5ef0d357757b7345f6f7f0f1b346f98286642bc6755ad413e0006508d7194f2",
+      "fetchedAt": "2026-10-11T21:21:26.501Z",
+      "extracted": {
+        "title": "Duke of Edinburgh’s International Award Canada",
+        "organization": "dukeofed.org",
+        "category": "Leadership",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.dukeofed.org/",
+        "summary": "Long-term award program. The Duke of Edinburgh's International Award is a globally recognized experiential learning framework empowering youth (ages 14–24) to build confidence and real-world skills through structured, goal-based activities.",
+        "eligibility": "Young people aged 14-24 — Requires registration, adult assessors, regular activity over several months, and completion of all sections. Fees apply.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"dukeofed.org\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Long-term award program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Open\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Ongoing\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "duke-of-edinburgh-s-international-award",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Duke of Edinburgh's International Award\" — title 100% similar, same domain."
+      ]
+    }
+  ]
 }
