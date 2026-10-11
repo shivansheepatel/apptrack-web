@@ -161,6 +161,7 @@ export function siteConfidenceFor(p: ExtractedProgram): Confidence["siteConfiden
 const AUTO_APPLICABLE = new Set([
   "summary",
   "category",
+  "country",
   "cost_type",
   "cost_note",
   "location_type",
