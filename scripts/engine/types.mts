@@ -38,6 +38,10 @@ export interface ExtractedProgram {
   title: string;
   organization: string;
   category: string;
+  /** Where the program itself runs. Optional: a producer that has no opinion
+   *  (the crawler, today) leaves it unset and the gate keeps whatever the
+   *  matched program already has. */
+  country?: "CA" | "US";
   /** Integers in 9..12. Empty means the page did not say. */
   grade_levels: number[];
 
