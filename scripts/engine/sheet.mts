@@ -21,7 +21,7 @@ import { createHash } from "node:crypto";
 import type { Program } from "../../src/data/programs.ts";
 import { registrableDomain, canonicalUrl } from "./sources.mts";
 import { checkOne } from "./linkcheck.mts";
-import { findDuplicate, fingerprint, fingerprintId } from "./dedupe.mts";
+import { findDuplicate, fingerprint, fingerprintId, normalizeTitle } from "./dedupe.mts";
 import { diffFields, decide, siteConfidenceFor } from "./confidence.mts";
 import { isDowngrade, toProgramField } from "./sink-git.mts";
 import type { Proposal, ExtractedProgram, Confidence, Claim } from "./types.mts";
@@ -115,22 +115,73 @@ export async function fetchSheetRows(): Promise<SheetRow[]> {
 
 /* ---------------------------------------------------------- normalization */
 
-const ISO_DATE_RE = /(\d{4})-(\d{2})-(\d{2})/;
+const ISO_DATE_RE_G = /\b(\d{4})-(\d{2})-(\d{2})\b/g;
 
-function extractIsoDate(text: string): string | null {
-  const m = ISO_DATE_RE.exec(text);
-  return m ? m[0] : null;
+/**
+ * The parts of a date cell that describe *this* cycle.
+ *
+ * People write cells like "TBA (2026 deadline was 2026-03-13)" or "Expected
+ * Jan 2027 (2026 cycle: 2026-01-07)". The only ISO date in those is last
+ * year's, and reading it as the current date would show a closed program as
+ * if it had a real date. So: a cell that opens with TBA / Expected / Not
+ * announced has no current date, and any parenthetical that talks about a
+ * previous cycle ("was", "last", "ran", "2026 cycle", ...) is dropped.
+ */
+function currentCycleText(raw: string): string {
+  const text = raw.trim();
+  if (/^(tba|tbd|expected|not announced|not verified|next round|unknown)\b/i.test(text)) return "";
+  // "Summer 2027 TBA (2026: on-site 2026-07-05 to 2026-07-18)": the only date
+  // is the bracketed reference to last year.
+  const outside = text.replace(/\([^)]*\)/g, "");
+  if (/\b(tba|tbd|expected|not announced)\b/i.test(outside) && !ISO_DATE_RE_G.test(outside)) return "";
+  ISO_DATE_RE_G.lastIndex = 0;
+  return text.replace(
+    /\(([^)]*)\)/g,
+    (whole, inner: string) =>
+      /\b(was|were|last|previous|prior|ran|opened|closed|cycle)\b|^\s*20\d\d\s*:/i.test(inner) ? "" : whole,
+  );
 }
 
-function dateClaim(raw: string): Claim<string> | null {
-  const iso = extractIsoDate(raw);
-  if (!iso) return null;
+function isoDatesIn(text: string): string[] {
+  return [...text.matchAll(ISO_DATE_RE_G)].map((m) => m[0]).filter((d) => !Number.isNaN(Date.parse(d)));
+}
+
+function claim(value: string, raw: string): Claim<string> {
   // "labelled" because a human put this value under a named column on
   // purpose — the same trust level the extractor gives an explicitly
   // labelled field on a web page, never "structured" (that is reserved for
   // machine-readable markup) and a cut above "prose".
-  return { value: iso, evidence: "labelled", quote: raw.trim() };
+  return { value, evidence: "labelled", quote: raw.trim() };
 }
+
+/** The first current-cycle date in a cell (open dates, start dates). */
+function dateClaim(raw: string): Claim<string> | null {
+  const iso = isoDatesIn(currentCycleText(raw))[0];
+  return iso ? claim(iso, raw) : null;
+}
+
+/**
+ * A deadline cell can list several rounds ("Early: 2026-11-08; Final:
+ * 2027-01-06"). The site shows one deadline, so use the next one that has not
+ * passed yet — once the early round closes, the next sync moves the listing
+ * on to the final round instead of showing it as closed. If every round has
+ * passed, the last one is the honest closing date.
+ */
+function deadlineClaim(raw: string, today = new Date()): Claim<string> | null {
+  const dates = isoDatesIn(currentCycleText(raw)).sort();
+  if (!dates.length) return null;
+  const todayIso = today.toISOString().slice(0, 10);
+  return claim(dates.find((d) => d >= todayIso) ?? dates[dates.length - 1]!, raw);
+}
+
+/** "2026-08-04 to 2026-08-13" → the end date, so a finished program reads as finished. */
+function endDateClaim(raw: string): Claim<string> | null {
+  const m = /\b(\d{4}-\d{2}-\d{2})\s*(?:to|–|—|-|through|until)\s*(\d{4}-\d{2}-\d{2})\b/i.exec(
+    currentCycleText(raw),
+  );
+  return m && m[2]! >= m[1]! ? claim(m[2]!, raw) : null;
+}
+
 
 const CATEGORY_KEYWORDS: [Program["category"], string[]][] = [
   ["STEM", ["stem", "science", "technology", "engineering", "math", "robotic", "coding", "computer", "ai", "data"]],
@@ -245,12 +296,13 @@ export function rowToExtracted(row: SheetRow): { extracted: ExtractedProgram; no
   }
 
   const appOpen = dateClaim(row["Applications Open"] ?? "");
-  const deadline = dateClaim(row["Deadline"] ?? "");
+  const deadline = deadlineClaim(row["Deadline"] ?? "");
   const programDate = dateClaim(row["Program Date"] ?? "");
+  const programEnd = endDateClaim(row["Program Date"] ?? "");
   if ((row["Program Date"] ?? "").trim() && !programDate) {
     notes.push(`Sheet's Program Date ("${row["Program Date"]}") isn't in a recognizable yyyy-mm-dd form and was left blank.`);
   }
-  if ((row["Program Date"] ?? "").trim() && programDate) {
+  if ((row["Program Date"] ?? "").trim() && programDate && !programEnd) {
     notes.push(`Sheet gives one "Program Date"; the site tracks a separate start and end date. Used it as the start date only — add an end date on review if the program runs more than one day.`);
   }
 
@@ -263,7 +315,7 @@ export function rowToExtracted(row: SheetRow): { extracted: ExtractedProgram; no
     app_open_date: appOpen,
     app_deadline: deadline,
     program_start_date: programDate,
-    program_end_date: null,
+    program_end_date: programEnd,
     cost_type: "Unknown",
     cost_note: null,
     location_type: "Unknown",
@@ -345,6 +397,9 @@ function sheetConfidence(extracted: ExtractedProgram, linkOk: boolean | null): C
 
 export async function buildProposals(rows: SheetRow[], known: Program[]): Promise<Proposal[]> {
   const proposals: Proposal[] = [];
+  // A listing two sheet rows both point at would otherwise be proposed twice,
+  // and the two rows would overwrite each other on every run.
+  const claimed = new Set<string>();
   for (const row of rows) {
     const title = (row["Program"] ?? "").trim();
     if (!title) continue; // a blank row — nothing to propose
@@ -358,11 +413,26 @@ export async function buildProposals(rows: SheetRow[], known: Program[]): Promis
     const url = link ? canonicalUrl(link) : `sheet-row:${title}`;
     const domain = link ? registrableDomain(link) : "google-sheet";
 
-    const match = findDuplicate(
-      { title: extracted.title, organization: extracted.organization, url, deadline: extracted.app_deadline?.value ?? null },
-      known.map((p) => ({ ...p, organization: p.org, deadline: p.deadline ?? null })),
-    );
+    // The sheet has no organisation column, so the "organisation" is guessed
+    // from the link's domain — and fixing a link (an aggregator swapped for
+    // the official site) changes it. An identical title is the stronger
+    // signal: when exactly one listing has it, that is the match.
+    const sameTitle = known.filter((p) => normalizeTitle(p.title) === normalizeTitle(extracted.title));
+    const match =
+      sameTitle.length === 1
+        ? { kind: "exact" as const, item: sameTitle[0]! }
+        : findDuplicate(
+            { title: extracted.title, organization: extracted.organization, url, deadline: extracted.app_deadline?.value ?? null },
+            known.map((p) => ({ ...p, organization: p.org, deadline: p.deadline ?? null })),
+          );
     const matchedProgram = match ? known.find((p) => p.id === (match.item as unknown as Program).id) : undefined;
+    if (matchedProgram) {
+      if (claimed.has(matchedProgram.id)) {
+        console.log(`  sheet: "${title}" is a second row for "${matchedProgram.title}" — skipped; keep one row in the sheet.`);
+        continue;
+      }
+      claimed.add(matchedProgram.id);
+    }
     // Drop "changes" that would only make the listing worse — the sheet's
     // "Unknown" cost/format, a bare domain where the curated organisation name
     // is, a reworded title. The apply step refuses them anyway; proposing them
