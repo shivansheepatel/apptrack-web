@@ -16,9 +16,10 @@ import { RotateCcw } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { SITE } from "@/config/site";
-import { CATEGORIES } from "@/data/programs";
+import { CATEGORIES, COUNTRIES } from "@/data/programs";
 import { INTERESTS } from "@/data/taxonomy";
 import { CATEGORY_META } from "@/lib/category";
+import { COUNTRY_META } from "@/lib/country";
 import {
   COMMITMENT_LABELS,
   COST_LABELS,
@@ -30,6 +31,7 @@ import { cn } from "@/lib/utils";
 export interface ExploreFilters {
   q: string;
   categories: string[];
+  countries: string[];
   /** A single interest track, which is narrower than a category. */
   track: string;
   grade: number | null;
@@ -46,6 +48,7 @@ export interface ExploreFilters {
 export const DEFAULT_FILTERS: ExploreFilters = {
   q: "",
   categories: [],
+  countries: [],
   track: "",
   grade: null,
   cost: "any",
@@ -61,6 +64,7 @@ export function activeFilterCount(f: ExploreFilters): number {
   return (
     (f.q.trim() ? 1 : 0) +
     f.categories.length +
+    f.countries.length +
     (f.track ? 1 : 0) +
     (f.grade !== null ? 1 : 0) +
     (f.cost !== "any" ? 1 : 0) +
@@ -73,6 +77,7 @@ export function activeFilterCount(f: ExploreFilters): number {
 
 export interface FacetCounts {
   categories: Record<string, number>;
+  countries: Record<string, number>;
   tracks: Record<string, number>;
   grades: Record<number, number>;
   cost: Record<string, number>;
@@ -144,6 +149,13 @@ export function FilterRail({ filters, onChange, onClear, counts, savedCount }: P
       categories: filters.categories.includes(c)
         ? filters.categories.filter((x) => x !== c)
         : [...filters.categories, c],
+    });
+
+  const toggleCountry = (c: string) =>
+    onChange({
+      countries: filters.countries.includes(c)
+        ? filters.countries.filter((x) => x !== c)
+        : [...filters.countries, c],
     });
 
   const active = activeFilterCount(filters);
@@ -225,6 +237,22 @@ export function FilterRail({ filters, onChange, onClear, counts, savedCount }: P
               </Pill>
             );
           })}
+        </div>
+      </Section>
+
+      <Section title="Country">
+        <div className="flex flex-wrap gap-2">
+          {COUNTRIES.map((c) => (
+            <Pill
+              key={c}
+              active={filters.countries.includes(c)}
+              onClick={() => toggleCountry(c)}
+              count={counts.countries[c] ?? 0}
+            >
+              <span aria-hidden>{COUNTRY_META[c].flag}</span>
+              {COUNTRY_META[c].label}
+            </Pill>
+          ))}
         </div>
       </Section>
 
