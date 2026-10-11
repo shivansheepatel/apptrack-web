@@ -102,12 +102,9 @@ export async function applyAuto(proposals: Proposal[]): Promise<ApplyReport> {
         after: change.after,
       });
     }
-    // A successful re-verify always refreshes the checked date.
-    const span = scanEntries(src).find((s) => s.id === p.matchedProgramId);
-    if (span) {
-      const next = replaceField(src, span, "checked", p.fetchedAt.slice(0, 10));
-      if (next) src = next;
-    }
+    // Catalogue freshness is a single global date (`CHECKED` in programs.ts),
+    // not a per-entry field, so there is nothing else to touch here once the
+    // field edits above have landed.
   }
 
   if (report.applied.length) await writeCatalogSource(src);
@@ -212,12 +209,14 @@ export async function applyDecisions(): Promise<{
         programStartDate: e.program_start_date?.value ?? null,
         programEndDate: e.program_end_date?.value ?? null,
         confidence: item.confidence.siteConfidence,
-        checked: item.fetchedAt.slice(0, 10),
         url: e.application_link ?? item.url,
         sourceUrl: item.url,
         summary: e.summary,
+        // The extraction schema has no separate long-form field, so the
+        // hand-authored `description` starts as a copy of the summary; a
+        // reviewer can always expand it by hand later.
+        description: e.summary,
         eligibility: e.eligibility ?? "",
-        why: `Added ${item.fetchedAt.slice(0, 10)} from ${item.domain}, reviewed by ${d.reviewer ?? "an admin"}.`,
       }),
     );
     added.push(id);
