@@ -158,6 +158,40 @@ function organizationFromLink(link: string, title: string): { organization: stri
   }
 }
 
+/**
+ * The sheet has no location column at all, so this leans on whatever text
+ * clues exist: a Canadian place name or "Canada" in the title/description, a
+ * US state or "United States" the same way, and — only when neither is
+ * present — the application link's domain. Defaults to CA, since this
+ * directory is Ontario-first and the sheet has historically been all-Canadian;
+ * only the uncertain cases (resolved from the domain alone) are flagged for a
+ * human to double-check, the same convention as the category guess above.
+ */
+const CA_COUNTRY_HINTS =
+  /\b(canada|canadian|ontario|toronto|ottawa|waterloo|hamilton|kingston|mississauga|brampton|windsor|london,? ontario|british columbia|alberta|qu[eé]bec|manitoba|nova scotia|saskatchewan)\b/i;
+const US_COUNTRY_HINTS =
+  /\b(united states|u\.s\.a?\.|\busa\b|california|new york|massachusetts|connecticut|\btexas\b|florida|illinois|pennsylvania|washington,? d\.?c\.?|virginia|georgia|michigan|\bohio\b|north carolina)\b/i;
+const US_DOMAIN_HINTS = /\.(edu|us)$/i;
+
+function countryFromRow(
+  link: string,
+  title: string,
+  about: string,
+): { country: "CA" | "US"; guessed: boolean } {
+  const haystack = `${title} ${about}`;
+  if (CA_COUNTRY_HINTS.test(haystack)) return { country: "CA", guessed: false };
+  if (US_COUNTRY_HINTS.test(haystack)) return { country: "US", guessed: false };
+  let domain = "";
+  try {
+    domain = link ? registrableDomain(link) : "";
+  } catch {
+    domain = "";
+  }
+  if (domain.endsWith(".ca")) return { country: "CA", guessed: false };
+  if (US_DOMAIN_HINTS.test(domain)) return { country: "US", guessed: true };
+  return { country: "CA", guessed: true };
+}
+
 /** Turn one sheet row into the engine's extracted shape, with no model call involved. */
 export function rowToExtracted(row: SheetRow): { extracted: ExtractedProgram; notes: string[] } {
   const notes: string[] = [];
@@ -184,6 +218,13 @@ export function rowToExtracted(row: SheetRow): { extracted: ExtractedProgram; no
       link
         ? `Organization guessed from the application link's domain ("${organization}") — the sheet has no organization column.`
         : `No application link given, so organization defaults to the program title. Please fill in.`,
+    );
+  }
+
+  const { country, guessed: countryGuessed } = countryFromRow(link, title, about);
+  if (countryGuessed) {
+    notes.push(
+      `Country guessed as "${country}" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.`,
     );
   }
 
@@ -216,6 +257,7 @@ export function rowToExtracted(row: SheetRow): { extracted: ExtractedProgram; no
     title,
     organization,
     category,
+    country,
     grade_levels: [],
     app_open_date: appOpen,
     app_deadline: deadline,
@@ -246,6 +288,7 @@ function programAsExtracted(p: Program): Record<string, unknown> {
     title: p.title,
     organization: p.org,
     category: p.category,
+    country: p.country,
     grade_levels: p.grades,
     app_deadline: p.deadline ?? null,
     app_open_date: p.appOpenDate ?? null,
@@ -265,6 +308,7 @@ function extractedAsComparable(e: ExtractedProgram): Record<string, unknown> {
     title: e.title,
     organization: e.organization,
     category: e.category,
+    country: e.country,
     grade_levels: e.grade_levels.length ? e.grade_levels : undefined,
     app_deadline: e.app_deadline?.value ?? null,
     app_open_date: e.app_open_date?.value ?? null,
