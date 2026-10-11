@@ -23,6 +23,7 @@ import { registrableDomain, canonicalUrl } from "./sources.mts";
 import { checkOne } from "./linkcheck.mts";
 import { findDuplicate, fingerprint, fingerprintId } from "./dedupe.mts";
 import { diffFields, decide, siteConfidenceFor } from "./confidence.mts";
+import { isDowngrade, toProgramField } from "./sink-git.mts";
 import type { Proposal, ExtractedProgram, Confidence, Claim } from "./types.mts";
 
 const GOOGLE_SHEET_ID = process.env["GOOGLE_SHEET_ID"];
@@ -362,8 +363,15 @@ export async function buildProposals(rows: SheetRow[], known: Program[]): Promis
       known.map((p) => ({ ...p, organization: p.org, deadline: p.deadline ?? null })),
     );
     const matchedProgram = match ? known.find((p) => p.id === (match.item as unknown as Program).id) : undefined;
+    // Drop "changes" that would only make the listing worse — the sheet's
+    // "Unknown" cost/format, a bare domain where the curated organisation name
+    // is, a reworded title. The apply step refuses them anyway; proposing them
+    // just re-fills /admin/review with the same noise every two hours. What is
+    // left is real news: dates, links, categories, new text.
     const changes = matchedProgram
-      ? diffFields(programAsExtracted(matchedProgram), extractedAsComparable(extracted), confidence)
+      ? diffFields(programAsExtracted(matchedProgram), extractedAsComparable(extracted), confidence).filter(
+          (c) => !isDowngrade(toProgramField(c.field), c.before, c.after),
+        )
       : [];
 
     const decision = decide({
