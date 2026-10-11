@@ -26,11 +26,35 @@ export interface EntrySpan {
   source: string;
 }
 
+/**
+ * The same slug `src/data/programs.ts` applies to a seed's title when the
+ * seed itself has no explicit `id`. Almost no seed in the real catalogue
+ * does, so this is how most entries are actually identified.
+ */
+function titleSlug(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+/** An entry's effective id: its own `id:` literal if present, else the slug of its title. */
+function entryId(entrySource: string): string | null {
+  const idMatch = /\bid:\s*["'`]([^"'`]+)["'`]/.exec(entrySource);
+  if (idMatch) return idMatch[1]!;
+  const titleMatch = /\btitle:\s*"((?:[^"\\]|\\.)*)"/.exec(entrySource);
+  if (!titleMatch) return null;
+  const title = titleMatch[1]!.replace(/\\(.)/g, "$1");
+  return titleSlug(title);
+}
+
 /** Walk the file, brace-counting, skipping strings/template literals/comments. */
 export function scanEntries(src: string): EntrySpan[] {
   // Anchor on the assignment, not on the identifier: `PROGRAMS: Program[] = [`
-  // contains a `[` in its *type* that is not the array we want.
-  const decl = /\bPROGRAMS\b[^=\n]*=\s*\[/.exec(src);
+  // contains a `[` in its *type* that is not the array we want. The real
+  // catalogue assigns the literal to `seeds` and derives PROGRAMS via
+  // `seeds.map(...)`, so this matches either identifier.
+  const decl = /\b(?:PROGRAMS|seeds)\b[^=\n]*=\s*\[/.exec(src);
   if (!decl) throw new Error("could not find the PROGRAMS array literal");
   const bracket = decl.index + decl[0].length - 1;
 
@@ -77,8 +101,8 @@ export function scanEntries(src: string): EntrySpan[] {
       depth--;
       if (depth === 0 && entryStart >= 0) {
         const source = src.slice(entryStart, i + 1);
-        const m = /\bid:\s*["'`]([^"'`]+)["'`]/.exec(source);
-        if (m) spans.push({ id: m[1]!, start: entryStart, end: i + 1, source });
+        const id = entryId(source);
+        if (id) spans.push({ id, start: entryStart, end: i + 1, source });
         entryStart = -1;
       }
     } else if (ch === "]" && depth === 0) {
@@ -121,7 +145,7 @@ export function replaceField(
     const indent = /\n(\s+)\w+:/.exec(entry)?.[1] ?? "  ";
     const patched =
       entry.slice(0, insertAt).replace(/\s*$/, "") +
-      `,\n${indent}${field}: ${renderValue(value)},\n` +
+      `\n${indent}${field}: ${renderValue(value)},\n` +
       entry.slice(insertAt);
     return src.slice(0, span.start) + patched + src.slice(span.end);
   }
@@ -148,13 +172,12 @@ export function renderEntry(p: Record<string, unknown>): string {
     "programStartDate",
     "programEndDate",
     "confidence",
-    "checked",
     "url",
     "sourceUrl",
     "summary",
+    "description",
     "eligibility",
     "commitment",
-    "why",
   ];
   const lines: string[] = ["  {"];
   for (const key of order) {
@@ -174,7 +197,7 @@ export function appendEntries(src: string, entries: string[]): string {
   if (!entries.length) return src;
   const spans = scanEntries(src);
   const last = spans.at(-1);
-  const decl = /\bPROGRAMS\b[^=\n]*=\s*\[/.exec(src);
+  const decl = /\b(?:PROGRAMS|seeds)\b[^=\n]*=\s*\[/.exec(src);
   const anchor = src.indexOf("]", last ? last.end : decl ? decl.index + decl[0].length : 0);
   if (anchor < 0) throw new Error("could not find the end of the PROGRAMS array");
   const block =
