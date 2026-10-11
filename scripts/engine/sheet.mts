@@ -93,7 +93,9 @@ export async function fetchSheetRows(): Promise<SheetRow[]> {
   }
   const res = await fetch(sheetCsvUrl());
   if (!res.ok) {
-    throw new Error(`Sheet export returned HTTP ${res.status}. Is it shared "Anyone with the link can view"?`);
+    throw new Error(
+      `Sheet export returned HTTP ${res.status}. Is it shared "Anyone with the link can view"?`,
+    );
   }
   const text = await res.text();
   if (/^<!DOCTYPE html/i.test(text.trim())) {
@@ -133,17 +135,20 @@ function currentCycleText(raw: string): string {
   // "Summer 2027 TBA (2026: on-site 2026-07-05 to 2026-07-18)": the only date
   // is the bracketed reference to last year.
   const outside = text.replace(/\([^)]*\)/g, "");
-  if (/\b(tba|tbd|expected|not announced)\b/i.test(outside) && !ISO_DATE_RE_G.test(outside)) return "";
+  if (/\b(tba|tbd|expected|not announced)\b/i.test(outside) && !ISO_DATE_RE_G.test(outside))
+    return "";
   ISO_DATE_RE_G.lastIndex = 0;
-  return text.replace(
-    /\(([^)]*)\)/g,
-    (whole, inner: string) =>
-      /\b(was|were|last|previous|prior|ran|opened|closed|cycle)\b|^\s*20\d\d\s*:/i.test(inner) ? "" : whole,
+  return text.replace(/\(([^)]*)\)/g, (whole, inner: string) =>
+    /\b(was|were|last|previous|prior|ran|opened|closed|cycle)\b|^\s*20\d\d\s*:/i.test(inner)
+      ? ""
+      : whole,
   );
 }
 
 function isoDatesIn(text: string): string[] {
-  return [...text.matchAll(ISO_DATE_RE_G)].map((m) => m[0]).filter((d) => !Number.isNaN(Date.parse(d)));
+  return [...text.matchAll(ISO_DATE_RE_G)]
+    .map((m) => m[0])
+    .filter((d) => !Number.isNaN(Date.parse(d)));
 }
 
 function claim(value: string, raw: string): Claim<string> {
@@ -182,12 +187,28 @@ function endDateClaim(raw: string): Claim<string> | null {
   return m && m[2]! >= m[1]! ? claim(m[2]!, raw) : null;
 }
 
-
 const CATEGORY_KEYWORDS: [Program["category"], string[]][] = [
-  ["STEM", ["stem", "science", "technology", "engineering", "math", "robotic", "coding", "computer", "ai", "data"]],
+  [
+    "STEM",
+    [
+      "stem",
+      "science",
+      "technology",
+      "engineering",
+      "math",
+      "robotic",
+      "coding",
+      "computer",
+      "ai",
+      "data",
+    ],
+  ],
   ["Business", ["business", "entrepreneur", "finance", "econom", "marketing", "accounting"]],
   ["Medicine", ["medicine", "medical", "health", "biology", "nursing", "clinical"]],
-  ["Law & Civics", ["law", "civics", "debate", "model un", "mun", "politic", "government", "policy"]],
+  [
+    "Law & Civics",
+    ["law", "civics", "debate", "model un", "mun", "politic", "government", "policy"],
+  ],
   ["Leadership", ["leadership", "volunteer", "community service", "mentor", "youth council"]],
   ["Arts", ["art", "music", "design", "film", "creative", "writing", "theatre", "theater"]],
 ];
@@ -201,7 +222,10 @@ function normalizeCategory(raw: string): { category: Program["category"]; guesse
   return { category: "STEM", guessed: true };
 }
 
-function organizationFromLink(link: string, title: string): { organization: string; guessed: boolean } {
+function organizationFromLink(
+  link: string,
+  title: string,
+): { organization: string; guessed: boolean } {
   if (!link) return { organization: title, guessed: true };
   try {
     return { organization: registrableDomain(link), guessed: true };
@@ -283,7 +307,9 @@ export function rowToExtracted(row: SheetRow): { extracted: ExtractedProgram; no
   let summary = about;
   if (programType) {
     summary = summary ? `${programType}. ${summary}` : programType;
-    notes.push(`Sheet's "Format" column ("${programType}") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.`);
+    notes.push(
+      `Sheet's "Format" column ("${programType}") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.`,
+    );
   }
 
   if (sheetStatus) {
@@ -292,7 +318,9 @@ export function rowToExtracted(row: SheetRow): { extracted: ExtractedProgram; no
     );
   }
   if ((row["Priority"] ?? "").trim() || (row["Planning Note"] ?? "").trim()) {
-    notes.push(`Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.`);
+    notes.push(
+      `Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.`,
+    );
   }
 
   const appOpen = dateClaim(row["Applications Open"] ?? "");
@@ -300,10 +328,14 @@ export function rowToExtracted(row: SheetRow): { extracted: ExtractedProgram; no
   const programDate = dateClaim(row["Program Date"] ?? "");
   const programEnd = endDateClaim(row["Program Date"] ?? "");
   if ((row["Program Date"] ?? "").trim() && !programDate) {
-    notes.push(`Sheet's Program Date ("${row["Program Date"]}") isn't in a recognizable yyyy-mm-dd form and was left blank.`);
+    notes.push(
+      `Sheet's Program Date ("${row["Program Date"]}") isn't in a recognizable yyyy-mm-dd form and was left blank.`,
+    );
   }
   if ((row["Program Date"] ?? "").trim() && programDate && !programEnd) {
-    notes.push(`Sheet gives one "Program Date"; the site tracks a separate start and end date. Used it as the start date only — add an end date on review if the program runs more than one day.`);
+    notes.push(
+      `Sheet gives one "Program Date"; the site tracks a separate start and end date. Used it as the start date only — add an end date on review if the program runs more than one day.`,
+    );
   }
 
   const extracted: ExtractedProgram = {
@@ -407,7 +439,8 @@ export async function buildProposals(rows: SheetRow[], known: Program[]): Promis
     const { extracted, notes } = rowToExtracted(row);
     const link = extracted.application_link;
     const linkOk = link ? await checkOne(link) : null;
-    if (linkOk === false) notes.push(`The application link in the sheet did not respond — check it still works.`);
+    if (linkOk === false)
+      notes.push(`The application link in the sheet did not respond — check it still works.`);
 
     const confidence = sheetConfidence(extracted, linkOk);
     const url = link ? canonicalUrl(link) : `sheet-row:${title}`;
@@ -417,18 +450,29 @@ export async function buildProposals(rows: SheetRow[], known: Program[]): Promis
     // from the link's domain — and fixing a link (an aggregator swapped for
     // the official site) changes it. An identical title is the stronger
     // signal: when exactly one listing has it, that is the match.
-    const sameTitle = known.filter((p) => normalizeTitle(p.title) === normalizeTitle(extracted.title));
+    const sameTitle = known.filter(
+      (p) => normalizeTitle(p.title) === normalizeTitle(extracted.title),
+    );
     const match =
       sameTitle.length === 1
         ? { kind: "exact" as const, item: sameTitle[0]! }
         : findDuplicate(
-            { title: extracted.title, organization: extracted.organization, url, deadline: extracted.app_deadline?.value ?? null },
+            {
+              title: extracted.title,
+              organization: extracted.organization,
+              url,
+              deadline: extracted.app_deadline?.value ?? null,
+            },
             known.map((p) => ({ ...p, organization: p.org, deadline: p.deadline ?? null })),
           );
-    const matchedProgram = match ? known.find((p) => p.id === (match.item as unknown as Program).id) : undefined;
+    const matchedProgram = match
+      ? known.find((p) => p.id === (match.item as unknown as Program).id)
+      : undefined;
     if (matchedProgram) {
       if (claimed.has(matchedProgram.id)) {
-        console.log(`  sheet: "${title}" is a second row for "${matchedProgram.title}" — skipped; keep one row in the sheet.`);
+        console.log(
+          `  sheet: "${title}" is a second row for "${matchedProgram.title}" — skipped; keep one row in the sheet.`,
+        );
         continue;
       }
       claimed.add(matchedProgram.id);
@@ -439,9 +483,11 @@ export async function buildProposals(rows: SheetRow[], known: Program[]): Promis
     // just re-fills /admin/review with the same noise every two hours. What is
     // left is real news: dates, links, categories, new text.
     const changes = matchedProgram
-      ? diffFields(programAsExtracted(matchedProgram), extractedAsComparable(extracted), confidence).filter(
-          (c) => !isDowngrade(toProgramField(c.field), c.before, c.after),
-        )
+      ? diffFields(
+          programAsExtracted(matchedProgram),
+          extractedAsComparable(extracted),
+          confidence,
+        ).filter((c) => !isDowngrade(toProgramField(c.field), c.before, c.after))
       : [];
 
     const decision = decide({
