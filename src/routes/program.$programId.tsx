@@ -35,6 +35,7 @@ import {
 import { FEATURES, SITE } from "@/config/site";
 import { PROGRAMS } from "@/data/programs";
 import { CATEGORY_META } from "@/lib/category";
+import { COUNTRY_META } from "@/lib/country";
 import { formatDate, formatRange, usualMonth } from "@/lib/dates";
 import { downloadIcs } from "@/lib/ics";
 import {
@@ -139,6 +140,7 @@ function ProgramDetail() {
 
   const program = useMemo(() => normalize(raw, now), [raw, now]);
   const meta = CATEGORY_META[program.category];
+  const country = COUNTRY_META[program.country];
   const Icon = meta.icon;
   const saved = hydrated && isSaved(program.id);
   const watching = hydrated && hasAlert(program.id);
@@ -309,6 +311,13 @@ function ProgramDetail() {
           >
             <Icon className="size-3.5" aria-hidden />
             {program.category}
+          </span>
+          <span
+            className="inline-flex items-center gap-1 rounded-full border-2 border-rule bg-secondary px-2.5 py-1 text-xs font-bold text-muted-foreground"
+            title={country.label}
+          >
+            <span aria-hidden>{country.flag}</span>
+            {country.label}
           </span>
           <span className="rounded-full border-2 border-rule bg-secondary px-2.5 py-1 text-xs font-bold text-muted-foreground">
             Grades {program.grades.join(", ")}
