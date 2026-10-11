@@ -1,5 +1,8 @@
 export type Category = "STEM" | "Business" | "Medicine" | "Law & Civics" | "Leadership" | "Arts";
 
+/** Where the program itself takes place — drives the flag badge, not the host org's HQ. */
+export type Country = "CA" | "US";
+
 export type Confidence = "confirmed" | "estimated" | "unposted";
 
 export interface Program {
@@ -7,6 +10,7 @@ export interface Program {
   title: string;
   org: string;
   category: Category;
+  country: Country;
   grades: number[];
   summary: string;
   description: string;
@@ -59,6 +63,8 @@ export const CATEGORIES: Category[] = [
   "Arts",
 ];
 
+export const COUNTRIES: Country[] = ["CA", "US"];
+
 const CHECKED = "2026-09-15";
 
 type Seed = Omit<Program, "lastChecked" | "id"> & { id?: string };
@@ -75,6 +81,7 @@ const seeds: Seed[] = [
     title: "SHAD Canada Summer Program",
     org: "SHAD",
     category: "STEM",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Month-long STEAM and entrepreneurship residency on a Canadian university campus.",
     description:
@@ -92,6 +99,7 @@ const seeds: Seed[] = [
     title: "DEEP Summer Academy",
     org: "University of Toronto Engineering Outreach",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "University-taught engineering and science courses across two-week summer blocks.",
     description:
@@ -109,6 +117,7 @@ const seeds: Seed[] = [
     title: "Canadian Computing Competition (CCC)",
     org: "CEMC, University of Waterloo",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "National programming contest and the entry point to Canada's IOI team.",
     description:
@@ -125,6 +134,7 @@ const seeds: Seed[] = [
     title: "Euclid Mathematics Contest",
     org: "CEMC, University of Waterloo",
     category: "STEM",
+    country: "CA",
     grades: [11, 12],
     summary: "Senior math contest used in Waterloo admission and scholarship decisions.",
     description:
@@ -141,6 +151,7 @@ const seeds: Seed[] = [
     title: "Canada-Wide Science Fair",
     org: "Youth Science Canada",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "National science fair reached by winning your regional fair first.",
     description:
@@ -157,6 +168,7 @@ const seeds: Seed[] = [
     title: "Toronto Science Fair",
     org: "Toronto Science Fair Association",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Regional science fair and qualifier for the Canada-Wide Science Fair.",
     description:
@@ -173,6 +185,7 @@ const seeds: Seed[] = [
     title: "Sanofi Biogenius Canada",
     org: "Sanofi Canada / BioTalent",
     category: "STEM",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Biotech research competition where students work in a real mentor lab.",
     description:
@@ -190,6 +203,7 @@ const seeds: Seed[] = [
     title: "International Summer School for Young Physicists (ISSYP)",
     org: "Perimeter Institute",
     category: "STEM",
+    country: "CA",
     grades: [11, 12],
     summary: "Two-week theoretical physics program with Perimeter researchers.",
     description:
@@ -207,6 +221,7 @@ const seeds: Seed[] = [
     title: "Quantum School for Young Students (QSYS)",
     org: "Institute for Quantum Computing, University of Waterloo",
     category: "STEM",
+    country: "CA",
     grades: [11, 12],
     summary: "Intensive introduction to quantum information science.",
     description:
@@ -223,6 +238,7 @@ const seeds: Seed[] = [
     title: "FIRST Robotics Competition — Ontario",
     org: "FIRST Robotics Canada",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Build a competition robot in six weeks with a school or community team.",
     description:
@@ -239,6 +255,7 @@ const seeds: Seed[] = [
     title: "VEX Robotics Ontario Provincials",
     org: "REC Foundation Canada",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Smaller-scale robotics league with a season of qualifying tournaments.",
     description:
@@ -255,6 +272,7 @@ const seeds: Seed[] = [
     title: "CyberTitan National Youth Cyber Defence Challenge",
     org: "ICTC",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Team cybersecurity competition run over an online season.",
     description:
@@ -271,6 +289,7 @@ const seeds: Seed[] = [
     title: "Technovation Girls",
     org: "Technovation",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Build a mobile app or AI project that solves a community problem.",
     description:
@@ -288,6 +307,7 @@ const seeds: Seed[] = [
     title: "Go ENG Girl",
     org: "Ontario Network of Women in Engineering",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "One-day campus engineering event hosted across Ontario universities.",
     description:
@@ -305,6 +325,7 @@ const seeds: Seed[] = [
     title: "Visions of Science Youth Programs",
     org: "Visions of Science",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Year-round STEM clubs and leadership tracks in Toronto-area communities.",
     description:
@@ -322,6 +343,7 @@ const seeds: Seed[] = [
     title: "STEM Fellowship Big Data Challenge",
     org: "STEM Fellowship",
     category: "STEM",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Data science competition ending in a peer-reviewed student publication.",
     description:
@@ -338,6 +360,7 @@ const seeds: Seed[] = [
     title: "Canadian Chemistry Olympiad — National Exam",
     org: "Chemical Institute of Canada",
     category: "STEM",
+    country: "CA",
     grades: [11, 12],
     summary: "Written exam selecting Canada's International Chemistry Olympiad team.",
     description:
@@ -354,6 +377,7 @@ const seeds: Seed[] = [
     title: "Canadian Biology Olympiad",
     org: "Canadian Biology Olympiad",
     category: "STEM",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Biology exam series leading to the International Biology Olympiad team.",
     description:
@@ -370,6 +394,7 @@ const seeds: Seed[] = [
     title: "Canadian Physics Olympiad (CPhO)",
     org: "Canadian Association of Physicists",
     category: "STEM",
+    country: "CA",
     grades: [11, 12],
     summary: "National physics exam and training camp pathway.",
     description:
@@ -386,6 +411,7 @@ const seeds: Seed[] = [
     title: "Queen's Enrichment Studies Unit (ESU) Summer Program",
     org: "Queen's University",
     category: "STEM",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Week-long university-level courses in science, engineering and the humanities.",
     description:
@@ -402,6 +428,7 @@ const seeds: Seed[] = [
     title: "Mini University — Waterloo Engineering",
     org: "University of Waterloo",
     category: "STEM",
+    country: "CA",
     grades: [9, 10],
     summary: "Summer camp blending engineering, math and science for younger students.",
     description:
@@ -418,6 +445,7 @@ const seeds: Seed[] = [
     title: "Let's Talk Science Volunteer Outreach",
     org: "Let's Talk Science",
     category: "STEM",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Volunteer hours running science activities for younger students.",
     description:
@@ -434,6 +462,7 @@ const seeds: Seed[] = [
     title: "Hack the North High School Track",
     org: "University of Waterloo",
     category: "STEM",
+    country: "CA",
     grades: [11, 12],
     summary: "Canada's largest hackathon, with limited spots for senior high school students.",
     description:
@@ -450,6 +479,7 @@ const seeds: Seed[] = [
     title: "Canadian Team Mathematics Contest",
     org: "CEMC, University of Waterloo",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Team-based math contest written in a single afternoon.",
     description:
@@ -466,6 +496,7 @@ const seeds: Seed[] = [
     title: "Actua National Youth Programs",
     org: "Actua",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Network of university-run STEM camps and workshops across the country.",
     description:
@@ -484,6 +515,7 @@ const seeds: Seed[] = [
     title: "DECA Ontario Provincials",
     org: "DECA Ontario",
     category: "Business",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Case competition in marketing, finance, hospitality and entrepreneurship.",
     description:
@@ -500,6 +532,7 @@ const seeds: Seed[] = [
     title: "JA Company Program",
     org: "Junior Achievement Central Ontario",
     category: "Business",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Run a real student-led company over a school year with business mentors.",
     description:
@@ -517,6 +550,7 @@ const seeds: Seed[] = [
     title: "Ivey Summer Leadership Program",
     org: "Ivey Business School, Western University",
     category: "Business",
+    country: "CA",
     grades: [11, 12],
     summary: "Business case-method week on the Ivey campus.",
     description:
@@ -533,6 +567,7 @@ const seeds: Seed[] = [
     title: "Summer Company Grant",
     org: "Government of Ontario",
     category: "Business",
+    country: "CA",
     grades: [11, 12],
     summary: "Up to $3,000 to start and run your own summer business.",
     description:
@@ -549,6 +584,7 @@ const seeds: Seed[] = [
     title: "Schulich Summer Business Academy",
     org: "Schulich School of Business, York University",
     category: "Business",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Week-long introduction to business disciplines taught by Schulich faculty.",
     description:
@@ -565,6 +601,7 @@ const seeds: Seed[] = [
     title: "Queen's Commerce Business Case Competition for High Schools",
     org: "Smith School of Business, Queen's University",
     category: "Business",
+    country: "CA",
     grades: [11, 12],
     summary: "Team case competition judged by Smith students and alumni.",
     description:
@@ -581,6 +618,7 @@ const seeds: Seed[] = [
     title: "Rotman Commerce Case Competition",
     org: "Rotman Commerce, University of Toronto",
     category: "Business",
+    country: "CA",
     grades: [11, 12],
     summary: "Student-run case competition introducing university-level business analysis.",
     description:
@@ -597,6 +635,7 @@ const seeds: Seed[] = [
     title: "JA Investment Strategies Program",
     org: "Junior Achievement",
     category: "Business",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "One-day workshop on investing, risk and personal finance.",
     description:
@@ -613,6 +652,7 @@ const seeds: Seed[] = [
     title: "Enactus Youth Impact Challenge",
     org: "Enactus Canada",
     category: "Business",
+    country: "CA",
     grades: [11, 12],
     summary: "Social entrepreneurship challenge judged on real community impact.",
     description:
@@ -629,6 +669,7 @@ const seeds: Seed[] = [
     title: "BMO Diversity Scholarship",
     org: "BMO Financial Group",
     category: "Business",
+    country: "CA",
     grades: [12],
     summary:
       "Scholarship for students from underrepresented communities entering business studies.",
@@ -648,6 +689,7 @@ const seeds: Seed[] = [
     title: "Young Entrepreneurs Ontario Pitch Nights",
     org: "Regional Small Business Enterprise Centres",
     category: "Business",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Local pitch events with cash prizes for student business ideas.",
     description:
@@ -664,6 +706,7 @@ const seeds: Seed[] = [
     title: "TD Future Cities Youth Challenge",
     org: "TD Bank Group",
     category: "Business",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Community innovation challenge with funding for youth-led projects.",
     description:
@@ -680,6 +723,7 @@ const seeds: Seed[] = [
     title: "Ontario Skills Competition — Business and IT Trades",
     org: "Skills Ontario",
     category: "Business",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Provincial skills contests including web design, IT and job interview skills.",
     description:
@@ -696,6 +740,7 @@ const seeds: Seed[] = [
     title: "Youth Entrepreneurship Summer Accelerator",
     org: "Futurpreneur Canada (youth stream)",
     category: "Business",
+    country: "CA",
     grades: [11, 12],
     summary: "Workshops and mentoring for students building a first venture.",
     description:
@@ -714,6 +759,7 @@ const seeds: Seed[] = [
     title: "Medical Summer Mentorship Program (MSMP)",
     org: "Temerty Faculty of Medicine, University of Toronto",
     category: "Medicine",
+    country: "CA",
     grades: [11],
     summary: "Four-week mentorship inside U of T's medical school for Grade 11 students.",
     description:
@@ -732,6 +778,7 @@ const seeds: Seed[] = [
     title: "SickKids Summer Research Program",
     org: "The Hospital for Sick Children",
     category: "Medicine",
+    country: "CA",
     grades: [11, 12],
     summary: "Paid and volunteer summer research placements in a pediatric research institute.",
     description:
@@ -748,6 +795,7 @@ const seeds: Seed[] = [
     title: "MedQuest",
     org: "Schulich School of Medicine & Dentistry, Western University",
     category: "Medicine",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Week-long hands-on introduction to medicine and dentistry.",
     description:
@@ -764,6 +812,7 @@ const seeds: Seed[] = [
     title: "Discovery Program in Health Sciences",
     org: "McMaster University",
     category: "Medicine",
+    country: "CA",
     grades: [11, 12],
     summary: "Problem-based learning program modelled on McMaster's health sciences approach.",
     description:
@@ -780,6 +829,7 @@ const seeds: Seed[] = [
     title: "Sunnybrook Youth Volunteer Program",
     org: "Sunnybrook Health Sciences Centre",
     category: "Medicine",
+    country: "CA",
     grades: [11, 12],
     summary: "Structured hospital volunteering with patient-facing and support placements.",
     description:
@@ -797,6 +847,7 @@ const seeds: Seed[] = [
     title: "UHN Youth Volunteer Placements",
     org: "University Health Network",
     category: "Medicine",
+    country: "CA",
     grades: [11, 12],
     summary: "Volunteer roles across Toronto General, Toronto Western and Princess Margaret.",
     description:
@@ -813,6 +864,7 @@ const seeds: Seed[] = [
     title: "HOSA Canada Future Health Professionals",
     org: "HOSA Canada",
     category: "Medicine",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Health science competitions covering clinical knowledge and skills events.",
     description:
@@ -829,6 +881,7 @@ const seeds: Seed[] = [
     title: "Ottawa Hospital Youth Volunteer Program",
     org: "The Ottawa Hospital",
     category: "Medicine",
+    country: "CA",
     grades: [11, 12],
     summary: "Summer and school-year volunteer placements in an academic hospital.",
     description:
@@ -845,6 +898,7 @@ const seeds: Seed[] = [
     title: "Black Youth in Medicine Mentorship",
     org: "Black Physicians of Canada",
     category: "Medicine",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Mentorship pairing Black high school students with physicians and med students.",
     description:
@@ -862,6 +916,7 @@ const seeds: Seed[] = [
     title: "Health Sciences Summer Camp",
     org: "Queen's University Faculty of Health Sciences",
     category: "Medicine",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Summer camp covering anatomy, physiology and clinical simulation.",
     description:
@@ -878,6 +933,7 @@ const seeds: Seed[] = [
     title: "Youth Mental Health Ambassadors",
     org: "Jack.org",
     category: "Medicine",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Training to run mental health talks and chapters in your own school.",
     description:
@@ -894,6 +950,7 @@ const seeds: Seed[] = [
     title: "St. John Ambulance Youth Medical First Responder",
     org: "St. John Ambulance Ontario",
     category: "Medicine",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Certified first aid training plus volunteer event medical coverage.",
     description:
@@ -912,6 +969,7 @@ const seeds: Seed[] = [
     title: "Ontario High School Model Parliament",
     org: "Ontario Legislative Assembly partners",
     category: "Law & Civics",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Debate real bills in the provincial legislative chamber.",
     description:
@@ -928,6 +986,7 @@ const seeds: Seed[] = [
     title: "CAIMUN Delegate Registration",
     org: "Canada International Model United Nations",
     category: "Law & Civics",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Large national Model UN conference with committees for all experience levels.",
     description:
@@ -944,6 +1003,7 @@ const seeds: Seed[] = [
     title: "Forum for Young Canadians",
     org: "Foundation for the Study of Processes of Government in Canada",
     category: "Law & Civics",
+    country: "CA",
     grades: [11, 12],
     summary: "A week inside federal politics in Ottawa with MPs, senators and public servants.",
     description:
@@ -960,6 +1020,7 @@ const seeds: Seed[] = [
     title: "Encounters with Canada",
     org: "Historica Canada",
     category: "Law & Civics",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Themed weeks in Ottawa on law, medicine, journalism, science and more.",
     description:
@@ -976,6 +1037,7 @@ const seeds: Seed[] = [
     title: "Mock Trial Tournament",
     org: "Ontario Justice Education Network",
     category: "Law & Civics",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Argue a criminal case in a real courtroom with lawyer coaches.",
     description:
@@ -992,6 +1054,7 @@ const seeds: Seed[] = [
     title: "Ontario Student Debating Championships",
     org: "Ontario Student Debating Union",
     category: "Law & Civics",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Provincial debate championships with junior and senior divisions.",
     description:
@@ -1008,6 +1071,7 @@ const seeds: Seed[] = [
     title: "Youth Parliament of Ontario",
     org: "Youth Parliament of Ontario",
     category: "Law & Civics",
+    country: "CA",
     grades: [11, 12],
     summary: "Student-run parliamentary simulation held over the winter break.",
     description:
@@ -1024,6 +1088,7 @@ const seeds: Seed[] = [
     title: "Osgoode Youth Law Outreach Program",
     org: "Osgoode Hall Law School, York University",
     category: "Law & Civics",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Workshops introducing legal reasoning and the path to law school.",
     description:
@@ -1041,6 +1106,7 @@ const seeds: Seed[] = [
     title: "Toronto Model United Nations",
     org: "TMUN",
     category: "Law & Civics",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Regional Model UN conference with beginner-friendly committees.",
     description:
@@ -1057,6 +1123,7 @@ const seeds: Seed[] = [
     title: "Ontario Legislature Page Program",
     org: "Legislative Assembly of Ontario",
     category: "Law & Civics",
+    country: "CA",
     grades: [9],
     summary: "Serve in the Legislative Assembly chamber for a sitting period.",
     description:
@@ -1074,6 +1141,7 @@ const seeds: Seed[] = [
     title: "Canadian Student Debating Federation Nationals",
     org: "CSDF",
     category: "Law & Civics",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "National debating championship with provincial team selection.",
     description:
@@ -1090,6 +1158,7 @@ const seeds: Seed[] = [
     title: "Youth Advisory Council — City of Toronto",
     org: "City of Toronto",
     category: "Law & Civics",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Advise city divisions on policy that affects young residents.",
     description:
@@ -1108,6 +1177,7 @@ const seeds: Seed[] = [
     title: "Duke of Edinburgh's International Award",
     org: "The Duke of Edinburgh's International Award — Canada",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Self-directed award across service, skill, fitness and an adventurous journey.",
     description:
@@ -1124,6 +1194,7 @@ const seeds: Seed[] = [
     title: "Loran Scholars Award",
     org: "Loran Scholars Foundation",
     category: "Leadership",
+    country: "CA",
     grades: [12],
     summary: "Canada's largest undergraduate award for character, service and leadership.",
     description:
@@ -1140,6 +1211,7 @@ const seeds: Seed[] = [
     title: "Schulich Leader Scholarships",
     org: "Schulich Foundation",
     category: "Leadership",
+    country: "CA",
     grades: [12],
     summary: "Major STEM entrance scholarships worth up to $120,000.",
     description:
@@ -1157,6 +1229,7 @@ const seeds: Seed[] = [
     title: "TD Scholarships for Community Leadership",
     org: "TD Bank Group",
     category: "Leadership",
+    country: "CA",
     grades: [12],
     summary: "Up to $70,000 for students with an outstanding community impact record.",
     description:
@@ -1173,6 +1246,7 @@ const seeds: Seed[] = [
     title: "Terry Fox Humanitarian Award",
     org: "Terry Fox Humanitarian Award Program",
     category: "Leadership",
+    country: "CA",
     grades: [12],
     summary: "Award recognising humanitarian service alongside academics and courage.",
     description:
@@ -1189,6 +1263,7 @@ const seeds: Seed[] = [
     title: "Indspire Building Brighter Futures Bursaries",
     org: "Indspire",
     category: "Leadership",
+    country: "CA",
     grades: [12],
     summary: "Bursaries and scholarships for First Nations, Inuit and Métis students.",
     description:
@@ -1207,6 +1282,7 @@ const seeds: Seed[] = [
     title: "BlackNorth Initiative Youth Scholarship",
     org: "BlackNorth Initiative",
     category: "Leadership",
+    country: "CA",
     grades: [12],
     summary: "Scholarships and mentorship for Black students entering post-secondary study.",
     description: "Financial awards paired with corporate mentorship and internship pathways.",
@@ -1223,6 +1299,7 @@ const seeds: Seed[] = [
     title: "Rotary Youth Leadership Awards (RYLA)",
     org: "Rotary District Ontario",
     category: "Leadership",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Weekend leadership camp sponsored by your local Rotary club.",
     description:
@@ -1239,6 +1316,7 @@ const seeds: Seed[] = [
     title: "Ontario Student Trustees' Association Leadership Congress",
     org: "OSTA-AECO",
     category: "Leadership",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Provincial gathering for student leaders and aspiring student trustees.",
     description:
@@ -1255,6 +1333,7 @@ const seeds: Seed[] = [
     title: "Canadian Cadet Program",
     org: "Department of National Defence",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Year-round leadership training with paid summer courses.",
     description:
@@ -1271,6 +1350,7 @@ const seeds: Seed[] = [
     title: "YMCA Youth Exchanges Canada",
     org: "YMCA Canada",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Fully funded reciprocal exchange with a youth group elsewhere in Canada.",
     description:
@@ -1287,6 +1367,7 @@ const seeds: Seed[] = [
     title: "Camp Leader-in-Training Programs",
     org: "Ontario Camps Association members",
     category: "Leadership",
+    country: "CA",
     grades: [10, 11],
     summary: "LIT and CIT summers that lead directly into paid counsellor jobs.",
     description:
@@ -1303,6 +1384,7 @@ const seeds: Seed[] = [
     title: "Canada Summer Jobs — Student Positions",
     org: "Employment and Social Development Canada",
     category: "Leadership",
+    country: "CA",
     grades: [11, 12],
     summary: "Government-funded paid summer jobs posted by local employers.",
     description:
@@ -1319,6 +1401,7 @@ const seeds: Seed[] = [
     title: "City of Toronto Youth Employment Programs",
     org: "City of Toronto",
     category: "Leadership",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Paid municipal summer roles in recreation, parks and community services.",
     description:
@@ -1335,6 +1418,7 @@ const seeds: Seed[] = [
     title: "Indigenous Youth Roots Programs",
     org: "Indigenous Youth Roots",
     category: "Leadership",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Grants, gatherings and leadership programs for Indigenous youth.",
     description:
@@ -1352,6 +1436,7 @@ const seeds: Seed[] = [
     title: "Horatio Alger Canadian Scholarships",
     org: "Horatio Alger Association of Canada",
     category: "Leadership",
+    country: "CA",
     grades: [12],
     summary: "Need-based scholarships for students who have overcome adversity.",
     description:
@@ -1372,6 +1457,7 @@ const seeds: Seed[] = [
     title: "National Youth Orchestra of Canada Summer Institute",
     org: "National Youth Orchestra of Canada",
     category: "Arts",
+    country: "CA",
     grades: [11, 12],
     summary: "Intensive orchestral training and a national tour for advanced musicians.",
     description:
@@ -1388,6 +1474,7 @@ const seeds: Seed[] = [
     title: "Ontario Youth Choir",
     org: "Choirs Ontario",
     category: "Arts",
+    country: "CA",
     grades: [11, 12],
     summary: "Provincial choir residency and concert tour each summer.",
     description:
@@ -1404,6 +1491,7 @@ const seeds: Seed[] = [
     title: "Sheridan Summer Arts Programs",
     org: "Sheridan College",
     category: "Arts",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Portfolio-building courses in animation, illustration and design.",
     description:
@@ -1420,6 +1508,7 @@ const seeds: Seed[] = [
     title: "OCAD U Summer Studio for Teens",
     org: "OCAD University",
     category: "Arts",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Studio intensives across drawing, digital media and design thinking.",
     description:
@@ -1436,6 +1525,7 @@ const seeds: Seed[] = [
     title: "National Theatre School Drama Festival",
     org: "National Theatre School of Canada",
     category: "Arts",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "School theatre festival with regional showcases and a national final.",
     description:
@@ -1452,6 +1542,7 @@ const seeds: Seed[] = [
     title: "Canadian Improv Games — Ontario Regionals",
     org: "Canadian Improv Games",
     category: "Arts",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Team improv tournament running from school regionals to a national final.",
     description:
@@ -1468,6 +1559,7 @@ const seeds: Seed[] = [
     title: "Toronto Youth Shorts Film Festival",
     org: "Toronto Youth Shorts",
     category: "Arts",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Submit a short film and screen it in a real Toronto cinema.",
     description:
@@ -1484,6 +1576,7 @@ const seeds: Seed[] = [
     title: "Polar Expressions Student Writing Contest",
     org: "Polar Expressions Publishing",
     category: "Arts",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "National short story and poetry contest with print publication.",
     description:
@@ -1500,6 +1593,7 @@ const seeds: Seed[] = [
     title: "Toronto Youth Poetry Slam",
     org: "Toronto Poetry Slam",
     category: "Arts",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Monthly spoken word slams and a youth team selection series.",
     description:
@@ -1516,6 +1610,7 @@ const seeds: Seed[] = [
     title: "SKETCH Working Arts Studio Programs",
     org: "SKETCH",
     category: "Arts",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Free arts studios and paid creative work for youth facing barriers.",
     description:
@@ -1533,6 +1628,7 @@ const seeds: Seed[] = [
     title: "Nia Centre Young Creators Program",
     org: "Nia Centre for the Arts",
     category: "Arts",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Arts training and showcase opportunities for Black youth creators.",
     description:
@@ -1550,6 +1646,7 @@ const seeds: Seed[] = [
     title: "Royal Conservatory Young Artists Performance Academy Audition",
     org: "The Royal Conservatory of Music",
     category: "Arts",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Pre-professional classical music training alongside high school.",
     description:
@@ -1566,6 +1663,7 @@ const seeds: Seed[] = [
     title: "Ontario Arts Council Youth-Focused Grants",
     org: "Ontario Arts Council",
     category: "Arts",
+    country: "CA",
     grades: [11, 12],
     summary: "Project grants that fund youth-led arts initiatives.",
     description:
@@ -1582,6 +1680,7 @@ const seeds: Seed[] = [
     title: "Doors Open Youth Photography Contest",
     org: "Ontario Heritage Trust",
     category: "Arts",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Photography contest documenting heritage sites across Ontario.",
     description:
@@ -1606,6 +1705,7 @@ const seeds: Seed[] = [
     title: "Kitchener Youth Action Council (KYAC)",
     org: "City of Kitchener",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "City advisory council where Kitchener youth shape initiatives and advise council on youth issues.",
@@ -1624,6 +1724,7 @@ const seeds: Seed[] = [
     title: "Kitchener Youth Crew",
     org: "City of Kitchener",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10, 11],
     summary:
       "Volunteer at city youth drop-ins and community activities while earning service hours.",
@@ -1642,6 +1743,7 @@ const seeds: Seed[] = [
     title: "Kitchener BYLD Program",
     org: "City of Kitchener",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10],
     summary:
       "Leadership training plus an optional recreation placement that earns volunteer hours.",
@@ -1660,6 +1762,7 @@ const seeds: Seed[] = [
     title: "Kitchener Parks Youth Engagement Committee",
     org: "City of Kitchener",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "Youth committee advising the city on parks, recreation spaces and community planning.",
@@ -1678,6 +1781,7 @@ const seeds: Seed[] = [
     title: "City of Kitchener Summer Student Jobs",
     org: "City of Kitchener",
     category: "Leadership",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Paid municipal summer roles in recreation, camps, parks and administration.",
     description:
@@ -1695,6 +1799,7 @@ const seeds: Seed[] = [
     title: "City of Waterloo Student Jobs",
     org: "City of Waterloo",
     category: "Leadership",
+    country: "CA",
     grades: [10, 11, 12],
     summary: "Paid seasonal roles in camps, aquatics, parks, facilities and administration.",
     description:
@@ -1712,6 +1817,7 @@ const seeds: Seed[] = [
     title: "Immerse Education — Waterloo Summer Programs",
     org: "Immerse Education (commercial provider)",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "Fee-based academic summer program hosted on a Waterloo campus, run independently of the university.",
@@ -1732,6 +1838,7 @@ const seeds: Seed[] = [
     title: "Prosper Ontario Case Competition",
     org: "Prosper Ontario",
     category: "Business",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Student-run business case competition where teams present recommendations to judges.",
     description:
@@ -1749,6 +1856,7 @@ const seeds: Seed[] = [
     title: "Prosper Ontario Executive Team",
     org: "Prosper Ontario",
     category: "Business",
+    country: "CA",
     grades: [10, 11, 12],
     summary:
       "Student leadership role organising the competition — operations, marketing, outreach or sponsorship.",
@@ -1767,6 +1875,7 @@ const seeds: Seed[] = [
     title: "Wharton Global High School Investment Competition",
     org: "The Wharton School, University of Pennsylvania",
     category: "Business",
+    country: "US",
     grades: [9, 10, 11, 12],
     summary:
       "School teams build and defend an investment strategy for a real client over a full trading period.",
@@ -1785,6 +1894,7 @@ const seeds: Seed[] = [
     title: "DMZ Basecamp",
     org: "DMZ, Toronto Metropolitan University",
     category: "Business",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Entrepreneurship bootcamp where students build a startup idea and pitch it.",
     description:
@@ -1802,6 +1912,7 @@ const seeds: Seed[] = [
     title: "JA Titan Business Challenge",
     org: "Junior Achievement Canada",
     category: "Business",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "Teams run a simulated company, setting price, production, marketing and investment each round.",
@@ -1822,6 +1933,7 @@ const seeds: Seed[] = [
     title: "AKFC Youth Leadership Academy",
     org: "Aga Khan Foundation Canada",
     category: "Leadership",
+    country: "CA",
     grades: [11, 12],
     summary:
       "Fully funded leadership academy on global development, community action and intercultural understanding.",
@@ -1840,6 +1952,7 @@ const seeds: Seed[] = [
     title: "AKFC Youth Advisory Committee",
     org: "Aga Khan Foundation Canada",
     category: "Leadership",
+    country: "CA",
     grades: [11, 12],
     summary: "Stipended one-year advisory role shaping AKFC's youth programming from the inside.",
     description:
@@ -1857,6 +1970,7 @@ const seeds: Seed[] = [
     title: "Yale Young Global Scholars",
     org: "Yale University",
     category: "Leadership",
+    country: "US",
     grades: [10, 11],
     summary:
       "Selective residential academic program with university-style seminars on global topics.",
@@ -1875,6 +1989,7 @@ const seeds: Seed[] = [
     title: "Ocean Wise Youth to Sea",
     org: "Ocean Wise",
     category: "Leadership",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "Service-learning program in ocean conservation with outdoor experiences and an action project.",
@@ -1893,6 +2008,7 @@ const seeds: Seed[] = [
     title: "Ontario Public Service Summer Employment",
     org: "Government of Ontario",
     category: "Leadership",
+    country: "CA",
     grades: [10, 11, 12],
     summary:
       "Paid summer jobs across Ontario ministries — policy, parks, science, communications and more.",
@@ -1912,6 +2028,7 @@ const seeds: Seed[] = [
     title: "EnergyMag Internship Directory",
     org: "EnergyMag",
     category: "Leadership",
+    country: "CA",
     grades: [11, 12],
     summary:
       "Online directory of renewable-energy internship listings — a starting point, not a program.",
@@ -1932,6 +2049,7 @@ const seeds: Seed[] = [
     title: "Sunnybrook Focused Ultrasound Summer Research",
     org: "Sunnybrook Research Institute",
     category: "Medicine",
+    country: "CA",
     grades: [11, 12],
     summary:
       "Paid summer placement in a focused-ultrasound biomedical research lab with scientific mentorship.",
@@ -1950,6 +2068,7 @@ const seeds: Seed[] = [
     title: "Youreka Canada Student Investigator Program",
     org: "Youreka Canada",
     category: "Medicine",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "Virtual research mentorship where students design a question and produce a real research project.",
@@ -1968,6 +2087,7 @@ const seeds: Seed[] = [
     title: "Emily Stowe Scholars Program",
     org: "Canadian Association for Women in Academia",
     category: "Medicine",
+    country: "CA",
     grades: [11, 12],
     summary:
       "Health and medicine enrichment program with mentorship and academic pathway guidance.",
@@ -1987,6 +2107,7 @@ const seeds: Seed[] = [
     title: "SPRINT — Summer Psychology Research Initiative",
     org: "Department of Psychology, University of Toronto",
     category: "Medicine",
+    country: "CA",
     grades: [10, 11, 12],
     summary:
       "Free two-week psychology research program at U of T, run by graduate students and postdocs.",
@@ -2007,6 +2128,7 @@ const seeds: Seed[] = [
     title: "U of T STEAM Design Program",
     org: "University of Toronto",
     category: "Medicine",
+    country: "CA",
     grades: [10, 11],
     summary:
       "Design challenge where students tackle healthcare problems with university mentorship.",
@@ -2026,6 +2148,7 @@ const seeds: Seed[] = [
     title: "T-CAIREM AI in Healthcare Summer Bootcamp",
     org: "T-CAIREM, University of Toronto",
     category: "Medicine",
+    country: "CA",
     grades: [10, 11, 12],
     summary:
       "Five-day introduction to artificial intelligence in healthcare — workshops, ML activities and a group presentation.",
@@ -2046,6 +2169,7 @@ const seeds: Seed[] = [
     title: "University of Toronto Physics Summer Camp",
     org: "Department of Physics, University of Toronto",
     category: "STEM",
+    country: "CA",
     grades: [10, 11],
     summary: "Week-long university physics camp with lessons, experiments and problem-solving.",
     description:
@@ -2063,6 +2187,7 @@ const seeds: Seed[] = [
     title: "Stanford University Mathematics Camp (SUMaC)",
     org: "Stanford Pre-Collegiate Studies",
     category: "STEM",
+    country: "US",
     grades: [10, 11],
     summary:
       "Highly selective advanced mathematics program built around proof-writing and abstract topics.",
@@ -2081,6 +2206,7 @@ const seeds: Seed[] = [
     title: "McMaster STEM Immersive Experience",
     org: "McMaster Faculty of Engineering",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "A week of university-style activities across science, technology, engineering and mathematics.",
@@ -2101,6 +2227,7 @@ const seeds: Seed[] = [
     title: "McMaster Engineering Design Studio",
     org: "McMaster Faculty of Engineering",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "Hands-on week applying the engineering design process to build and test real solutions.",
@@ -2119,6 +2246,7 @@ const seeds: Seed[] = [
     title: "Queen's SEEDS in Residence",
     org: "Queen's University",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Residential science and engineering enrichment with labs and campus life.",
     description:
@@ -2136,6 +2264,7 @@ const seeds: Seed[] = [
     title: "Kode With Klossy Summer Camp",
     org: "Kode With Klossy",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Free two-week coding camp in web development, mobile apps or data science.",
     description:
@@ -2154,6 +2283,7 @@ const seeds: Seed[] = [
     title: "FIRST Tech Challenge",
     org: "FIRST Robotics Canada",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Team robotics competition with a smaller robot and lower barrier to entry than FRC.",
     description:
@@ -2171,6 +2301,7 @@ const seeds: Seed[] = [
     title: "International Brain Bee — Canadian Chapters",
     org: "Brain Bee Canada",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Neuroscience competition on brain anatomy, neurological disease and research.",
     description:
@@ -2188,6 +2319,7 @@ const seeds: Seed[] = [
     title: "Canadian Open Mathematics Challenge (COMC)",
     org: "Canadian Mathematical Society",
     category: "STEM",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "National problem-solving contest and a gateway to advanced Canadian math opportunities.",
@@ -2207,6 +2339,7 @@ const seeds: Seed[] = [
     title: "RBC Summer Tech Labs",
     org: "RBC (Royal Bank of Canada)",
     category: "STEM",
+    country: "CA",
     grades: [11, 12],
     summary:
       "Paid high-school technology internship working on real innovation projects inside RBC.",
@@ -2227,6 +2360,7 @@ const seeds: Seed[] = [
     title: "OSDU Provincial Debate Tournaments",
     org: "Ontario Student Debating Union",
     category: "Law & Civics",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary: "Ontario's school and regional debate circuit in prepared and impromptu formats.",
     description:
@@ -2244,6 +2378,7 @@ const seeds: Seed[] = [
     title: "Speech and Debate Canada National Speech Competition",
     org: "Speech and Debate Canada Foundation",
     category: "Law & Civics",
+    country: "CA",
     grades: [9, 10, 11, 12],
     summary:
       "National persuasive-speech competition judged from a submitted video, with a cash prize.",
