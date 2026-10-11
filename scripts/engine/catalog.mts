@@ -138,6 +138,7 @@ export function renderEntry(p: Record<string, unknown>): string {
     "title",
     "org",
     "category",
+    "country",
     "grades",
     "cost",
     "format",
