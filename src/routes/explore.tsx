@@ -50,6 +50,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 export interface ExploreSearch {
   q?: string;
   cat?: string[];
+  country?: string[];
   track?: string;
   grade?: number;
   cost?: string;
@@ -77,6 +78,14 @@ function validateSearch(search: Record<string, unknown>): ExploreSearch {
     out.cat = cat.split(",");
   }
 
+  const country = search["country"];
+  if (Array.isArray(country)) {
+    const list = country.filter((c): c is string => typeof c === "string");
+    if (list.length > 0) out.country = list;
+  } else if (typeof country === "string" && country.length > 0) {
+    out.country = country.split(",");
+  }
+
   const track = str(search["track"]);
   if (track && INTERESTS_BY_ID.has(track)) out.track = track;
 
@@ -95,6 +104,7 @@ function toFilters(s: ExploreSearch): ExploreFilters {
   return {
     q: s.q ?? DEFAULT_FILTERS.q,
     categories: s.cat ?? DEFAULT_FILTERS.categories,
+    countries: s.country ?? DEFAULT_FILTERS.countries,
     track: s.track ?? DEFAULT_FILTERS.track,
     grade: typeof s.grade === "number" ? s.grade : null,
     cost: s.cost ?? DEFAULT_FILTERS.cost,
@@ -112,6 +122,7 @@ function toSearch(f: ExploreFilters): ExploreSearch {
   const s: ExploreSearch = {};
   if (f.q.trim()) s.q = f.q.trim();
   if (f.categories.length > 0) s.cat = f.categories;
+  if (f.countries.length > 0) s.country = f.countries;
   if (f.track) s.track = f.track;
   if (f.grade !== null) s.grade = f.grade;
   if (f.cost !== "any") s.cost = f.cost;
@@ -129,7 +140,16 @@ function toSearch(f: ExploreFilters): ExploreSearch {
 /* -------------------------------------------------------------------------- */
 
 type Facet =
-  "q" | "cat" | "track" | "grade" | "cost" | "delivery" | "commitment" | "phase" | "saved";
+  | "q"
+  | "cat"
+  | "country"
+  | "track"
+  | "grade"
+  | "cost"
+  | "delivery"
+  | "commitment"
+  | "phase"
+  | "saved";
 
 /**
  * One predicate for everything, with the ability to *skip* one facet. Skipping
@@ -148,6 +168,8 @@ function passes(
     if (!terms.every((t) => p.haystack.includes(t))) return false;
   }
   if (skip !== "cat" && f.categories.length > 0 && !f.categories.includes(p.category)) return false;
+  if (skip !== "country" && f.countries.length > 0 && !f.countries.includes(p.country))
+    return false;
   if (skip !== "track" && f.track) {
     const track = INTERESTS_BY_ID.get(f.track);
     if (track && !programMatchesTrack(track, p.category, p.haystack)) return false;
@@ -238,6 +260,10 @@ function Explore() {
     for (const c of new Set(all.map((p) => p.category))) {
       categories[c] = countIn("cat", (p) => p.category === c);
     }
+    const countries: Record<string, number> = {};
+    for (const c of new Set(all.map((p) => p.country))) {
+      countries[c] = countIn("country", (p) => p.country === c);
+    }
     const tracks: Record<string, number> = {};
     for (const [id, t] of INTERESTS_BY_ID) {
       tracks[id] = countIn("track", (p) => programMatchesTrack(t, p.category, p.haystack));
@@ -260,7 +286,7 @@ function Explore() {
     for (const ph of ["open", "opening-soon", "in-session", "rolling", "closed"]) {
       phase[ph] = countIn("phase", (p) => p.phase === ph);
     }
-    return { categories, tracks, grades, cost, delivery, commitment, phase };
+    return { categories, countries, tracks, grades, cost, delivery, commitment, phase };
   }, [all, filters, saved]);
 
   /** Timeline view: group by the month of whatever date comes next. */
