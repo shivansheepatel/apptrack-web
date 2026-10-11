@@ -85,7 +85,7 @@ function Home() {
   );
 
   const stats = useMemo(() => {
-    const open = all.filter((p) => p.phase !== "closed");
+    const open = all.filter((p) => p.phase === "open");
     return {
       total: all.length,
       open: open.length,
