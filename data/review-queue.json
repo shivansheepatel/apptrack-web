@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T00:38:22.348Z",
-  "runId": "2026-10-11-3d2fc070",
+  "generatedAt": "2026-10-11T08:08:21.158Z",
+  "runId": "2026-10-11-20760806",
   "items": [
     {
       "id": "bd6a0a1d7f8fc191",
@@ -8,11 +8,12 @@
       "url": "https://caimun.ca/registration",
       "domain": "caimun.ca",
       "contentHash": "dd2771745182d3f0b76549c23fa0e38190b9c8cbf141558740b0ca9968cfe750",
-      "fetchedAt": "2026-10-11T00:37:05.773Z",
+      "fetchedAt": "2026-10-11T08:07:03.118Z",
       "extracted": {
         "title": "CAIMUN 2027 Delegate Registration",
         "organization": "caimun.ca",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": {
           "value": "2026-03-09",
@@ -70,11 +71,12 @@
       "url": "sheet-row:Canada Speak & Debate Competition",
       "domain": "google-sheet",
       "contentHash": "31fcb2f27aaed46adfb5207edf762355b5e536cda7df6ebd307338f38862bcd4",
-      "fetchedAt": "2026-10-11T00:37:05.776Z",
+      "fetchedAt": "2026-10-11T08:07:03.121Z",
       "extracted": {
         "title": "Canada Speak & Debate Competition",
         "organization": "Canada Speak & Debate Competition",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -120,11 +122,12 @@
       "url": "https://kitchener.ca/council-and-city-administration/civic-engagement/leadership-development/kitchener-youth-action-council",
       "domain": "kitchener.ca",
       "contentHash": "a4b7884af742a14c21f5d977a64ea47ebbf8366446a46c4fed4021e52fc03f25",
-      "fetchedAt": "2026-10-11T00:37:06.010Z",
+      "fetchedAt": "2026-10-11T08:07:03.287Z",
       "extracted": {
         "title": "Kitchener Youth Action Council (KYAC)",
         "organization": "kitchener.ca",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -208,11 +211,12 @@
       "url": "https://kitchener.ca/council-and-city-administration/civic-engagement/leadership-development/kitchener-youth-crew",
       "domain": "kitchener.ca",
       "contentHash": "2c98f6dfa4d60357e270247173ceff58cd19af45a714718867f7e30f0ca667fe",
-      "fetchedAt": "2026-10-11T00:37:06.144Z",
+      "fetchedAt": "2026-10-11T08:07:03.416Z",
       "extracted": {
         "title": "Kitchener Youth Crew",
         "organization": "kitchener.ca",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -296,11 +300,12 @@
       "url": "https://kitchener.ca/recreation-and-sports/children-and-youth-programs/summer-programs/byld-program",
       "domain": "kitchener.ca",
       "contentHash": "4c525b46f275c6fa02bed0e90e00eeb6c515baf42c0693d321d8a39c9e0a58a3",
-      "fetchedAt": "2026-10-11T00:37:06.298Z",
+      "fetchedAt": "2026-10-11T08:07:03.534Z",
       "extracted": {
         "title": "Kitchener BYLD",
         "organization": "kitchener.ca",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -402,11 +407,12 @@
       "url": "https://jacanada.org/program/company-program",
       "domain": "jacanada.org",
       "contentHash": "fe7943501d8cc5c2af36b65824493f1d2d301ad63d71ef644863805ca0dc70ec",
-      "fetchedAt": "2026-10-11T00:37:07.261Z",
+      "fetchedAt": "2026-10-11T08:07:04.097Z",
       "extracted": {
         "title": "JA Company Program",
         "organization": "jacanada.org",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -425,6 +431,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"jacanada.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Entrepreneurship program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Check local intake\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -452,11 +459,12 @@
       "url": "https://prosperontario.org/",
       "domain": "prosperontario.org",
       "contentHash": "6f2ddeb06104cbedf2e483e5f51803323bd18568a802107c5181b63a7eec9382",
-      "fetchedAt": "2026-10-11T00:37:07.551Z",
+      "fetchedAt": "2026-10-11T08:07:04.384Z",
       "extracted": {
         "title": "Prosper Ontario",
         "organization": "prosperontario.org",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -547,11 +555,12 @@
       "url": "https://prosperontario.org/faq",
       "domain": "prosperontario.org",
       "contentHash": "e90f418eb3ed591fd7773ea72ed2f460aa291aa03c14e9c26b4c29f9ba06f7b3",
-      "fetchedAt": "2026-10-11T00:37:07.743Z",
+      "fetchedAt": "2026-10-11T08:07:05.808Z",
       "extracted": {
         "title": "Prosper Ontario Executive Team",
         "organization": "prosperontario.org",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -635,11 +644,12 @@
       "url": "https://ivey.uwo.ca/high-school-case-competitions",
       "domain": "uwo.ca",
       "contentHash": "d5d407ee8bec186ba3f0344a16f33f55ba4d55c9417ca4b9142025e96bb99959",
-      "fetchedAt": "2026-10-11T00:37:08.206Z",
+      "fetchedAt": "2026-10-11T08:07:06.284Z",
       "extracted": {
         "title": "Ivey High School Case Competition",
         "organization": "uwo.ca",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -685,11 +695,12 @@
       "url": "https://globalyouth.wharton.upenn.edu/competitions/investment-competition",
       "domain": "upenn.edu",
       "contentHash": "9a01105bcfe92e968ee0432feca529ea84fb14450c84c78174db4f523d4c8c49",
-      "fetchedAt": "2026-10-11T00:37:09.878Z",
+      "fetchedAt": "2026-10-11T08:07:06.313Z",
       "extracted": {
         "title": "Wharton Global High School Investment Competition",
         "organization": "upenn.edu",
         "category": "Business",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": {
           "value": "2026-08-10",
@@ -720,6 +731,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"upenn.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Investment competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Closed\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -806,11 +818,12 @@
       "url": "https://schulich.yorku.ca/future-students/business-excellence-academy",
       "domain": "yorku.ca",
       "contentHash": "bb4109e317faa0f357fe329aceea8d7433b6a220c0a825d491e7955c00e89ad1",
-      "fetchedAt": "2026-10-11T00:37:10.504Z",
+      "fetchedAt": "2026-10-11T08:07:06.901Z",
       "extracted": {
         "title": "Schulich Business Excellence Academy",
         "organization": "yorku.ca",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -908,11 +921,12 @@
       "url": "https://ivey.uwo.ca/summerleadership",
       "domain": "uwo.ca",
       "contentHash": "0dd9f5794765358633d4b02dffdec51bf2b8158b9b4a1057b44b12891bc9b68b",
-      "fetchedAt": "2026-10-11T00:37:10.792Z",
+      "fetchedAt": "2026-10-11T08:07:07.428Z",
       "extracted": {
         "title": "Ivey John F. Wood Summer Leadership Program",
         "organization": "uwo.ca",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1010,11 +1024,12 @@
       "url": "https://ojen.ca/en/program/futures-in-justice",
       "domain": "ojen.ca",
       "contentHash": "dd067de28990591fe171da8df5dc4a03a21d9f91c8a0020156b46ec36a2fcd36",
-      "fetchedAt": "2026-10-11T00:37:11.974Z",
+      "fetchedAt": "2026-10-11T08:07:08.210Z",
       "extracted": {
         "title": "OJEN Futures in Justice",
         "organization": "ojen.ca",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1060,11 +1075,12 @@
       "url": "https://ola.org/en/visit-learn/programs/model-parliament-high-school-students",
       "domain": "ola.org",
       "contentHash": "4d0d0569194e348a5fb971ea646aa457e0a7d93847e6ac11a2e8c8103c9d4b16",
-      "fetchedAt": "2026-10-11T00:37:12.534Z",
+      "fetchedAt": "2026-10-11T08:07:08.853Z",
       "extracted": {
         "title": "Ontario High School Model Parliament",
         "organization": "ola.org",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": {
@@ -1170,11 +1186,12 @@
       "url": "https://childrenfirstcanada.org/campaign/young-canadians-parliament",
       "domain": "childrenfirstcanada.org",
       "contentHash": "c95477c636bfb02c96fb4209a519e3656fb0e65ef32076d2a647602a144669d4",
-      "fetchedAt": "2026-10-11T00:37:12.898Z",
+      "fetchedAt": "2026-10-11T08:07:10.456Z",
       "extracted": {
         "title": "Young Canadians' Parliament",
         "organization": "childrenfirstcanada.org",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1193,6 +1210,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"childrenfirstcanada.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Youth rights and civic engagement\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -1220,11 +1238,12 @@
       "url": "https://forum.ca/forum-for-young-canadians-national-summit",
       "domain": "forum.ca",
       "contentHash": "133743559a7c0181b646b05afdee809905293845eedf1b4da19aa0c2114e1130",
-      "fetchedAt": "2026-10-11T00:37:13.112Z",
+      "fetchedAt": "2026-10-11T08:07:10.574Z",
       "extracted": {
         "title": "Forum for Young Canadians",
         "organization": "forum.ca",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1326,11 +1345,12 @@
       "url": "https://youngpoliticians.org/",
       "domain": "youngpoliticians.org",
       "contentHash": "55b2ac2bc85f35f9077dd92436e31343903d35cb41f4978721678bd7f9f2c55c",
-      "fetchedAt": "2026-10-11T00:37:13.600Z",
+      "fetchedAt": "2026-10-11T08:07:10.744Z",
       "extracted": {
         "title": "Young Politicians of Canada",
         "organization": "youngpoliticians.org",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1376,11 +1396,12 @@
       "url": "https://akfc.ca/get-involved/youth-leadership-academy",
       "domain": "akfc.ca",
       "contentHash": "f921aca0f4836bbabf03f17fc7e6d1b3b618b2d0ad32174815d46fcbb02e8af4",
-      "fetchedAt": "2026-10-11T00:37:16.261Z",
+      "fetchedAt": "2026-10-11T08:07:12.600Z",
       "extracted": {
         "title": "AKFC Youth Leadership Academy",
         "organization": "akfc.ca",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1464,11 +1485,12 @@
       "url": "https://akfc.ca/yac-recruitment",
       "domain": "akfc.ca",
       "contentHash": "de4379ba68e307d46defb798578bddf8e43610b5f9ca3fd994d54760a990f3fe",
-      "fetchedAt": "2026-10-11T00:37:16.431Z",
+      "fetchedAt": "2026-10-11T08:07:12.639Z",
       "extracted": {
         "title": "AKFC Youth Advisory Committee",
         "organization": "akfc.ca",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1554,11 +1576,12 @@
       "url": "https://rcmp.ca/en/youth/national-youth-advisory-committee",
       "domain": "rcmp.ca",
       "contentHash": "a79f58636f272c1c7f10e40a34a10273738a8d679e4c3cfbee081e36541066ec",
-      "fetchedAt": "2026-10-11T00:37:17.121Z",
+      "fetchedAt": "2026-10-11T08:07:12.764Z",
       "extracted": {
         "title": "RCMP National Youth Advisory Committee",
         "organization": "rcmp.ca",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1604,11 +1627,12 @@
       "url": "https://research.sunnybrook.ca/careers-and-students/summer-students/focused-ultrasound-high-school-summer-research-program",
       "domain": "sunnybrook.ca",
       "contentHash": "cd6234479ac536d4b7b8673c5e68e167e7d186315768ee4f1e9b828e3b4c73d2",
-      "fetchedAt": "2026-10-11T00:37:17.407Z",
+      "fetchedAt": "2026-10-11T08:07:12.913Z",
       "extracted": {
         "title": "Sunnybrook Focused Ultrasound High School Summer Research",
         "organization": "sunnybrook.ca",
         "category": "Medicine",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1699,11 +1723,12 @@
       "url": "https://yourekacanada.org/apply",
       "domain": "yourekacanada.org",
       "contentHash": "12f5441858f6628f587dc11e64702fa2aa20a8a783b70f2bffa1f9d1195561f3",
-      "fetchedAt": "2026-10-11T00:37:17.515Z",
+      "fetchedAt": "2026-10-11T08:07:13.356Z",
       "extracted": {
         "title": "Youreka Canada Student Investigator",
         "organization": "yourekacanada.org",
         "category": "Medicine",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1794,11 +1819,12 @@
       "url": "https://womensacademics.ca/learning/emily-stowe-scholars-program",
       "domain": "womensacademics.ca",
       "contentHash": "23537d111c5e944b94a81544e269c48c579e72ba88106c773f59875fc495ec96",
-      "fetchedAt": "2026-10-11T00:37:17.762Z",
+      "fetchedAt": "2026-10-11T08:07:13.615Z",
       "extracted": {
         "title": "Emily Stowe Scholars Program",
         "organization": "womensacademics.ca",
         "category": "Medicine",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1882,11 +1908,12 @@
       "url": "https://summercamp.physics.utoronto.ca/",
       "domain": "utoronto.ca",
       "contentHash": "5b74c1805bad7c2a9e3c0a8bee9527e352552279722ef37491b286d5579bc5a2",
-      "fetchedAt": "2026-10-11T00:37:19.028Z",
+      "fetchedAt": "2026-10-11T08:07:14.423Z",
       "extracted": {
         "title": "University of Toronto Physics Summer Camp",
         "organization": "utoronto.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -1970,11 +1997,12 @@
       "url": "https://perimeterinstitute.ca/issyp",
       "domain": "perimeterinstitute.ca",
       "contentHash": "e3a8a788750139854d8bf0234c399c716f94665ed021befb9134e65ad717f8bf",
-      "fetchedAt": "2026-10-11T00:37:19.356Z",
+      "fetchedAt": "2026-10-11T08:07:14.906Z",
       "extracted": {
         "title": "ISSYP - Perimeter Institute",
         "organization": "perimeterinstitute.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2019,11 +2047,12 @@
       "url": "https://uwaterloo.ca/institute-for-quantum-computing/outreach/quantum-school-young-students",
       "domain": "uwaterloo.ca",
       "contentHash": "5a75309bfb61b5aecfafc3950d1f853997f87558f6363877ad61c4a918a0294a",
-      "fetchedAt": "2026-10-11T00:37:19.753Z",
+      "fetchedAt": "2026-10-11T08:07:15.134Z",
       "extracted": {
         "title": "Waterloo QSYS",
         "organization": "uwaterloo.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": {
@@ -2076,11 +2105,12 @@
       "url": "sheet-row:SPRINT Psychology Research Program",
       "domain": "google-sheet",
       "contentHash": "cf36748a20cd1c053803ebef20d1f4340cfacb3dfda1c21268c4d929131f3cfc",
-      "fetchedAt": "2026-10-11T00:37:19.758Z",
+      "fetchedAt": "2026-10-11T08:07:15.136Z",
       "extracted": {
         "title": "SPRINT Psychology Research Program",
         "organization": "SPRINT Psychology Research Program",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2099,6 +2129,7 @@
         "not_a_program": false,
         "notes": [
           "No application link given, so organization defaults to the program title. Please fill in.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Psychology research program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -2126,11 +2157,12 @@
       "url": "https://cemc.uwaterloo.ca/workshops/student-workshops/sparcs",
       "domain": "uwaterloo.ca",
       "contentHash": "9a8cfd189c060e27675169c47811e090a3b215132f246ecced57722f27569819",
-      "fetchedAt": "2026-10-11T00:37:19.914Z",
+      "fetchedAt": "2026-10-11T08:07:15.242Z",
       "extracted": {
         "title": "Waterloo SPARCS",
         "organization": "uwaterloo.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2176,11 +2208,12 @@
       "url": "https://sumac.spcs.stanford.edu/sumac-admissions",
       "domain": "stanford.edu",
       "contentHash": "be860038596b1d9a4d26ddc99c003da7aa76e02f04ca041301e00fcb75e3fe63",
-      "fetchedAt": "2026-10-11T00:37:20.292Z",
+      "fetchedAt": "2026-10-11T08:07:15.478Z",
       "extracted": {
         "title": "Stanford SUMaC",
         "organization": "stanford.edu",
         "category": "STEM",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2199,6 +2232,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"stanford.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Advanced mathematics camp\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -2271,11 +2305,12 @@
       "url": "https://cee.org/programs/research-science-institute-rsi/rsi-application-faqs",
       "domain": "cee.org",
       "contentHash": "dd42b7d38a5cacf5f97b72988acdd600a145f14358285b543e018a42d2e19827",
-      "fetchedAt": "2026-10-11T00:37:20.777Z",
+      "fetchedAt": "2026-10-11T08:07:15.730Z",
       "extracted": {
         "title": "Research Science Institute (RSI)",
         "organization": "cee.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2294,6 +2329,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"cee.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Selective summer research institute\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -2321,11 +2357,12 @@
       "url": "https://youthscience.ca/science-fairs/regional-fairs",
       "domain": "youthscience.ca",
       "contentHash": "cd9f24be0e6de82b03341e5e295b858161fc4db8e0baae018434d199b529ade2",
-      "fetchedAt": "2026-10-11T00:37:22.283Z",
+      "fetchedAt": "2026-10-11T08:07:17.513Z",
       "extracted": {
         "title": "Youth Science Canada Regional Fair",
         "organization": "youthscience.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2423,11 +2460,12 @@
       "url": "https://jobs.rbc.com/ca/en",
       "domain": "rbc.com",
       "contentHash": "54cb5f3dab560b0c1cfcb77805d259fd80b401f0c74e5d2a7e88a6fe571ae612",
-      "fetchedAt": "2026-10-11T00:37:22.655Z",
+      "fetchedAt": "2026-10-11T08:07:17.887Z",
       "extracted": {
         "title": "RBC Summer Tech Labs",
         "organization": "rbc.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2447,6 +2485,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"Jobs / Tech\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"rbc.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Paid technology internship\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -2512,11 +2551,12 @@
       "url": "https://canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html",
       "domain": "canada.ca",
       "contentHash": "44d8cc988e37fde62c8b58a3d660347473cf1bcc08fff7d85533f9582fbe075f",
-      "fetchedAt": "2026-10-11T00:37:25.841Z",
+      "fetchedAt": "2026-10-11T08:07:20.009Z",
       "extracted": {
         "title": "Federal Student Work Experience Program (FSWEP)",
         "organization": "canada.ca",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2562,11 +2602,12 @@
       "url": "https://energymag.net/internships",
       "domain": "energymag.net",
       "contentHash": "95e2a14c07909928eed03eae1646adeb9c182cf6a6087fdd39ff0b18f336f313",
-      "fetchedAt": "2026-10-11T00:37:26.016Z",
+      "fetchedAt": "2026-10-11T08:07:20.065Z",
       "extracted": {
         "title": "EnergyMag internships",
         "organization": "energymag.net",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2586,6 +2627,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"Jobs / Remote\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"energymag.net\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Internship directory\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Directory\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -2665,11 +2707,12 @@
       "url": "https://globalscholars.yale.edu/",
       "domain": "yale.edu",
       "contentHash": "7401beaa7d1b5b91ce1c7f002a32344ee8455dd024866c026fc1bdc31ce7f429",
-      "fetchedAt": "2026-10-11T00:37:26.140Z",
+      "fetchedAt": "2026-10-11T08:07:20.103Z",
       "extracted": {
         "title": "Yale Young Global Scholars",
         "organization": "yale.edu",
         "category": "Leadership",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": {
           "value": "2026-09-16",
@@ -2696,6 +2739,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"yale.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Academic summer program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Open\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -2775,11 +2819,12 @@
       "url": "https://immerse.education/study-abroad/canada/university-of-waterloo-summer-programs-high-school-students",
       "domain": "immerse.education",
       "contentHash": "4af0ea554f3ccc5607b5cd5bdfb7e8a5ffd0b775dc040ccdb04b7574087af794",
-      "fetchedAt": "2026-10-11T00:37:26.609Z",
+      "fetchedAt": "2026-10-11T08:07:20.590Z",
       "extracted": {
         "title": "Immerse Education - Waterloo programs",
         "organization": "immerse.education",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2878,11 +2923,12 @@
       "url": "https://ola.org/en/visit-learn/programs/ontario-womens-parliamentary-forum/application-form",
       "domain": "ola.org",
       "contentHash": "82a5786f534d0e0d83f10ae5b56f3e64d467fa6f3f07862a0e049094d8a1a3d5",
-      "fetchedAt": "2026-10-11T00:37:26.834Z",
+      "fetchedAt": "2026-10-11T08:07:21.317Z",
       "extracted": {
         "title": "Ontario Women's Parliamentary Forum",
         "organization": "ola.org",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -2928,11 +2974,12 @@
       "url": "https://kitchener.ca/council-and-city-administration/civic-engagement/leadership-development/parks-youth-engagement-committee",
       "domain": "kitchener.ca",
       "contentHash": "2dba17dae0fd5a734cb37aa1b9aad1f5e7d2b8d9d9c7afdff281924367f54f57",
-      "fetchedAt": "2026-10-11T00:37:27.063Z",
+      "fetchedAt": "2026-10-11T08:07:21.442Z",
       "extracted": {
         "title": "Kitchener Parks Youth Engagement Committee",
         "organization": "kitchener.ca",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3016,11 +3063,12 @@
       "url": "https://akfc.ca/yac-recruitment",
       "domain": "akfc.ca",
       "contentHash": "4a5d628147a28b9865dd7f382bc966402291ec02253c9bd3f9ae3a4ccb8565a8",
-      "fetchedAt": "2026-10-11T00:37:29.029Z",
+      "fetchedAt": "2026-10-11T08:07:23.782Z",
       "extracted": {
         "title": "AKFC Youth Advisory Committee",
         "organization": "akfc.ca",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3104,11 +3152,12 @@
       "url": "https://scholarshipamerica.org/students/browse-scholarships",
       "domain": "scholarshipamerica.org",
       "contentHash": "ae033b07cb5f35109e3e2755d029eb59e99e88bdc8658c9d0e262c9e99e6962e",
-      "fetchedAt": "2026-10-11T00:37:29.942Z",
+      "fetchedAt": "2026-10-11T08:07:24.765Z",
       "extracted": {
         "title": "#RAREis Scholarship Fund",
         "organization": "scholarshipamerica.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3127,7 +3176,8 @@
         "not_a_program": false,
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
-          "Organization guessed from the application link's domain (\"scholarshipamerica.org\") — the sheet has no organization column."
+          "Organization guessed from the application link's domain (\"scholarshipamerica.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country."
         ]
       },
       "confidence": {
@@ -3151,11 +3201,12 @@
       "url": "https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027",
       "domain": "collegeboard.org",
       "contentHash": "5fd50f19b2c7ab866dc082db0a5be8cdf8e86437984fdc957e0b66181443ebc5",
-      "fetchedAt": "2026-10-11T00:37:30.394Z",
+      "fetchedAt": "2026-10-11T08:07:25.141Z",
       "extracted": {
         "title": "$40k BigFuture Scholarships for Seniors",
         "organization": "collegeboard.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3175,6 +3226,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"collegeboard.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Status\" says \"Expired\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
         ]
@@ -3200,11 +3252,12 @@
       "url": "https://standoutconnect.org/post/30-stem-internships-for-high-school-students",
       "domain": "standoutconnect.org",
       "contentHash": "bd21592467820d56d4dd4b311231f8c7c2ec4eb6173b55cac95f10a91fee33fd",
-      "fetchedAt": "2026-10-11T00:37:30.730Z",
+      "fetchedAt": "2026-10-11T08:07:25.479Z",
       "extracted": {
         "title": "30 STEM Internships for High School Students",
         "organization": "standoutconnect.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3223,6 +3276,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"standoutconnect.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "Sheet's Program Date (\"Summer, Spring, Fall, or Winter\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -3248,11 +3302,12 @@
       "url": "https://blog.collegevine.com/high-school-summer-programs-in-nyc",
       "domain": "collegevine.com",
       "contentHash": "7519392be4f995049186682b801c7a63acb818311635e0735534c8f91770a364",
-      "fetchedAt": "2026-10-11T00:37:30.999Z",
+      "fetchedAt": "2026-10-11T08:07:25.839Z",
       "extracted": {
         "title": "All Star Code Summer Intensive",
         "organization": "collegevine.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3271,6 +3326,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"collegevine.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"July 6 – August 14\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -3296,11 +3352,12 @@
       "url": "https://northphoenixprep.greatheartsamerica.org/college-enrich",
       "domain": "greatheartsamerica.org",
       "contentHash": "5ccb14bc1e927c1b03ddb43ca78f856de3f5da6063ae0371d0a6e6110742c049",
-      "fetchedAt": "2026-10-11T00:37:51.529Z",
+      "fetchedAt": "2026-10-11T08:07:46.824Z",
       "extracted": {
         "title": "ASU Camp Cronkite",
         "organization": "greatheartsamerica.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3319,6 +3376,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"greatheartsamerica.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"June 7 – 12\") isn't in a recognizable yyyy-mm-dd form and was left blank.",
           "The application link in the sheet did not respond — check it still works."
@@ -3343,11 +3401,12 @@
       "url": "https://facebook.com/nichesocial/videos/best-paid-internships-for-high-school-students/1507335497194376",
       "domain": "facebook.com",
       "contentHash": "fb8323c8ab369707bf6a9f6ca79bc8bb78044d0efe9647503d8f2cd54ed45847",
-      "fetchedAt": "2026-10-11T00:37:51.816Z",
+      "fetchedAt": "2026-10-11T08:07:47.065Z",
       "extracted": {
         "title": "Best Paid Internships for High School Students",
         "organization": "facebook.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3367,6 +3426,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"facebook.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
         ]
       },
@@ -3391,11 +3451,12 @@
       "url": "https://fastweb.com/college-scholarships/articles/scholarships-for-high-school-seniors",
       "domain": "fastweb.com",
       "contentHash": "57c9b2f1eee72618e90149afb1ccd8bd1000fb2d30055025b8a431a3da6e3726",
-      "fetchedAt": "2026-10-11T00:37:52.491Z",
+      "fetchedAt": "2026-10-11T08:07:47.630Z",
       "extracted": {
         "title": "BigFuture $40,000 Scholarship",
         "organization": "fastweb.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3415,6 +3476,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"fastweb.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Status\" says \"Expired\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "The application link in the sheet did not respond — check it still works."
@@ -3439,11 +3501,12 @@
       "url": "https://youthscience.ca/science-fairs/cwsf",
       "domain": "youthscience.ca",
       "contentHash": "6a3b52ac5bb237020c1f62003b2970903ba4b043c5f6257b76a5937248ea22ed",
-      "fetchedAt": "2026-10-11T00:37:53.940Z",
+      "fetchedAt": "2026-10-11T08:07:49.116Z",
       "extracted": {
         "title": "Canada-Wide Science Fair",
         "organization": "youthscience.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3527,11 +3590,12 @@
       "url": "https://usabo-trc.org/canadian-biology-olympiad",
       "domain": "usabo-trc.org",
       "contentHash": "ea1fa90f075ff63d336e006367b06d7908963efead9043e3e71a2413a8acbeaf",
-      "fetchedAt": "2026-10-11T00:37:54.579Z",
+      "fetchedAt": "2026-10-11T08:07:49.554Z",
       "extracted": {
         "title": "Canadian Biology Olympiad",
         "organization": "usabo-trc.org",
         "category": "Medicine",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3576,11 +3640,12 @@
       "url": "https://cap.ca/programs/medals-and-awards/prize-exam",
       "domain": "cap.ca",
       "contentHash": "748654f3d9a889a9cfcd0bbe64ac9a3d5ceaa7f52cac465f1dbca0aa12e5e025",
-      "fetchedAt": "2026-10-11T00:37:55.760Z",
+      "fetchedAt": "2026-10-11T08:07:50.384Z",
       "extracted": {
         "title": "CAP High School Prize Exam",
         "organization": "cap.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3626,11 +3691,12 @@
       "url": "https://sps.nyu.edu/high-school-academy/programs/career-edge.html",
       "domain": "nyu.edu",
       "contentHash": "5f5b3fc6d88cc3e327487b88a42a3eb07271ea4809febc0a78912fe727e3221a",
-      "fetchedAt": "2026-10-11T00:37:56.201Z",
+      "fetchedAt": "2026-10-11T08:07:50.507Z",
       "extracted": {
         "title": "Career Edge NYU Summer High School Program",
         "organization": "nyu.edu",
         "category": "Business",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3649,6 +3715,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"nyu.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -3676,11 +3743,12 @@
       "url": "https://kitchener.ca/council-and-city-administration/jobs-and-volunteering/find-a-job",
       "domain": "kitchener.ca",
       "contentHash": "b668a3b2dffe09068519d4fb02e86532ffd60839fecca00dc84e686d1082efc1",
-      "fetchedAt": "2026-10-11T00:37:56.533Z",
+      "fetchedAt": "2026-10-11T08:07:50.761Z",
       "extracted": {
         "title": "City of Kitchener Summer Student Jobs",
         "organization": "kitchener.ca",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3773,11 +3841,12 @@
       "url": "https://waterloo.ca/en/government/jobs.aspx",
       "domain": "waterloo.ca",
       "contentHash": "cc1382ef53e8acc9975a4935455e30c9509af1f00cd61657439a49dd5e786a52",
-      "fetchedAt": "2026-10-11T00:37:56.857Z",
+      "fetchedAt": "2026-10-11T08:07:50.927Z",
       "extracted": {
         "title": "City of Waterloo Student Jobs",
         "organization": "waterloo.ca",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3870,11 +3939,12 @@
       "url": "https://thevolunteercenter.org/celi",
       "domain": "thevolunteercenter.org",
       "contentHash": "70aaf736a1c971b4877bd7944562896a3361fc0336ed86e84e09645f7bc8f725",
-      "fetchedAt": "2026-10-11T00:38:00.678Z",
+      "fetchedAt": "2026-10-11T08:07:54.249Z",
       "extracted": {
         "title": "Civic Engagement Leadership Institute (CELI)",
         "organization": "thevolunteercenter.org",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3893,6 +3963,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"thevolunteercenter.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Completed\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -3920,11 +3991,12 @@
       "url": "https://thepolicycircle.org/cler-application",
       "domain": "thepolicycircle.org",
       "contentHash": "f5374cce868eec54f4eadc7acf2ddff3e4842a88953985885d34cb464b9d42cc",
-      "fetchedAt": "2026-10-11T00:38:02.054Z",
+      "fetchedAt": "2026-10-11T08:07:57.200Z",
       "extracted": {
         "title": "Civic Leadership Engagement Roadmap (CLER)",
         "organization": "thepolicycircle.org",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3943,6 +4015,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"thepolicycircle.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "Sheet's Program Date (\"Spring 2027 (Feb. 1 - Apr. 30)\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -3968,11 +4041,12 @@
       "url": "https://summer.ucsd.edu/program-finder/index.html",
       "domain": "ucsd.edu",
       "contentHash": "bd5dfb2e65df9189be28668dffeca7a2f1b16cd00c6843d425ceb8be888766ea",
-      "fetchedAt": "2026-10-11T00:38:02.587Z",
+      "fetchedAt": "2026-10-11T08:07:57.637Z",
       "extracted": {
         "title": "COSMOS",
         "organization": "ucsd.edu",
         "category": "STEM",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -3992,6 +4066,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"ucsd.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Residential\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"2026 (four-week program)\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -4017,11 +4092,12 @@
       "url": "https://cybertitan.ca/",
       "domain": "cybertitan.ca",
       "contentHash": "8fbe7b0599ef5b9a6320bed0ee748d33e260a72666d522d173ef945f70576683",
-      "fetchedAt": "2026-10-11T00:38:03.044Z",
+      "fetchedAt": "2026-10-11T08:07:57.798Z",
       "extracted": {
         "title": "CyberTitan National Youth Cyber Defence Competition",
         "organization": "cybertitan.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4067,11 +4143,12 @@
       "url": "https://deca.ca/",
       "domain": "deca.ca",
       "contentHash": "d197ac17b515cba1f7beb4de885e7effd077e47f7b610c4e411bb1e1e15d81a2",
-      "fetchedAt": "2026-10-11T00:38:03.702Z",
+      "fetchedAt": "2026-10-11T08:07:58.282Z",
       "extracted": {
         "title": "DECA Ontario High School Program",
         "organization": "deca.ca",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4169,11 +4246,12 @@
       "url": "https://boundlearn.com/delta/blog/10-stem-internships-for-high-school-students",
       "domain": "boundlearn.com",
       "contentHash": "f02dbcbbec794e92bc2658c9129ad7f4397462fec894aa6cc539feb58564f640",
-      "fetchedAt": "2026-10-11T00:38:04.022Z",
+      "fetchedAt": "2026-10-11T08:07:58.453Z",
       "extracted": {
         "title": "Delta Careers",
         "organization": "boundlearn.com",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4192,6 +4270,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"boundlearn.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Virtual\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "Sheet's Program Date (\"null\") isn't in a recognizable yyyy-mm-dd form and was left blank."
@@ -4218,11 +4297,12 @@
       "url": "https://dmz.torontomu.ca/basecamp",
       "domain": "torontomu.ca",
       "contentHash": "04a33b0ea07f5a953e2086895993278d27d2cc88ae03d91b2f438f7075e0ac2b",
-      "fetchedAt": "2026-10-11T00:38:04.187Z",
+      "fetchedAt": "2026-10-11T08:07:58.533Z",
       "extracted": {
         "title": "DMZ Basecamp",
         "organization": "torontomu.ca",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4306,11 +4386,12 @@
       "url": "https://dukeofed.org/",
       "domain": "dukeofed.org",
       "contentHash": "f5ef0d357757b7345f6f7f0f1b346f98286642bc6755ad413e0006508d7194f2",
-      "fetchedAt": "2026-10-11T00:38:04.518Z",
+      "fetchedAt": "2026-10-11T08:07:58.788Z",
       "extracted": {
         "title": "Duke of Edinburgh’s International Award Canada",
         "organization": "dukeofed.org",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4401,11 +4482,12 @@
       "url": "https://cemc.uwaterloo.ca/contests/euclid",
       "domain": "uwaterloo.ca",
       "contentHash": "e94f1cba48ac5c34f60c489b3a88e85c279146b1ba962a920182a098591b4e36",
-      "fetchedAt": "2026-10-11T00:38:04.563Z",
+      "fetchedAt": "2026-10-11T08:07:58.832Z",
       "extracted": {
         "title": "Euclid Mathematics Contest",
         "organization": "uwaterloo.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4507,11 +4589,12 @@
       "url": "https://firstinspires.org/robotics/ftc",
       "domain": "firstinspires.org",
       "contentHash": "b2c5e69aa5bbe587721bb3abedeb595c8e51136e6773adf9f34f0c081c581139",
-      "fetchedAt": "2026-10-11T00:38:04.961Z",
+      "fetchedAt": "2026-10-11T08:07:59.082Z",
       "extracted": {
         "title": "FIRST Tech Challenge",
         "organization": "firstinspires.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4530,6 +4613,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"firstinspires.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Team competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Annual\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -4595,11 +4679,12 @@
       "url": "https://lumiere-education.com/post/stem-internships-for-high-school-students-in-seattle-washington",
       "domain": "lumiere-education.com",
       "contentHash": "8f401cbd225505866b1bdf3d0efd51b21c2f3ac4f3032a26bca57902c706acfa",
-      "fetchedAt": "2026-10-11T00:38:05.244Z",
+      "fetchedAt": "2026-10-11T08:08:00.603Z",
       "extracted": {
         "title": "Fred Hutch Cancer Centre Summer High School Internship Program",
         "organization": "lumiere-education.com",
         "category": "Medicine",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4618,6 +4703,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"lumiere-education.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"June 23 – August 15\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -4643,11 +4729,12 @@
       "url": "https://neiu.edu/academics/our-centers-and-programs/student-center-science-engagement/opportunities-stem/stem-researchinternship-opportunities",
       "domain": "neiu.edu",
       "contentHash": "f93fabf2be5bd0fcadca3e643297db20c99f53e81e1fc22e7e3d99cc6ba16fee",
-      "fetchedAt": "2026-10-11T00:38:05.441Z",
+      "fetchedAt": "2026-10-11T08:08:00.793Z",
       "extracted": {
         "title": "HACU National Internship Program (HNIP)",
         "organization": "neiu.edu",
         "category": "Leadership",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4689,11 +4776,12 @@
       "url": "https://summer.harvard.edu/high-school-programs/pre-college-program",
       "domain": "harvard.edu",
       "contentHash": "a48fab9092463c353be085f12ec8a9bdfbe7c7d7ef83788399fb309e63779e92",
-      "fetchedAt": "2026-10-11T00:38:05.695Z",
+      "fetchedAt": "2026-10-11T08:08:01.284Z",
       "extracted": {
         "title": "Harvard’s Pre-College Summer Program",
         "organization": "harvard.edu",
         "category": "STEM",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4713,6 +4801,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"harvard.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"June 21–July 2, July 12–23, or July 26–Aug. 6, 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -4738,11 +4827,12 @@
       "url": "https://see.isbscience.org/resources/for-students/high-school-intern-program",
       "domain": "isbscience.org",
       "contentHash": "0b7669a71fbdb4490a57874190ab120311266f8353fa7550ecbe6444a3703e41",
-      "fetchedAt": "2026-10-11T00:38:06.809Z",
+      "fetchedAt": "2026-10-11T08:08:01.734Z",
       "extracted": {
         "title": "High School Intern Program",
         "organization": "isbscience.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4761,6 +4851,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"isbscience.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Hybrid\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "Sheet's Program Date (\"Summer of 2026 and the 2026-2027 academic year\") isn't in a recognizable yyyy-mm-dd form and was left blank."
@@ -4787,11 +4878,12 @@
       "url": "https://extern.com/post/internships-for-high-school-students-2027",
       "domain": "extern.com",
       "contentHash": "e3221c5e849bac5f23c45a345130163842c9c0bb4299c7bde985c85d85993479",
-      "fetchedAt": "2026-10-11T00:38:07.089Z",
+      "fetchedAt": "2026-10-11T08:08:01.986Z",
       "extracted": {
         "title": "Internships for High School Students 2027",
         "organization": "extern.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4811,6 +4903,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"extern.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "Sheet's Program Date (\"summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -4836,11 +4929,12 @@
       "url": "https://jacanada.org/program/investment-strategies-program",
       "domain": "jacanada.org",
       "contentHash": "64d7977b10132db60c3bcb536e81ce842c98838b51e12744932e4057385734c3",
-      "fetchedAt": "2026-10-11T00:38:07.361Z",
+      "fetchedAt": "2026-10-11T08:08:02.165Z",
       "extracted": {
         "title": "Junior Achievement Investment Strategies Program",
         "organization": "jacanada.org",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4859,6 +4953,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"jacanada.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Financial literacy program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Recurring\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -4885,11 +4980,12 @@
       "url": "https://myneighborhoodnews.com/lone-star-college-leadership-high-school-program-opens-free-2026-2027-applications-for-houston-area-students",
       "domain": "myneighborhoodnews.com",
       "contentHash": "db840683e1520089ece54e2105c5c3e7fd2e4a46cd9c5662030645ef765afa64",
-      "fetchedAt": "2026-10-11T00:38:08.341Z",
+      "fetchedAt": "2026-10-11T08:08:02.979Z",
       "extracted": {
         "title": "Leadership High School Program",
         "organization": "myneighborhoodnews.com",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4908,6 +5004,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"myneighborhoodnews.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Hybrid (monthly experiential learning sessions)\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Closed\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -4935,11 +5032,12 @@
       "url": "https://lockheedmartin.com/en-us/careers/candidates/students-early-careers/high-school.html",
       "domain": "lockheedmartin.com",
       "contentHash": "e930209243ab9a49d9354b84f32adef6019a6d8bdba70eeb0349f87e4a3e34e9",
-      "fetchedAt": "2026-10-11T00:38:08.743Z",
+      "fetchedAt": "2026-10-11T08:08:03.464Z",
       "extracted": {
         "title": "Lockheed Martin Space’s High School Internship Program",
         "organization": "lockheedmartin.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -4958,6 +5056,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"lockheedmartin.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"June - August 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -4983,11 +5082,12 @@
       "url": "https://blog.collegevine.com/stem-internships-for-high-schoolers",
       "domain": "collegevine.com",
       "contentHash": "28e7caa949d6c428194d8ff04d184101ee5f30980855fb1baa2ed4de90c83d11",
-      "fetchedAt": "2026-10-11T00:38:08.858Z",
+      "fetchedAt": "2026-10-11T08:08:03.654Z",
       "extracted": {
         "title": "NASA OSTEM Internship",
         "organization": "collegevine.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5006,6 +5106,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"collegevine.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
         ]
@@ -5031,11 +5132,12 @@
       "url": "https://accessscholarships.com/blog/scholarships-for-high-school-seniors",
       "domain": "accessscholarships.com",
       "contentHash": "f83698cdcdebdf24fd453a42cea7453f81fc138ecb7dcc126aca7a80cc98dff9",
-      "fetchedAt": "2026-10-11T00:38:10.130Z",
+      "fetchedAt": "2026-10-11T08:08:04.817Z",
       "extracted": {
         "title": "Niche $40,000 No Essay Scholarship",
         "organization": "accessscholarships.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5054,7 +5156,8 @@
         "not_a_program": false,
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
-          "Organization guessed from the application link's domain (\"accessscholarships.com\") — the sheet has no organization column."
+          "Organization guessed from the application link's domain (\"accessscholarships.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country."
         ]
       },
       "confidence": {
@@ -5078,11 +5181,12 @@
       "url": "https://nitrd.gov/stem4all",
       "domain": "nitrd.gov",
       "contentHash": "3497b66faae7503c31ff64dfc501d383cc6a3b4d6cd28e095d34d0fb2a414796",
-      "fetchedAt": "2026-10-11T00:38:11.285Z",
+      "fetchedAt": "2026-10-11T08:08:07.275Z",
       "extracted": {
         "title": "NITRD STEM Portal",
         "organization": "nitrd.gov",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5101,6 +5205,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"nitrd.gov\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
         ]
       },
@@ -5125,11 +5230,12 @@
       "url": "https://nshss.org/scholarships",
       "domain": "nshss.org",
       "contentHash": "d4ea49e2357e5458a5513a9407c09f9bede9c8ed766b9a8835b32e0976a7d809",
-      "fetchedAt": "2026-10-11T00:38:11.735Z",
+      "fetchedAt": "2026-10-11T08:08:07.512Z",
       "extracted": {
         "title": "NSHSS Scholarships",
         "organization": "nshss.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5149,6 +5255,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"nshss.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
         ]
       },
@@ -5173,11 +5280,12 @@
       "url": "https://studentresearchnyc.org/students",
       "domain": "studentresearchnyc.org",
       "contentHash": "eb925ba1073e03ddaadd9b1b34fbd3476335ffb50dee84d4c888c76eb24603cf",
-      "fetchedAt": "2026-10-11T00:38:12.504Z",
+      "fetchedAt": "2026-10-11T08:08:08.039Z",
       "extracted": {
         "title": "NYC SRMC Student Programs",
         "organization": "studentresearchnyc.org",
         "category": "STEM",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5220,11 +5328,12 @@
       "url": "https://osdu.on.ca/",
       "domain": "osdu.on.ca",
       "contentHash": "91c369cf623e27b910c80334039fd79297844a15f61465f686ab393940e2e1e9",
-      "fetchedAt": "2026-10-11T00:38:12.605Z",
+      "fetchedAt": "2026-10-11T08:08:08.104Z",
       "extracted": {
         "title": "OSDU Provincial Debate Tournaments",
         "organization": "osdu.on.ca",
         "category": "Law & Civics",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5310,11 +5419,12 @@
       "url": "https://parks.canada.ca/agence-agency/emplois-jobs/etudiants-students",
       "domain": "canada.ca",
       "contentHash": "feeb0d90f682ac1b661ce6f3b0db1585bfc95caf60e69fb8b37aad410a453e47",
-      "fetchedAt": "2026-10-11T00:38:12.948Z",
+      "fetchedAt": "2026-10-11T08:08:08.471Z",
       "extracted": {
         "title": "Parks Canada Student Employment",
         "organization": "canada.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5361,11 +5471,12 @@
       "url": "https://pathwaystoscience.org/k12.aspx",
       "domain": "pathwaystoscience.org",
       "contentHash": "3561a3d191513fbad372e186368772b3dee75e4bd23f99b62d35d2ea7fb951f6",
-      "fetchedAt": "2026-10-11T00:38:13.273Z",
+      "fetchedAt": "2026-10-11T08:08:08.703Z",
       "extracted": {
         "title": "Pathways to Science",
         "organization": "pathwaystoscience.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5385,6 +5496,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"pathwaystoscience.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
         ]
       },
@@ -5409,11 +5521,12 @@
       "url": "https://queensu.ca/esu",
       "domain": "queensu.ca",
       "contentHash": "bfb208acf44e5a8f700cc1935d72b6502a162bd90fe644d482f7a730f0134799",
-      "fetchedAt": "2026-10-11T00:38:13.555Z",
+      "fetchedAt": "2026-10-11T08:08:08.896Z",
       "extracted": {
         "title": "Queen’s Enrichment Studies — Business and Innovation Courses",
         "organization": "queensu.ca",
         "category": "Business",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5458,11 +5571,12 @@
       "url": "https://generalacademic.com/summer-opportunities-for-houston-high-school-students",
       "domain": "generalacademic.com",
       "contentHash": "063f4c13a3ab2dc6e9d4957c5070e73462c7cfcd81359ef36b6ca3dc3309a8b3",
-      "fetchedAt": "2026-10-11T00:38:14.770Z",
+      "fetchedAt": "2026-10-11T08:08:10.084Z",
       "extracted": {
         "title": "Rice University Summer Scholars Program",
         "organization": "generalacademic.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5481,6 +5595,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"generalacademic.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"June [no specific date stated]\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -5506,11 +5621,12 @@
       "url": "https://ivywise.com/blog/internship-programs-for-high-school-students",
       "domain": "ivywise.com",
       "contentHash": "72506833553ff15e9d32adf25e56fd7d29b890f69ca2a833cb5ea736baa839e7",
-      "fetchedAt": "2026-10-11T00:38:15.362Z",
+      "fetchedAt": "2026-10-11T08:08:10.441Z",
       "extracted": {
         "title": "SEES High School Summer Intern Program",
         "organization": "ivywise.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5529,6 +5645,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"ivywise.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Hybrid (virtual work and on-site internship)\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -5556,11 +5673,12 @@
       "url": "https://shad.ca/shad-programs",
       "domain": "shad.ca",
       "contentHash": "68f356bc6f5ef6ecd3f0cfe5151bcf1de2a89dd88cec928358b6c0f81b8472ac",
-      "fetchedAt": "2026-10-11T00:38:17.394Z",
+      "fetchedAt": "2026-10-11T08:08:11.939Z",
       "extracted": {
         "title": "SHAD Canada",
         "organization": "shad.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": {
@@ -5682,11 +5800,12 @@
       "url": "https://pioneeracademics.com/news/top-16-stem-internships-for-high-school-students",
       "domain": "pioneeracademics.com",
       "contentHash": "c3e2e08526be971c143090d107efd2bb3dee8e0adef7f4e61648226c6c7e28bb",
-      "fetchedAt": "2026-10-11T00:38:17.994Z",
+      "fetchedAt": "2026-10-11T08:08:12.657Z",
       "extracted": {
         "title": "Stanford Institutes of Medicine Summer Research Internship (SIMR)",
         "organization": "pioneeracademics.com",
         "category": "Medicine",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5705,6 +5824,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"pioneeracademics.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"8 weeks\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -5730,11 +5850,12 @@
       "url": "https://naco.org/news/students-texas-county-learn-civic-engagement-skills-student2government-leadership-academy",
       "domain": "naco.org",
       "contentHash": "0866ce072ad7fe6b6b784a7f6bfce571c371e06802054fc31fc86560dc9814c2",
-      "fetchedAt": "2026-10-11T00:38:18.116Z",
+      "fetchedAt": "2026-10-11T08:08:16.107Z",
       "extracted": {
         "title": "Student2Government Leadership Academy",
         "organization": "naco.org",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5753,6 +5874,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"naco.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's Program Date (\"four-week program\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
       },
@@ -5777,11 +5899,12 @@
       "url": "https://summerdiscovery.com/campuses/university-of-michigan",
       "domain": "summerdiscovery.com",
       "contentHash": "c155f393305edf484857aaaa4fd0742c8957f47aca4a879a2a56bfaf7522d43f",
-      "fetchedAt": "2026-10-11T00:38:18.390Z",
+      "fetchedAt": "2026-10-11T08:08:16.294Z",
       "extracted": {
         "title": "Summer Discovery at the University of Michigan",
         "organization": "summerdiscovery.com",
         "category": "STEM",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5826,11 +5949,12 @@
       "url": "https://schools.nyc.gov/enrollment/summer-rising",
       "domain": "nyc.gov",
       "contentHash": "b6a027325e64e631c9183c205ba93eaf6a8a12d2372fc2b26d7c168d12490aa1",
-      "fetchedAt": "2026-10-11T00:38:19.017Z",
+      "fetchedAt": "2026-10-11T08:08:17.246Z",
       "extracted": {
         "title": "Summer Rising 2026",
         "organization": "nyc.gov",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5850,6 +5974,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"nyc.gov\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Archive\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -5877,11 +6002,12 @@
       "url": "https://susd.org/departments/community-education/hs-summer-school",
       "domain": "susd.org",
       "contentHash": "5694175b4ce9979b3ebe3f0d6468edad8e5d70563859af1fda7c9cdc0dc9fda3",
-      "fetchedAt": "2026-10-11T00:38:19.225Z",
+      "fetchedAt": "2026-10-11T08:08:18.516Z",
       "extracted": {
         "title": "SUSD High School Summer School",
         "organization": "susd.org",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5901,6 +6027,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"susd.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Hybrid\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet \"Status\" says \"Archive\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
@@ -5928,11 +6055,12 @@
       "url": "https://mylifesciencecareer.com/20-stem-internships-for-high-school-students",
       "domain": "mylifesciencecareer.com",
       "contentHash": "dc43be46bf1cf472598867c74ca0f9361a4d6abf53a1967fffedce78631af103",
-      "fetchedAt": "2026-10-11T00:38:19.462Z",
+      "fetchedAt": "2026-10-11T08:08:18.595Z",
       "extracted": {
         "title": "The Summer Science Program",
         "organization": "mylifesciencecareer.com",
         "category": "Medicine",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -5951,6 +6079,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"mylifesciencecareer.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's \"Format\" column (\"Hybrid (online and in-person)\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
           "Sheet's Program Date (\"summer\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -5976,11 +6105,12 @@
       "url": "https://fastweb.com/college-scholarships/articles/scholarships-for-high-school-juniors",
       "domain": "fastweb.com",
       "contentHash": "5867862f137e2e8cef581cc15ea7b9e38870044be9a3aca18b9b3ef286bc2644",
-      "fetchedAt": "2026-10-11T00:38:19.914Z",
+      "fetchedAt": "2026-10-11T08:08:19.121Z",
       "extracted": {
         "title": "Top Scholarships for High School Juniors: Class of 2028",
         "organization": "fastweb.com",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -6000,6 +6130,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"fastweb.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "The application link in the sheet did not respond — check it still works."
         ]
@@ -6023,11 +6154,12 @@
       "url": "https://universitycollege.tufts.edu/pre-college/academics/high-school-summer-programs",
       "domain": "tufts.edu",
       "contentHash": "4c45bf2fc871ff151c3125b01e21970aed68966e85bf852c86eeb418e45263ba",
-      "fetchedAt": "2026-10-11T00:38:20.013Z",
+      "fetchedAt": "2026-10-11T08:08:19.183Z",
       "extracted": {
         "title": "Tufts Summer Programs for High School Students",
         "organization": "tufts.edu",
         "category": "STEM",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -6047,6 +6179,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"tufts.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "Sheet's Program Date (\"Summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
@@ -6072,11 +6205,12 @@
       "url": "https://nslcleaders.org/summer-program-locations/michigan-high-school-summer-programs",
       "domain": "nslcleaders.org",
       "contentHash": "f2ec497b754e0660166c84f4a28507512d762358ff81986510e3fbda8d10e9e3",
-      "fetchedAt": "2026-10-11T00:38:21.145Z",
+      "fetchedAt": "2026-10-11T08:08:19.865Z",
       "extracted": {
         "title": "University of Michigan Summer Programs for High Schoolers",
         "organization": "nslcleaders.org",
         "category": "Business",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -6121,11 +6255,12 @@
       "url": "https://precollege.usc.edu/summer-programs",
       "domain": "usc.edu",
       "contentHash": "d2a1eb45c625e2a4d298b293b257c06b4b731a2f3d896eb91178abb7d4479e1f",
-      "fetchedAt": "2026-10-11T00:38:21.459Z",
+      "fetchedAt": "2026-10-11T08:08:20.044Z",
       "extracted": {
         "title": "USC Summer Programs",
         "organization": "usc.edu",
         "category": "STEM",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -6145,6 +6280,7 @@
         "notes": [
           "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
           "Organization guessed from the application link's domain (\"usc.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet's Program Date (\"four-week programs\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]
       },
@@ -6169,11 +6305,12 @@
       "url": "https://cemc.uwaterloo.ca/workshops",
       "domain": "uwaterloo.ca",
       "contentHash": "6eef17551f43900c0b8078920af5a6b3f4a4315dfcd9b688a41f7e14d11d78bd",
-      "fetchedAt": "2026-10-11T00:38:21.647Z",
+      "fetchedAt": "2026-10-11T08:08:20.129Z",
       "extracted": {
         "title": "Waterloo Math Circles — Girls in Math or Coding Events",
         "organization": "uwaterloo.ca",
         "category": "STEM",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -6220,11 +6357,12 @@
       "url": "https://polyhigh.org/apps/pages/SummerPrograms_Volunteer_Internships",
       "domain": "polyhigh.org",
       "contentHash": "3532f23455b6ab384d8f09ad8b2f71c7fd017ab5698fdc95da74dee5e11eb828",
-      "fetchedAt": "2026-10-11T00:38:22.132Z",
+      "fetchedAt": "2026-10-11T08:08:20.731Z",
       "extracted": {
         "title": "Wise Up! Summer Program",
         "organization": "polyhigh.org",
         "category": "Leadership",
+        "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -6243,6 +6381,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"polyhigh.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Status\" says \"Re-verify\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
         ]
@@ -6268,11 +6407,12 @@
       "url": "https://admissions.washu.edu/college-prep/summer-programs-for-high-school-students",
       "domain": "washu.edu",
       "contentHash": "f511febf47a77e51c4850af0c6bb63f21ee05662a33cb125be0abecdba5097e2",
-      "fetchedAt": "2026-10-11T00:38:22.346Z",
+      "fetchedAt": "2026-10-11T08:08:21.155Z",
       "extracted": {
         "title": "Young Scientist Program",
         "organization": "washu.edu",
         "category": "Medicine",
+        "country": "US",
         "grade_levels": [],
         "app_open_date": null,
         "app_deadline": null,
@@ -6291,6 +6431,7 @@
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"washu.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
           "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
           "Sheet's Program Date (\"8-week paid summer research internship opportunity\") isn't in a recognizable yyyy-mm-dd form and was left blank."
         ]

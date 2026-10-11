@@ -1,4 +1,4 @@
-## Data engine run `2026-10-11-3d2fc070`
+## Data engine run `2026-10-11-20760806`
 
 Crawled **95** pages · **0** model calls · ~**$0.00** · **0** auto-applied · **95** need review · **0** to archive
 
@@ -137,6 +137,7 @@ Source: https://jacanada.org/program/company-program
 
 Extractor notes:
 - Organization guessed from the application link's domain ("jacanada.org") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Entrepreneurship program") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Check local intake". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -237,6 +238,7 @@ Evidence:
 
 Extractor notes:
 - Organization guessed from the application link's domain ("upenn.edu") — the sheet has no organization column.
+- Country guessed as "US" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Investment competition") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Closed". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -354,6 +356,7 @@ Source: https://childrenfirstcanada.org/campaign/young-canadians-parliament
 
 Extractor notes:
 - Organization guessed from the application link's domain ("childrenfirstcanada.org") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Youth rights and civic engagement") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -623,6 +626,7 @@ Source: sheet-row:SPRINT Psychology Research Program
 
 Extractor notes:
 - No application link given, so organization defaults to the program title. Please fill in.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Psychology research program") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -665,6 +669,7 @@ Source: https://sumac.spcs.stanford.edu/sumac-admissions
 
 Extractor notes:
 - Organization guessed from the application link's domain ("stanford.edu") — the sheet has no organization column.
+- Country guessed as "US" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Advanced mathematics camp") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -681,6 +686,7 @@ Source: https://cee.org/programs/research-science-institute-rsi/rsi-application-
 
 Extractor notes:
 - Organization guessed from the application link's domain ("cee.org") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Selective summer research institute") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -734,6 +740,7 @@ Source: https://jobs.rbc.com/ca/en
 Extractor notes:
 - Could not confidently map the sheet's Category ("Jobs / Tech") to one of the site's six tracks — defaulted to "STEM". Please correct.
 - Organization guessed from the application link's domain ("rbc.com") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Paid technology internship") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -778,6 +785,7 @@ Source: https://energymag.net/internships
 Extractor notes:
 - Could not confidently map the sheet's Category ("Jobs / Remote") to one of the site's six tracks — defaulted to "STEM". Please correct.
 - Organization guessed from the application link's domain ("energymag.net") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Internship directory") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Directory". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -809,6 +817,7 @@ Evidence:
 
 Extractor notes:
 - Organization guessed from the application link's domain ("yale.edu") — the sheet has no organization column.
+- Country guessed as "US" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("Academic summer program") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Open". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
@@ -920,6 +929,7 @@ Source: https://scholarshipamerica.org/students/browse-scholarships
 Extractor notes:
 - Could not confidently map the sheet's Category ("General") to one of the site's six tracks — defaulted to "STEM". Please correct.
 - Organization guessed from the application link's domain ("scholarshipamerica.org") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 
 </details>
 
