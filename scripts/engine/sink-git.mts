@@ -202,6 +202,7 @@ export async function applyDecisions(): Promise<{
         title: e.title,
         org: e.organization,
         category: e.category,
+        country: e.country ?? "CA",
         grades: e.grade_levels.length ? e.grade_levels : [9, 10, 11, 12],
         cost: e.cost_note ?? e.cost_type,
         format: e.location_type,
