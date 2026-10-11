@@ -97,7 +97,7 @@ const seeds: Seed[] = [
     url: "https://www.shad.ca/shad-programs/",
     programStartDate: "2027-07-04",
     programEndDate: "2027-07-30",
-},
+  },
   {
     title: "DEEP Summer Academy",
     org: "University of Toronto Engineering Outreach",
@@ -153,7 +153,7 @@ const seeds: Seed[] = [
     url: "https://cemc.uwaterloo.ca/contests/euclid",
     programStartDate: "2027-04-06",
     appOpenDate: "2026-09-01",
-},
+  },
   {
     title: "Canada-Wide Science Fair",
     org: "Youth Science Canada",
@@ -174,7 +174,7 @@ const seeds: Seed[] = [
     url: "https://youthscience.ca/science-fairs/cwsf/",
     programStartDate: "2027-05-29",
     programEndDate: "2027-06-05",
-},
+  },
   {
     title: "Toronto Science Fair",
     org: "Toronto Science Fair Association",
@@ -285,7 +285,8 @@ const seeds: Seed[] = [
     category: "STEM",
     country: "CA",
     grades: [9, 10, 11, 12],
-    summary: "Team competition. Equipping middle and secondary school students with critical skills for a digital-based economy. The growth in cyber attacks on Canadian companies highlights the need for more comprehensive cybersecurity training, particularly for young people.",
+    summary:
+      "Team competition. Equipping middle and secondary school students with critical skills for a digital-based economy. The growth in cyber attacks on Canadian companies highlights the need for more comprehensive cybersecurity training, particularly for young people.",
     description:
       "Teams of up to six secure simulated networks under time pressure across several online rounds, with top teams invited to a national final.",
     eligibility: "You are a current educator in the middle and secondary Canadian school system",
@@ -390,10 +391,12 @@ const seeds: Seed[] = [
     category: "STEM",
     country: "CA",
     grades: [10, 11, 12],
-    summary: "Exam / olympiad. A national biology competition and selection pathway for the International Biology Olympiad.",
+    summary:
+      "Exam / olympiad. A national biology competition and selection pathway for the International Biology Olympiad.",
     description:
       "An open first-round exam narrows to a national semifinal and final, with the top four students representing Canada at the IBO.",
-    eligibility: "Canadian high-school students — Advanced biology knowledge is required. International team eligibility may include citizenship, age, and graduation-year limits.",
+    eligibility:
+      "Canadian high-school students — Advanced biology knowledge is required. International team eligibility may include citizenship, age, and graduation-year limits.",
     deadline: "2027-01-15",
     confidence: "estimated",
     cost: "Small registration fee",
@@ -542,14 +545,15 @@ const seeds: Seed[] = [
     url: "https://deca.ca/",
     programStartDate: "2027-02-04",
     programEndDate: "2027-02-06",
-},
+  },
   {
     title: "JA Company Program",
     org: "Junior Achievement Central Ontario",
     category: "Business",
     country: "CA",
     grades: [10, 11, 12],
-    summary: "Entrepreneurship program. Youth gain real‑world entrepreneurial skills by co‑creating and operating a small business from idea to launch. This program empowers youth to transform their ideas into real ventures. Through hands‑on learning, they explore every aspect of entrepreneurship—from brainstorming and prototyping to branding, sales, and budgeting—by creating and operating a functioning small business.",
+    summary:
+      "Entrepreneurship program. Youth gain real‑world entrepreneurial skills by co‑creating and operating a small business from idea to launch. This program empowers youth to transform their ideas into real ventures. Through hands‑on learning, they explore every aspect of entrepreneurship—from brainstorming and prototyping to branding, sales, and budgeting—by creating and operating a functioning small business.",
     description:
       "Teams incorporate a small business, raise capital, sell a product and liquidate at year end, guided by volunteer mentors from industry.",
     eligibility:
@@ -656,10 +660,12 @@ const seeds: Seed[] = [
     category: "Business",
     country: "CA",
     grades: [10, 11, 12],
-    summary: "Financial literacy program. Students learn investing, markets, risk, diversification, and financial decision-making through practical activities.",
+    summary:
+      "Financial literacy program. Students learn investing, markets, risk, diversification, and financial decision-making through practical activities.",
     description:
       "Volunteer finance professionals run simulations covering markets, portfolios and long-term saving.",
-    eligibility: "Grade 8-12 students; delivered through classrooms (ISP Classroom) or self-directed via JA Digital Campus (ISP Student-Led)",
+    eligibility:
+      "Grade 8-12 students; delivered through classrooms (ISP Classroom) or self-directed via JA Digital Campus (ISP Student-Led)",
     deadline: null,
     confidence: "unposted",
     cost: "Free",
@@ -1005,17 +1011,19 @@ const seeds: Seed[] = [
     programStartDate: "2026-11-05",
     appOpenDate: "2026-06-08",
     programEndDate: "2027-02-26",
-},
+  },
   {
     title: "CAIMUN Delegate Registration",
     org: "Canada International Model United Nations",
     category: "Law & Civics",
     country: "CA",
     grades: [9, 10, 11, 12],
-    summary: "Model UN conference. CAIMUN is a conference for secondary school-aged students and middle school students, where they can participate in committees and represent countries.",
+    summary:
+      "Model UN conference. CAIMUN is a conference for secondary school-aged students and middle school students, where they can participate in committees and represent countries.",
     description:
       "Delegates research a country position, debate in committee, and draft resolutions over a multi-day conference.",
-    eligibility: "All secondary school-aged students are eligible to attend CAIMUN, as well as middle school students. No gender, race, or identity restriction stated. Independent delegates may need to arrange their own supervision, payment, and travel.",
+    eligibility:
+      "All secondary school-aged students are eligible to attend CAIMUN, as well as middle school students. No gender, race, or identity restriction stated. Independent delegates may need to arrange their own supervision, payment, and travel.",
     deadline: "2027-02-04",
     confidence: "confirmed",
     cost: "Delegate fee plus travel",
@@ -1025,7 +1033,7 @@ const seeds: Seed[] = [
     appOpenDate: "2026-03-09",
     programStartDate: "2027-03-05",
     programEndDate: "2027-03-07",
-},
+  },
   {
     title: "Forum for Young Canadians",
     org: "Foundation for the Study of Processes of Government in Canada",
@@ -1046,7 +1054,7 @@ const seeds: Seed[] = [
     url: "https://forum.ca/forum-for-young-canadians-national-summit/",
     programStartDate: "2027-02-07",
     programEndDate: "2027-02-12",
-},
+  },
   {
     title: "Encounters with Canada",
     org: "Historica Canada",
@@ -1793,7 +1801,7 @@ const seeds: Seed[] = [
     programStartDate: "2026-10-21",
     appOpenDate: "2026-08-18",
     programEndDate: "2026-12-02",
-},
+  },
   {
     title: "Kitchener Parks Youth Engagement Committee",
     org: "City of Kitchener",
@@ -1933,7 +1941,7 @@ const seeds: Seed[] = [
     appOpenDate: "2026-08-10",
     programStartDate: "2026-09-28",
     programEndDate: "2026-12-04",
-},
+  },
   {
     title: "DMZ Basecamp",
     org: "DMZ, Toronto Metropolitan University",
@@ -2031,7 +2039,7 @@ const seeds: Seed[] = [
     url: "https://globalscholars.yale.edu/",
     appOpenDate: "2026-09-16",
     programStartDate: "2027-06-20",
-},
+  },
   {
     title: "Ocean Wise Youth to Sea",
     org: "Ocean Wise",
@@ -3259,7 +3267,8 @@ const seeds: Seed[] = [
       "The Niche $40,000 No Essay Scholarship is open to high school seniors and is awarded monthly.",
     description:
       "The Niche $40,000 No Essay Scholarship is open to high school seniors and is awarded monthly.",
-    eligibility: "High school/college students and those planning to enroll; see official rules (typically U.S. residents/citizens only)",
+    eligibility:
+      "High school/college students and those planning to enroll; see official rules (typically U.S. residents/citizens only)",
   },
   {
     id: "nitrd-stem-portal-nitrd-gov",
@@ -3305,8 +3314,7 @@ const seeds: Seed[] = [
       "NSHSS provides over $2.5 million in annual scholarships to students in various fields, including academics, entrepreneurship, leadership, literature, medicine, music, STEM, sustainability, and visual arts.",
     description:
       "NSHSS provides over $2.5 million in annual scholarships to students in various fields, including academics, entrepreneurship, leadership, literature, medicine, music, STEM, sustainability, and visual arts.",
-    eligibility:
-      "Varies by scholarship; some are NSHSS members-only",
+    eligibility: "Varies by scholarship; some are NSHSS members-only",
   },
   {
     id: "nyc-srmc-student-programs-studentresearchnyc-org",
@@ -3590,7 +3598,8 @@ const seeds: Seed[] = [
       "In-person residential (5 weeks). The program attracts rising senior high school students from around the world and focuses on not just learning science, but doing it. Students will conduct research, learn from and teach other students.",
     description:
       "Hybrid (online and in-person). The program attracts rising senior high school students from around the world and focuses on not just learning science, but doing it. Students will conduct research, learn from and teach other students.",
-    eligibility: "High-school juniors graduating in 2028 (rising seniors); international students accepted",
+    eligibility:
+      "High-school juniors graduating in 2028 (rising seniors); international students accepted",
   },
   {
     id: "top-scholarships-for-high-school-juniors",
@@ -3755,7 +3764,8 @@ const seeds: Seed[] = [
       "The Young Scientist Program is an 8-week paid summer research internship opportunity for motivated rising high school seniors from the St. Louis area who are interested in biomedical science.",
     description:
       "The Young Scientist Program is an 8-week paid summer research internship opportunity for motivated rising high school seniors from the St. Louis area who are interested in biomedical science.",
-    eligibility: "Juniors at Greater St. Louis (MO/IL) high schools who live in the St. Louis metro area",
+    eligibility:
+      "Juniors at Greater St. Louis (MO/IL) high schools who live in the St. Louis metro area",
   },
 
   // --- added by the data engine; review the diff before merging ---
@@ -3776,9 +3786,12 @@ const seeds: Seed[] = [
     confidence: "confirmed",
     url: "https://wwsef.ca/",
     sourceUrl: "https://wwsef.ca/",
-    summary: "Science fair pathway. A science-fair pathway where students design an independent project, present their findings, and may advance to national-level competition.",
-    description: "Science fair pathway. A science-fair pathway where students design an independent project, present their findings, and may advance to national-level competition.",
-    eligibility: "Students; regional fair rules vary Students must enter through their local or regional science fair and follow project safety and ethics rules. Human, animal, or biological research may require prior approval.",
+    summary:
+      "Science fair pathway. A science-fair pathway where students design an independent project, present their findings, and may advance to national-level competition.",
+    description:
+      "Science fair pathway. A science-fair pathway where students design an independent project, present their findings, and may advance to national-level competition.",
+    eligibility:
+      "Students; regional fair rules vary Students must enter through their local or regional science fair and follow project safety and ethics rules. Human, animal, or biological research may require prior approval.",
   },
   {
     id: "hosa-canada-spring-leadership-conference-hosacanada",
@@ -3797,8 +3810,10 @@ const seeds: Seed[] = [
     confidence: "confirmed",
     url: "https://hosacanada.org/home/2026-2027-registration/students/",
     sourceUrl: "https://hosacanada.org/home/2026-2027-registration/students",
-    summary: "In-person competitive conference (Metro Toronto Convention Centre) or Virtual Spring Leadership Conference (vSLC). HOSA Canada enables secondary and post-secondary students to become leaders in the healthcare industry through competitive events, leadership workshops, and healthcare-focused skill development.",
-    description: "In-person competitive conference (Metro Toronto Convention Centre) or Virtual Spring Leadership Conference (vSLC). HOSA Canada enables secondary and post-secondary students to become leaders in the healthcare industry through competitive events, leadership workshops, and healthcare-focused skill development.",
+    summary:
+      "In-person competitive conference (Metro Toronto Convention Centre) or Virtual Spring Leadership Conference (vSLC). HOSA Canada enables secondary and post-secondary students to become leaders in the healthcare industry through competitive events, leadership workshops, and healthcare-focused skill development.",
+    description:
+      "In-person competitive conference (Metro Toronto Convention Centre) or Virtual Spring Leadership Conference (vSLC). HOSA Canada enables secondary and post-secondary students to become leaders in the healthcare industry through competitive events, leadership workshops, and healthcare-focused skill development.",
     eligibility: "Secondary (high school) and post-secondary students",
   },
 ];
