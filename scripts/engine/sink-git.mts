@@ -75,6 +75,7 @@ export async function applyAuto(proposals: Proposal[]): Promise<ApplyReport> {
     for (const change of p.changes) {
       if (!change.autoApplicable) continue;
       const field = toProgramField(change.field);
+      if (isDowngrade(field, change.before, change.after)) continue;
       // Re-scan each time: every successful edit shifts the offsets after it.
       const span = scanEntries(src).find((s) => s.id === p.matchedProgramId);
       if (!span) {
@@ -142,6 +143,41 @@ export interface DecisionsFile {
   decisions: Decision[];
 }
 
+/** Unwrap an extracted `{ value, quote }` date to its value; pass anything else through. */
+function plain(v: unknown): unknown {
+  if (v && typeof v === "object" && !Array.isArray(v) && "value" in v) {
+    return (v as { value: unknown }).value ?? null;
+  }
+  return v === undefined ? null : v;
+}
+
+const PLACEHOLDER = /^(unknown|n\/?a|tbd|none|-)?$/i;
+const isBlank = (v: unknown) =>
+  v === null || v === undefined || (typeof v === "string" && PLACEHOLDER.test(v.trim()));
+
+/**
+ * A change that would make a listing worse rather than more current: blanking a
+ * known value, or replacing a curated organisation name with a bare domain.
+ * Sheet rows often carry "Unknown" or the link's host in those columns. The
+ * reviewer approves a proposal for its dates; the placeholders should not ride
+ * along and overwrite hand-written copy. An explicit reviewer edit bypasses this.
+ */
+function isDowngrade(field: string, before: unknown, after: unknown): boolean {
+  // A listing's title is its identity: the URL, saved lists and shortlists are
+  // all keyed by the slug of it. Re-wording it is never a "more current" fact.
+  if (field === "title") return !isBlank(before);
+  if (isBlank(before)) return false;
+  if (isBlank(after)) return true;
+  if (
+    field === "org" &&
+    typeof after === "string" &&
+    /^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(after.trim())
+  ) {
+    return true;
+  }
+  return false;
+}
+
 /**
  * Apply what a human approved. Runs as its own job so the review step and the
  * crawl never race, and so an approval is always a separate, reviewable commit.
@@ -179,15 +215,48 @@ export async function applyDecisions(): Promise<{
       Record<string, unknown>;
 
     if (item.matchedProgramId) {
+      const edits = d.edits ?? {};
+      // Reviewer edits are keyed by the engine's field names (app_deadline),
+      // so look them up under both spellings. An edit always wins.
+      const editFor = (engineField: string): { hit: boolean; value: unknown } => {
+        const programField = toProgramField(engineField);
+        if (engineField in edits) return { hit: true, value: edits[engineField] };
+        if (programField in edits) return { hit: true, value: edits[programField] };
+        return { hit: false, value: undefined };
+      };
+      const writes: { field: string; value: unknown }[] = [];
+      const covered = new Set<string>();
       for (const change of item.changes) {
         const field = toProgramField(change.field);
+        covered.add(field);
+        const edit = editFor(change.field);
+        if (edit.hit) {
+          writes.push({ field, value: plain(edit.value) });
+        } else if (!isDowngrade(field, change.before, plain(change.after))) {
+          writes.push({ field, value: plain(change.after) });
+        }
+      }
+      // Fields the reviewer corrected that the extraction never proposed.
+      for (const [key, value] of Object.entries(edits)) {
+        const field = toProgramField(key);
+        if (!covered.has(field)) writes.push({ field, value: plain(value) });
+      }
+      // A reviewer who deliberately renames a listing must not change its id:
+      // pin the current id first so links and saved lists keep working.
+      if (writes.some((w) => w.field === "title")) {
         const span = scanEntries(src).find((s) => s.id === item.matchedProgramId);
-        if (!span) continue;
-        const value = d.edits && field in d.edits ? d.edits[field] : change.after;
-        const next = replaceField(src, span, field, value as unknown);
+        if (span && !/\bid:\s*["'`]/.test(span.source)) {
+          const next = replaceField(src, span, "id", item.matchedProgramId);
+          if (next) src = next;
+        }
+      }
+      for (const w of writes) {
+        const span = scanEntries(src).find((s) => s.id === item.matchedProgramId);
+        if (!span) break;
+        const next = replaceField(src, span, w.field, w.value);
         if (next) src = next;
       }
-      updated.push(item.matchedProgramId);
+      if (!updated.includes(item.matchedProgramId)) updated.push(item.matchedProgramId);
       continue;
     }
 
@@ -204,10 +273,12 @@ export async function applyDecisions(): Promise<{
         cost: e.cost_note ?? e.cost_type,
         format: e.location_type,
         location: e.location_note ?? "",
-        deadline: e.app_deadline?.value ?? null,
-        appOpenDate: e.app_open_date?.value ?? null,
-        programStartDate: e.program_start_date?.value ?? null,
-        programEndDate: e.program_end_date?.value ?? null,
+        // A reviewer edit replaces the extracted { value, quote } with a bare
+        // string, so read either shape.
+        deadline: plain(e.app_deadline),
+        appOpenDate: plain(e.app_open_date),
+        programStartDate: plain(e.program_start_date),
+        programEndDate: plain(e.program_end_date),
         confidence: item.confidence.siteConfidence,
         url: e.application_link ?? item.url,
         sourceUrl: item.url,
