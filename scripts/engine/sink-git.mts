@@ -162,7 +162,7 @@ const isBlank = (v: unknown) =>
  * reviewer approves a proposal for its dates; the placeholders should not ride
  * along and overwrite hand-written copy. An explicit reviewer edit bypasses this.
  */
-function isDowngrade(field: string, before: unknown, after: unknown): boolean {
+export function isDowngrade(field: string, before: unknown, after: unknown): boolean {
   // A listing's title is its identity: the URL, saved lists and shortlists are
   // all keyed by the slug of it. Re-wording it is never a "more current" fact.
   if (field === "title") return !isBlank(before);
@@ -296,8 +296,16 @@ export async function applyDecisions(): Promise<{
   if (newEntries.length) src = appendEntries(src, newEntries);
   if (added.length || updated.length) await writeCatalogSource(src);
 
-  // Consume the decisions so the next run does not replay them.
+  // Consume the decisions so the next run does not replay them, and take the
+  // decided items out of the queue so /admin/review does not show them again.
   await writeFile(DECISIONS_PATH, JSON.stringify({ decisions: [] }, null, 2) + "\n");
+  const decided = new Set(decisions.map((d) => d.proposalId));
+  if (decided.size) {
+    await writeQueue(
+      queue.items.filter((i) => !decided.has(i.id)),
+      queue.runId,
+    );
+  }
   return { added, updated, rejected };
 }
 
