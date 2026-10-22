@@ -2031,7 +2031,7 @@ const seeds: Seed[] = [
       "Two weeks of seminars, lectures and collaborative projects on a chosen global-topics track, alongside students from around the world. Yale runs an early-action round in the autumn (Oct 15) and a regular round in January (Jan 6); the date shown is the next round still open.",
     eligibility:
       "High-school sophomores/juniors or international equivalents; age rules apply Must be age 16-18 by the program dates, be a current high-school sophomore or junior or international equivalent, and be attending high school during application. English proficiency is required.",
-    deadline: "2026-10-15",
+    deadline: "2027-01-06",
     confidence: "estimated",
     cost: "Paid, with substantial need-based financial aid",
     format: "Residential academic program",
@@ -3815,6 +3815,33 @@ const seeds: Seed[] = [
     description:
       "In-person competitive conference (Metro Toronto Convention Centre) or Virtual Spring Leadership Conference (vSLC). HOSA Canada enables secondary and post-secondary students to become leaders in the healthcare industry through competitive events, leadership workshops, and healthcare-focused skill development.",
     eligibility: "Secondary (high school) and post-secondary students",
+  },
+
+  // --- added by the data engine; review the diff before merging ---
+  {
+    id: "honeywell-aerospace-ascend-academy-at-space",
+    title: "Honeywell Aerospace Ascend Academy at Space Camp",
+    org: "honeywellaerospace.com",
+    category: "STEM",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.honeywellaerospace.com/us/en/company/newsroom/2026/09/honeywell-aerospace-launches-ascend-academy",
+    sourceUrl:
+      "https://honeywellaerospace.com/us/en/company/newsroom/2026/09/honeywell-aerospace-launches-ascend-academy",
+    summary:
+      "In-person. A week-long immersive STEM education and leadership development program at Space Camp, where high school students practice incident command scenarios and simulated space missions in a space shuttle simulator. It continues the Honeywell Leadership Challenge Academy, which ran at Space Camp for 15 years.",
+    description:
+      "In-person. A week-long immersive STEM education and leadership development program at Space Camp, where high school students practice incident command scenarios and simulated space missions in a space shuttle simulator. It continues the Honeywell Leadership Challenge Academy, which ran at Space Camp for 15 years.",
+    eligibility:
+      "High school students ages 16-18. The 2026 cohort was drawn from applications by children of Honeywell Aerospace employees and members of Honeywell's non-profit STEM partners (e.g., Boys and Girls Clubs of Greater Scottsdale, Operation Breakthrough, Gentlemen's Quest of Tampa). Honeywell does not state whether students outside those groups can apply.",
   },
 ];
 
