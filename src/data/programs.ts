@@ -123,16 +123,18 @@ const seeds: Seed[] = [
     category: "STEM",
     country: "CA",
     grades: [9, 10, 11, 12],
-    summary: "National programming contest and the entry point to Canada's IOI team.",
+    summary:
+      "Programming contest. The Canadian Computing Competition (CCC) is a fun challenge for participants with an interest in programming. Designed to be both accessible to participants with some programming experience and to challenge the keenest programmers at the secondary school level, the CCC helps participants build confidence and grow their ability to understand, design, and implement algorithms.",
     description:
       "A written-at-school programming contest with Junior and Senior divisions. Top scorers are invited to the Canadian Computing Olympiad and eventually the International Olympiad in Informatics.",
-    eligibility: "Any secondary school student. Your school must register you as a contest centre.",
+    eligibility:
+      "Participants have the option to compete at either the Junior or Senior level. Junior level - any participant with beginner to intermediate programming skills. Senior level - any participant with intermediate to advanced programming skills. — Must write under an approved school supervisor and use a permitted programming language. Senior results can lead to further selection.",
     deadline: "2027-01-20",
     confidence: "estimated",
     cost: "Small school-set registration fee",
     format: "Written at your school",
     location: "Ontario-wide",
-    url: "https://www.cemc.uwaterloo.ca/contests/computing.html",
+    url: "https://cemc.uwaterloo.ca/contests/ccc",
   },
   {
     title: "Euclid Mathematics Contest",
@@ -609,11 +611,11 @@ const seeds: Seed[] = [
     country: "CA",
     grades: [10, 11, 12],
     summary:
-      "Business academy + case competition. A business-enrichment academy offering workshops, mentorship, campus exposure, and a case competition for students from equity-deserving communities.",
+      "Business academy + case competition. The Schulich Business Excellence Academy is a free summer business education and mentorship program supporting Grade 10, 11, and 12 high school students across Ontario. The program targets all students from equity-deserving groups including Black, Indigenous, BIPOC, 2SLGBTQIA+ individuals, and people with disabilities.",
     description:
       "Students rotate through marketing, finance, accounting and strategy sessions and build a final team pitch.",
     eligibility:
-      "Ontario Grades 10-12; equity-deserving groups Applicants must meet the grade requirement and may need strong academics, extracurricular involvement, and written application responses. Travel to York University may be required.",
+      "Grade 10, 11, and 12 high school students across Ontario, from equity-deserving groups including Black, Indigenous, BIPOC, 2SLGBTQIA+ individuals, and people with disabilities. Applicants must meet the grade requirement and may need strong academics, extracurricular involvement, and written application responses. Travel to York University may be required.",
     deadline: "2027-04-15",
     confidence: "estimated",
     cost: "Program fee; some subsidised seats",
@@ -1968,11 +1970,10 @@ const seeds: Seed[] = [
     country: "CA",
     grades: [9, 10, 11, 12],
     summary:
-      "Teams run a simulated company, setting price, production, marketing and investment each round.",
+      "Business simulation competition. Through an interactive business simulation, youth manage limited resources across multiple quarters to make real-world business decisions related to budgeting, production, research and development, marketing, and corporate social responsibility.",
     description:
       "A business simulation where teams compete on the results of their own decisions. Regional formats and deadlines vary — ask JA Central Ontario whether a local competition is scheduled for this year.",
-    eligibility:
-      "High-school students; local JA availability varies. May require school registration, a teacher contact and team participation.",
+    eligibility: "Grades 8-12",
     deadline: null,
     confidence: "unposted",
     cost: "Not listed — ask JA Central Ontario",
@@ -2063,15 +2064,15 @@ const seeds: Seed[] = [
   {
     title: "Ontario Public Service Summer Employment",
     org: "Government of Ontario",
-    category: "Leadership",
+    category: "Law & Civics",
     country: "CA",
     grades: [10, 11, 12],
     summary:
-      "Paid summer jobs across Ontario ministries — policy, parks, science, communications and more.",
+      "Paid summer employment. Paid summer jobs across Ontario ministries in administration, policy, parks, science, communications, and other fields.",
     description:
       "Hundreds of paid summer positions across provincial ministries. Postings usually appear in January and close on their own schedules through February and March, so there is no single deadline. Apply to several job types and locations rather than one posting.",
     eligibility:
-      "Students generally aged 15–24, legally entitled to work in Canada, meeting each posting's student-status, location and skill requirements.",
+      "Students generally ages 15-24, or up to 29 with a disability — Must be legally entitled to work in Canada and meet each posting’s age, student-status, location, and skill requirements.",
     deadline: null,
     confidence: "unposted",
     cost: "Paid",
@@ -2247,11 +2248,11 @@ const seeds: Seed[] = [
     country: "US",
     grades: [10, 11],
     summary:
-      "Advanced mathematics camp. A highly selective mathematics program where students study advanced topics, write proofs, solve challenging problems, and work with university instructors.",
+      "Advanced mathematics camp. SUMaC invites students who seek to be challenged in mathematics beyond high school subject matter and who would enjoy intensive, in-depth mathematical pursuits to apply.",
     description:
       "Students study advanced topics such as abstract algebra and number theory, write proofs and work with university instructors. The application itself includes proof-based math questions, so preparation needs to start months ahead. The 2026 round closed 2 February, which is the date carried forward here.",
     eligibility:
-      "Grades 10-11 at application; age 15+ during program Applicants worldwide may apply, but advanced mathematical maturity is required. Application includes proof-based math questions, transcript, recommendation, and English proficiency where applicable.",
+      "Students in grades 10 and 11 at the time of application submission and that are at least 15 years old during the program are eligible to apply. Participants who will be 18 years or older during the program are not eligible for SUMaC residential but are eligible for SUMaC online. Applicants worldwide may apply, but advanced mathematical maturity is required. Application includes proof-based math questions, transcript, recommendation, and English proficiency where applicable.",
     deadline: "2027-02-02",
     confidence: "estimated",
     cost: "Paid, with financial aid available — verify current fees",
@@ -2266,11 +2267,11 @@ const seeds: Seed[] = [
     country: "CA",
     grades: [9, 10, 11, 12],
     summary:
-      "A week of university-style activities across science, technology, engineering and mathematics.",
+      "In-person day program. Our engineering camps offer campers the chance to explore a wide range of engineering themes through hands-on, engaging projects designed for curious creators.",
     description:
       "Hands-on university-style sessions spanning the STEM disciplines, run through McMaster Engineering outreach. Registration is generally first-come, first-served and runs until each week fills.",
     eligibility:
-      "Students entering Grades 9–12. A program fee applies and daily travel to Hamilton is required.",
+      "Students entering Grade 2 – 8 as of September 2026 should enroll in Engineering Camps: Fireball AND/OR Flare. Students entering Grade 9, 10, 11 or 12 as of September 2026 should enrol in Engineering Immersive Experience AND/OR Engineering Design Studio.",
     deadline: null,
     confidence: "unposted",
     cost: "Program fee applies",
@@ -2323,11 +2324,12 @@ const seeds: Seed[] = [
     category: "STEM",
     country: "CA",
     grades: [9, 10, 11, 12],
-    summary: "Free two-week coding camp in web development, mobile apps or data science.",
+    summary:
+      "Virtual or in-person coding camp. Kode With Klossy provides FREE technical skill-building, career development, and community support for young women and gender-expansive people.",
     description:
       "A free camp teaching a full coding track in a supportive community, offered both virtually and at in-person locations. Places are competitive — apply early and select both virtual and nearby in-person preferences where the form allows it.",
     eligibility:
-      "Typically ages 13–18. Location and age eligibility vary by camp, and full attendance is required.",
+      "No prior experience is required for our FREE onboarding programs that serve scholars ages 13-18.",
     deadline: null,
     confidence: "unposted",
     cost: "Free",
@@ -2361,11 +2363,12 @@ const seeds: Seed[] = [
     category: "STEM",
     country: "CA",
     grades: [9, 10, 11, 12],
-    summary: "Neuroscience competition on brain anatomy, neurological disease and research.",
+    summary:
+      "Academic competition. The Canadian National Brain Bee is a neuroscience competition for high school students, grades 9 through 12. Students study brain and neuroscience research topics including memory, sleep, intelligence, emotion, perception, stress, aging, brain imaging, neurology, neurotransmitters, genetics, brain disease, and more.",
     description:
       "A knowledge competition covering neuroanatomy, neurological disorders and current research, with winners advancing from local chapters upward. Find your nearest Ontario chapter first, then work through the official study materials.",
     eligibility:
-      "High-school students; local chapter rules apply. You must qualify through a local Brain Bee, and age or prior-winner restrictions may apply.",
+      "To compete in the Canadian National, students must first compete in a regional brain bee competition in Canada.",
     deadline: null,
     confidence: "unposted",
     cost: "Free or low cost — varies by local chapter",
@@ -2380,11 +2383,11 @@ const seeds: Seed[] = [
     country: "CA",
     grades: [9, 10, 11, 12],
     summary:
-      "National problem-solving contest and a gateway to advanced Canadian math opportunities.",
+      "Math contest. The Canadian Open Mathematics Challenge (COMC) is Canada’s premier national mathematics competition open to any student with an interest in and grasp of high school math.",
     description:
       "Canada's premier national math challenge, used as a pathway into further olympiad-level opportunities and team selection. The contest is written in late autumn and registration usually closes a couple of weeks before — register through your school where possible.",
     eligibility:
-      "Students in Canada and internationally; school or individual registration options vary. A contest fee and supervised writing conditions apply, and awards or team selection can carry residency rules.",
+      "Students in Canada and internationally; school or individual registration options vary — Contest fee and supervised writing conditions apply. Awards and team selection can have residency rules.",
     deadline: "2026-10-21",
     confidence: "estimated",
     cost: "Contest fee applies",
@@ -3178,7 +3181,7 @@ const seeds: Seed[] = [
     title: "Leadership High School Program",
     org: "myneighborhoodnews.com",
     category: "Leadership",
-    country: "CA",
+    country: "US",
     grades: [9, 10, 11, 12],
     cost: "Unknown",
     format: "Unknown",
@@ -3188,15 +3191,15 @@ const seeds: Seed[] = [
     programStartDate: null,
     programEndDate: null,
     confidence: "unposted",
-    url: "https://myneighborhoodnews.com/lone-star-college-leadership-high-school-program-opens-free-2026-2027-applications-for-houston-area-students",
+    url: "https://www.lonestar.edu/leadership-highschool.htm",
     sourceUrl:
       "https://myneighborhoodnews.com/lone-star-college-leadership-high-school-program-opens-free-2026-2027-applications-for-houston-area-students",
     summary:
-      "Hybrid (monthly experiential learning sessions). The Leadership High School program is a tuition-free opportunity for public high school sophomores and juniors to build confidence, strengthen workplace skills, and connect with professionals across the Lone Star College System service area.",
+      "Leadership High School is Lone Star College's premier leadership development program for sophomore and junior students attending public high schools within the Lone Star College service area. Through hands-on leadership experiences, career exploration, and engagement with community leaders, students gain the confidence, skills, and connections needed to succeed in college, careers, and life.",
     description:
       "Hybrid (monthly experiential learning sessions). The Leadership High School program is a tuition-free opportunity for public high school sophomores and juniors to build confidence, strengthen workplace skills, and connect with professionals across the Lone Star College System service area.",
     eligibility:
-      "Public high school sophomores or juniors attending a school within the LSCS service area",
+      "Open to sophomore and junior students attending public high schools within the Lone Star College service area. Students are selected through a competitive application process that considers leadership potential, character, and motivation.",
   },
   {
     id: "lockheed-martin-space-s-high-school",
@@ -3843,6 +3846,414 @@ const seeds: Seed[] = [
       "In-person. A week-long immersive STEM education and leadership development program at Space Camp, where high school students practice incident command scenarios and simulated space missions in a space shuttle simulator. It continues the Honeywell Leadership Challenge Academy, which ran at Space Camp for 15 years.",
     eligibility:
       "High school students ages 16-18. The 2026 cohort was drawn from applications by children of Honeywell Aerospace employees and members of Honeywell's non-profit STEM partners (e.g., Boys and Girls Clubs of Greater Scottsdale, Operation Breakthrough, Gentlemen's Quest of Tampa). Honeywell does not state whether students outside those groups can apply.",
+  },
+
+  // --- added by the data engine; review the diff before merging ---
+  {
+    id: "aeop-high-school-internship-stem-research",
+    title: "AEOP High School Internship STEM Research Program",
+    org: "charlotte.edu",
+    category: "STEM",
+    country: "US",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://cstem.charlotte.edu/pk-20-students/stem-research-experience-program",
+    sourceUrl: "https://cstem.charlotte.edu/pk-20-students/stem-research-experience-program",
+    summary:
+      "In-person. The AEOP High School Internship STEM Research Program is a six to eight week summer research experience for high school rising juniors and seniors, where students are paired with a faculty mentor to engage in STEM research and showcase their findings. The program aims to spark interest, enrich, and support high school students in their pursuit of education and careers in STEM. Students will participate in multiple events, including a virtual program orientation and a Junior Science & Humanities Symposium.",
+    description:
+      "In-person. The AEOP High School Internship STEM Research Program is a six to eight week summer research experience for high school rising juniors and seniors, where students are paired with a faculty mentor to engage in STEM research and showcase their findings. The program aims to spark interest, enrich, and support high school students in their pursuit of education and careers in STEM. Students will participate in multiple events, including a virtual program orientation and a Junior Science & Humanities Symposium.",
+    eligibility:
+      "High school rising juniors and rising seniors must be permanent US residents in order to participate. Ideally, students should have taken chemistry, biology, algebra I and II.",
+  },
+  {
+    id: "after-school-stem-lab-internship-uchicago",
+    title: "After-School STEM Lab Internship",
+    org: "uchicago.edu",
+    category: "STEM",
+    country: "US",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://pme.uchicago.edu/academics/stem-education-community-outreach/k-12-student-programs/after-school-stem-lab-internship",
+    sourceUrl:
+      "https://pme.uchicago.edu/academics/stem-education-community-outreach/k-12-student-programs/after-school-stem-lab-internship",
+    summary:
+      "In-person. The University of Chicago Pritzker School of Molecular Engineering at the University of Chicago partners with After School Matters to host a summer internship opportunity for Chicago Public Schools high school students interested in participating in an authentic research experience.",
+    description:
+      "In-person. The University of Chicago Pritzker School of Molecular Engineering at the University of Chicago partners with After School Matters to host a summer internship opportunity for Chicago Public Schools high school students interested in participating in an authentic research experience.",
+    eligibility: "Attend a high school in Chicago, be 16 years old by the first day of the program",
+  },
+  {
+    id: "civic-leadership-program-learntoearndayton-org",
+    title: "Civic Leadership Program",
+    org: "learntoearndayton.org",
+    category: "Leadership",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.learntoearndayton.org/post/applications-now-open-for-civic-leadership-program-2026-2027",
+    sourceUrl:
+      "https://learntoearndayton.org/post/applications-now-open-for-civic-leadership-program-2026-2027",
+    summary:
+      "The Civic Leadership Program provides participants with intensive training in civic engagement and coalition-building, empowering local residents to advocate effectively for students and families. The program aims to cultivate a robust cohort of leaders prepared to run for local elected office or serve on influential advisory committees.",
+    description:
+      "The Civic Leadership Program provides participants with intensive training in civic engagement and coalition-building, empowering local residents to advocate effectively for students and families. The program aims to cultivate a robust cohort of leaders prepared to run for local elected office or serve on influential advisory committees.",
+    eligibility: "",
+  },
+  {
+    id: "civic-responsibility-for-young-leaders-summer",
+    title: "CIVIC RESPONSIBILITY FOR YOUNG LEADERS SUMMER PROGRAM",
+    org: "npuatlanta.org",
+    category: "Leadership",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.npuatlanta.org/dnucp1005",
+    sourceUrl: "https://npuatlanta.org/dnucp1005",
+    summary:
+      "In-person. This week-long academy for high school students explores the importance of engaging in political, economic, and social conversations and empowers them to become agents of change in their local communities. Students will participate in immersive experiences such as shadowing city leaders, identifying problems affecting their communities, and practicing public speaking.",
+    description:
+      "In-person. This week-long academy for high school students explores the importance of engaging in political, economic, and social conversations and empowers them to become agents of change in their local communities. Students will participate in immersive experiences such as shadowing city leaders, identifying problems affecting their communities, and practicing public speaking.",
+    eligibility: "Rising high school juniors and seniors in Atlanta Public Schools",
+  },
+  {
+    id: "designing-mitochondria-for-the-future-utoronto",
+    title: "Designing Mitochondria for the Future",
+    org: "utoronto.ca",
+    category: "Medicine",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://outreach.engineering.utoronto.ca/event/designing-mitochondria-for-the-future-youth-summer-program/2026-07-13/",
+    sourceUrl:
+      "https://outreach.engineering.utoronto.ca/event/designing-mitochondria-for-the-future-youth-summer-program/2026-07-13",
+    summary:
+      "In-person workshop. The Designing Mitochondria for the Future Summer Program is catered for senior high school students ( Grade 11-12 ) who are curious about research, innovation, and the future of medicine. Through hands-on activities, interactive lectures, immersive tours, and presentation of real-world applications, the students will learn that breakthroughs in medicine do not happen in isolation but through collaborative work between scientists, engineers, clinicians, and innovators.",
+    description:
+      "In-person workshop. The Designing Mitochondria for the Future Summer Program is catered for senior high school students ( Grade 11-12 ) who are curious about research, innovation, and the future of medicine. Through hands-on activities, interactive lectures, immersive tours, and presentation of real-world applications, the students will learn that breakthroughs in medicine do not happen in isolation but through collaborative work between scientists, engineers, clinicians, and innovators.",
+    eligibility: "For students in grade 11-12",
+  },
+  {
+    id: "first-robotics-competition-firstinspires-org",
+    title: "FIRST Robotics Competition",
+    org: "firstinspires.org",
+    category: "STEM",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.firstinspires.org/robotics/frc",
+    sourceUrl: "https://firstinspires.org/robotics/frc",
+    summary:
+      "Team competition. FIRST Robotics Competition Starting with a Kit of Parts, teams of high school students design, program, and build industrial-sized robots to play an action-packed game, released in January. They compete on a themed field as part of a three-team alliance in the spirit of Coopertition ® . In 360-degree learning guided by adult mentors, each FIRST ® Robotics Competition team also creates a team identity, raises funds to meet its goals, and advances appreciation for STEM in its community.",
+    description:
+      "Team competition. FIRST Robotics Competition Starting with a Kit of Parts, teams of high school students design, program, and build industrial-sized robots to play an action-packed game, released in January. They compete on a themed field as part of a three-team alliance in the spirit of Coopertition ® . In 360-degree learning guided by adult mentors, each FIRST ® Robotics Competition team also creates a team identity, raises funds to meet its goals, and advances appreciation for STEM in its community.",
+    eligibility:
+      "High-school students on a registered FIRST team — Must join or create a registered team. Significant time commitment, adult mentors, workspace, fundraising, and travel may be required.",
+  },
+  {
+    id: "gatorlabs-precollege-scholars-virtual-ufl-edu",
+    title: "GatorLabs Precollege Scholars (Virtual)",
+    org: "ufl.edu",
+    category: "STEM",
+    country: "US",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.cpet.ufl.edu/students/summer-programs",
+    sourceUrl: "https://cpet.ufl.edu/students/summer-programs",
+    summary:
+      "Virtual. A virtual program offered by the University of Florida, allowing students to engage in hands-on activities and projects.",
+    description:
+      "Virtual. A virtual program offered by the University of Florida, allowing students to engage in hands-on activities and projects.",
+    eligibility: "",
+  },
+  {
+    id: "google-summer-program-hphsnyc-org",
+    title: "Google Summer Program",
+    org: "hphsnyc.org",
+    category: "STEM",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.hphsnyc.org/apps/news/article/438122",
+    sourceUrl: "https://hphsnyc.org/apps/news/article/438122",
+    summary:
+      "In-person. A three-week introduction to computer science for graduating high school seniors with a passion for technology, especially students from historically underrepresented groups in the field.",
+    description:
+      "In-person. A three-week introduction to computer science for graduating high school seniors with a passion for technology, especially students from historically underrepresented groups in the field.",
+    eligibility:
+      "Graduating HS seniors, NYC HS Students, 9-11th Grade, 10th & 11th Grade Girls, 9th grade girls, HS Students, 16-21",
+  },
+  {
+    id: "hands-on-atlanta-civic-leadership-program",
+    title: "Hands On Atlanta Civic Leadership Program",
+    org: "handsonatlanta.org",
+    category: "Leadership",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.handsonatlanta.org/civic-leadership",
+    sourceUrl: "https://handsonatlanta.org/civic-leadership",
+    summary:
+      "In-person. The Hands On Atlanta Civic Leadership Program is a leadership development initiative that cultivates the next generation of changemakers in metro Atlanta. Through a blend of interactive workshops, targeted trainings, and hands-on community engagement, Civic Fellows gain real-world experience while making a tangible impact.",
+    description:
+      "In-person. The Hands On Atlanta Civic Leadership Program is a leadership development initiative that cultivates the next generation of changemakers in metro Atlanta. Through a blend of interactive workshops, targeted trainings, and hands-on community engagement, Civic Fellows gain real-world experience while making a tangible impact.",
+    eligibility:
+      "Have volunteered for at least three (3) service projects in the past year, be at least 25 years of age, pass a criminal background check, and demonstrate a passion for creating positive change in the community",
+  },
+  {
+    id: "high-school-internship-opportunities-austintexas-gov",
+    title: "High School Internship Opportunities",
+    org: "austintexas.gov",
+    category: "STEM",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.austintexas.gov/economic-development/programs/high-school-internship-opportunities",
+    sourceUrl:
+      "https://austintexas.gov/economic-development/programs/high-school-internship-opportunities",
+    summary:
+      "In-person. Youth Initiatives provides multiple curated opportunities for Austin-area High School students to be placed as interns at various locations based on their future career interests.",
+    description:
+      "In-person. Youth Initiatives provides multiple curated opportunities for Austin-area High School students to be placed as interns at various locations based on their future career interests.",
+    eligibility:
+      "Must be a resident of Austin, Texas and attend an Austin-area high school. Must be a rising sophomore, junior, senior or current senior. Must be between the ages of 15 and 18 years old at the time you apply. Must be available for the full duration of the program with no more than 3 days of absences.",
+  },
+  {
+    id: "leadership-grow-program-leadershippbc-org",
+    title: "Leadership Grow Program",
+    org: "leadershippbc.org",
+    category: "Leadership",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.leadershippbc.org/grow",
+    sourceUrl: "https://leadershippbc.org/grow",
+    summary:
+      "In-person. The Leadership Grow Program provides high school juniors with a unique opportunity to hear directly from Palm Beach County leaders and understand the critical issues facing Palm Beach County. Participants learn important leadership skills, connect with their community and strengthen their involvement in their schools and in their county.",
+    description:
+      "In-person. The Leadership Grow Program provides high school juniors with a unique opportunity to hear directly from Palm Beach County leaders and understand the critical issues facing Palm Beach County. Participants learn important leadership skills, connect with their community and strengthen their involvement in their schools and in their county.",
+    eligibility:
+      "Approximately 50-55 high school sophomores who represent the diversity of Palm Beach County’s public schools, charter schools, private schools, or homeschools are accepted and go through the program in their junior year.",
+  },
+  {
+    id: "library-and-archives-canada-youth-advisory",
+    title: "Library and Archives Canada Youth Advisory Council",
+    org: "canada.ca",
+    category: "Law & Civics",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.canada.ca/en/library-archives/corporate/about-us/partners/youth-advisory-council.html",
+    sourceUrl:
+      "https://canada.ca/en/library-archives/corporate/about-us/partners/youth-advisory-council.html",
+    summary:
+      "Paid national advisory council. Members advise a federal institution on programs, digital access, collections, and youth engagement through monthly virtual meetings.",
+    description:
+      "Paid national advisory council. Members advise a federal institution on programs, digital access, collections, and youth engagement through monthly virtual meetings.",
+    eligibility:
+      "Ages 16-25 — Must be a Canadian citizen or permanent resident, fluent in English or French, and available for the full term.",
+  },
+  {
+    id: "nyc-summer-academy-nytedu-com",
+    title: "NYC Summer Academy",
+    org: "nytedu.com",
+    category: "Law & Civics",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://nytedu.com/pre-college/summer-academy/nyc",
+    sourceUrl: "https://nytedu.com/pre-college/summer-academy/nyc",
+    summary:
+      "Residential. The NYC Summer Academy is a pre-college program that empowers students with their next decision in life, whether they choose to apply for college or start their careers straight from high school. Students will investigate the forces shaping fields such as media, culture, sports, fashion, business, and law with the guidance of seasoned journalists, editors, and media professionals.",
+    description:
+      "Residential. The NYC Summer Academy is a pre-college program that empowers students with their next decision in life, whether they choose to apply for college or start their careers straight from high school. Students will investigate the forces shaping fields such as media, culture, sports, fashion, business, and law with the guidance of seasoned journalists, editors, and media professionals.",
+    eligibility:
+      "Rising high school students (grades 10-12) and graduating seniors who are 15-18 years old by the first day of the program.",
+  },
+  {
+    id: "ontario-summer-company-ontario-ca",
+    title: "Ontario Summer Company",
+    org: "ontario.ca",
+    category: "Business",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.ontario.ca/page/start-summer-company-students",
+    sourceUrl: "https://ontario.ca/page/start-summer-company-students",
+    summary:
+      "Entrepreneurship grant/program. Through a program called Summer Company , you can get start-up money to kick-off a new summer business advice and mentorship from local business leaders to help get the business up and running. Learning how to run your own student business is one of the best summer jobs you can have.",
+    description:
+      "Entrepreneurship grant/program. Through a program called Summer Company , you can get start-up money to kick-off a new summer business advice and mentorship from local business leaders to help get the business up and running. Learning how to run your own student business is one of the best summer jobs you can have.",
+    eligibility:
+      "You could be eligible, if you: go to high school, college or university live in Ontario are a Canadian citizen or permanent resident are between 15-29 years old (if under 18 : a parent or guardian must sign the agreement for the applicant) are not already running a business are not working at another job or going to school for more than 12 hours a week during the program are returning to school after the program ends",
+  },
+  {
+    id: "penn-sas-high-school-summer-programs",
+    title: "Penn SAS High School Summer Programs",
+    org: "upenn.edu",
+    category: "STEM",
+    country: "US",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://hs.sas.upenn.edu/summer-programs",
+    sourceUrl: "https://hs.sas.upenn.edu/summer-programs",
+    summary:
+      "The program offers various summer programs for high school students, including residential and online academies, seminars, and a pre-college residential program. Students can engage in exploratory research, take undergraduate courses, or participate in online seminars.",
+    description:
+      "The program offers various summer programs for high school students, including residential and online academies, seminars, and a pre-college residential program. Students can engage in exploratory research, take undergraduate courses, or participate in online seminars.",
+    eligibility: "Current 9th-11th grade students; International students welcome",
+  },
+  {
+    id: "prime-minister-s-youth-council-canada",
+    title: "Prime Minister’s Youth Council",
+    org: "canada.ca",
+    category: "Law & Civics",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.canada.ca/en/campaign/prime-ministers-youth-council.html",
+    sourceUrl: "https://canada.ca/en/campaign/prime-ministers-youth-council.html",
+    summary:
+      "National advisory council. A national council that provides youth perspectives to the federal government on issues affecting Canada.",
+    description:
+      "National advisory council. A national council that provides youth perspectives to the federal government on issues affecting Canada.",
+    eligibility:
+      "Typically ages 16-24 — Canadian residency/status requirements apply. Selection emphasizes regional and demographic representation; video interview may be required.",
+  },
+  {
+    id: "s2s-stem-internships-students2science-org",
+    title: "S2S STEM Internships",
+    org: "students2science.org",
+    category: "STEM",
+    country: "CA",
+    grades: [9, 10, 11, 12],
+    cost: "Unknown",
+    format: "Unknown",
+    location: "",
+    deadline: null,
+    appOpenDate: null,
+    programStartDate: null,
+    programEndDate: null,
+    confidence: "unposted",
+    url: "https://www.students2science.org/internships",
+    sourceUrl: "https://students2science.org/internships",
+    summary:
+      "Virtual. The S2S project-based internship program provides a mentored internship opportunity and career readiness experience to students interested in learning about STEM (Science, Technology, Engineering and Mathematics).",
+    description:
+      "Virtual. The S2S project-based internship program provides a mentored internship opportunity and career readiness experience to students interested in learning about STEM (Science, Technology, Engineering and Mathematics).",
+    eligibility: "",
   },
 ];
 
