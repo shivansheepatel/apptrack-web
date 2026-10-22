@@ -1,3 +1,49 @@
 {
-  "decisions": []
+  "decisions": [
+    {
+      "proposalId": "e18d4ee987253d18",
+      "action": "reject",
+      "decidedAt": "2026-10-22T21:21:18.590Z"
+    },
+    {
+      "proposalId": "dcb5b62667f98caa",
+      "action": "approve",
+      "decidedAt": "2026-10-22T21:21:20.266Z"
+    },
+    {
+      "proposalId": "322b7acc24a22773",
+      "action": "approve",
+      "decidedAt": "2026-10-22T21:21:21.626Z"
+    },
+    {
+      "proposalId": "b655a5845f8d7562",
+      "action": "approve",
+      "decidedAt": "2026-10-22T21:21:22.942Z"
+    },
+    {
+      "proposalId": "5dd3f157b2013eec",
+      "action": "approve",
+      "decidedAt": "2026-10-22T21:21:24.255Z"
+    },
+    {
+      "proposalId": "91edbccb5af26d65",
+      "action": "approve",
+      "decidedAt": "2026-10-22T21:21:25.426Z"
+    },
+    {
+      "proposalId": "2beef496c34dedc9",
+      "action": "approve",
+      "decidedAt": "2026-10-22T21:21:26.689Z"
+    },
+    {
+      "proposalId": "7401c8101cf61cdd",
+      "action": "approve",
+      "decidedAt": "2026-10-22T21:21:28.277Z"
+    },
+    {
+      "proposalId": "6851a2fbee33c832",
+      "action": "approve",
+      "decidedAt": "2026-10-22T21:21:30.045Z"
+    }
+  ]
 }
