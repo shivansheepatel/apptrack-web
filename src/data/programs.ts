@@ -94,9 +94,10 @@ const seeds: Seed[] = [
     cost: "$6,500 — need-based financial aid available for most applicants",
     format: "In person, residential",
     location: "Host campuses across Canada",
-    url: "https://www.shad.ca/shad-programs/",
+    url: "https://www.shad.ca/apply",
     programStartDate: "2027-07-04",
     programEndDate: "2027-07-30",
+    appOpenDate: "2026-09-15",
   },
   {
     title: "DEEP Summer Academy",
@@ -2161,7 +2162,7 @@ const seeds: Seed[] = [
   {
     title: "SPRINT — Summer Psychology Research Initiative",
     org: "Department of Psychology, University of Toronto",
-    category: "Medicine",
+    category: "STEM",
     country: "CA",
     grades: [10, 11, 12],
     summary:
@@ -2777,7 +2778,7 @@ const seeds: Seed[] = [
     cost: "Unknown",
     format: "Unknown",
     location: "",
-    deadline: "2026-11-30",
+    deadline: "2026-10-31",
     appOpenDate: null,
     programStartDate: null,
     programEndDate: null,
@@ -3303,7 +3304,7 @@ const seeds: Seed[] = [
     cost: "Unknown",
     format: "Unknown",
     location: "",
-    deadline: null,
+    deadline: "2026-10-27",
     appOpenDate: null,
     programStartDate: null,
     programEndDate: null,
