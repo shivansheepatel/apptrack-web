@@ -1,3 +1,24 @@
 {
-  "decisions": []
+  "decisions": [
+    {
+      "proposalId": "3c579308d496a8fd",
+      "action": "reject",
+      "decidedAt": "2026-10-22T01:24:43.215Z"
+    },
+    {
+      "proposalId": "3d836f933769121f",
+      "action": "reject",
+      "decidedAt": "2026-10-22T01:25:00.196Z"
+    },
+    {
+      "proposalId": "fc1e165ac71fd842",
+      "action": "approve",
+      "decidedAt": "2026-10-22T01:26:52.323Z"
+    },
+    {
+      "proposalId": "1f79ce80e42bf8b5",
+      "action": "approve",
+      "decidedAt": "2026-10-22T01:28:21.648Z"
+    }
+  ]
 }
