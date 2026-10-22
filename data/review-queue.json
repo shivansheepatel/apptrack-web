@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T22:58:50.484Z",
+  "generatedAt": "2026-10-22T01:42:52.914Z",
   "runId": "2026-10-21-f8ef71ed",
   "items": [
     {
@@ -53,59 +53,6 @@
         "Looks like an existing listing under a different name.",
         "Source: Master Tracker Google Sheet.",
         "Possible duplicate of \"Prosper Ontario Case Competition\" — title 100% similar, same domain."
-      ]
-    },
-    {
-      "id": "3c579308d496a8fd",
-      "fingerprint": "academy business excellence schulich|ca yorku|yorku.ca",
-      "url": "https://schulich.yorku.ca/future-students/business-excellence-academy",
-      "domain": "yorku.ca",
-      "contentHash": "eeb1b1283d8d89d8db6ef1ed610942c22a9bc594720596b26224e77fb5c9e64e",
-      "fetchedAt": "2026-10-21T22:57:49.614Z",
-      "extracted": {
-        "title": "Schulich Business Excellence Academy",
-        "organization": "yorku.ca",
-        "category": "Business",
-        "country": "CA",
-        "grade_levels": [],
-        "app_open_date": null,
-        "app_deadline": null,
-        "program_start_date": null,
-        "program_end_date": null,
-        "cost_type": "Unknown",
-        "cost_note": null,
-        "location_type": "Unknown",
-        "location_note": null,
-        "essay_prompts": [],
-        "required_documents": [],
-        "application_link": "https://schulich.yorku.ca/future-students/business-excellence-academy/",
-        "summary": "Business academy + case competition. A business-enrichment academy offering workshops, mentorship, campus exposure, and a case competition for students from equity-deserving communities.",
-        "eligibility": "Ontario Grades 10-12; equity-deserving groups Applicants must meet the grade requirement and may need strong academics, extracurricular involvement, and written application responses. Travel to York University may be required.",
-        "rolling": false,
-        "not_a_program": false,
-        "notes": [
-          "Organization guessed from the application link's domain (\"yorku.ca\") — the sheet has no organization column.",
-          "Sheet's \"Format\" column (\"Business academy + case competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
-          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
-          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
-          "Sheet's Program Date (\"Summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
-        ]
-      },
-      "confidence": {
-        "score": 70,
-        "band": "medium",
-        "siteConfidence": "unposted",
-        "signals": {
-          "humanEntered": 70
-        }
-      },
-      "matchedProgramId": "schulich-summer-business-academy",
-      "changes": [],
-      "disposition": "needs-review",
-      "reasons": [
-        "Looks like an existing listing under a different name.",
-        "Source: Master Tracker Google Sheet.",
-        "Possible duplicate of \"Schulich Summer Business Academy\" — title 100% similar, same domain."
       ]
     },
     {
@@ -224,60 +171,6 @@
       ]
     },
     {
-      "id": "3d836f933769121f",
-      "fingerprint": "stanford sumac|edu stanford|stanford.edu",
-      "url": "https://sumac.spcs.stanford.edu/sumac-admissions",
-      "domain": "stanford.edu",
-      "contentHash": "be860038596b1d9a4d26ddc99c003da7aa76e02f04ca041301e00fcb75e3fe63",
-      "fetchedAt": "2026-10-21T22:58:00.398Z",
-      "extracted": {
-        "title": "Stanford SUMaC",
-        "organization": "stanford.edu",
-        "category": "STEM",
-        "country": "US",
-        "grade_levels": [],
-        "app_open_date": null,
-        "app_deadline": null,
-        "program_start_date": null,
-        "program_end_date": null,
-        "cost_type": "Unknown",
-        "cost_note": null,
-        "location_type": "Unknown",
-        "location_note": null,
-        "essay_prompts": [],
-        "required_documents": [],
-        "application_link": "https://sumac.spcs.stanford.edu/sumac-admissions",
-        "summary": "Advanced mathematics camp. A highly selective mathematics program where students study advanced topics, write proofs, solve challenging problems, and work with university instructors.",
-        "eligibility": "Grades 10-11 at application; age 15+ during program Applicants worldwide may apply, but advanced mathematical maturity is required. Application includes proof-based math questions, transcript, recommendation, and English proficiency where applicable.",
-        "rolling": false,
-        "not_a_program": false,
-        "notes": [
-          "Organization guessed from the application link's domain (\"stanford.edu\") — the sheet has no organization column.",
-          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
-          "Sheet's \"Format\" column (\"Advanced mathematics camp\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
-          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
-          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
-          "Sheet's Program Date (\"Summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
-        ]
-      },
-      "confidence": {
-        "score": 70,
-        "band": "medium",
-        "siteConfidence": "unposted",
-        "signals": {
-          "humanEntered": 70
-        }
-      },
-      "matchedProgramId": "stanford-university-mathematics-camp-sumac",
-      "changes": [],
-      "disposition": "needs-review",
-      "reasons": [
-        "Looks like an existing listing under a different name.",
-        "Source: Master Tracker Google Sheet.",
-        "Possible duplicate of \"Stanford University Mathematics Camp (SUMaC)\" — title 100% similar, same domain."
-      ]
-    },
-    {
       "id": "b655a5845f8d7562",
       "fingerprint": "energymag internships|energymag net|energymag.net",
       "url": "https://energymag.net/internships",
@@ -330,80 +223,6 @@
         "Looks like an existing listing under a different name.",
         "Source: Master Tracker Google Sheet.",
         "Possible duplicate of \"EnergyMag Internship Directory\" — title 76% similar, same domain."
-      ]
-    },
-    {
-      "id": "fc1e165ac71fd842",
-      "fingerprint": "global scholars yale young|edu yale|yale.edu",
-      "url": "https://globalscholars.yale.edu/",
-      "domain": "yale.edu",
-      "contentHash": "e2937f74edd2baedac9f3b54c781834a4719a7555fddcddb49b921f52fb92891",
-      "fetchedAt": "2026-10-21T22:58:04.787Z",
-      "extracted": {
-        "title": "Yale Young Global Scholars",
-        "organization": "yale.edu",
-        "category": "Leadership",
-        "country": "US",
-        "grade_levels": [],
-        "app_open_date": {
-          "value": "2026-09-16",
-          "evidence": "labelled",
-          "quote": "2026-09-16"
-        },
-        "app_deadline": {
-          "value": "2027-01-06",
-          "evidence": "labelled",
-          "quote": "Early Action: 2026-10-15 11:59 p.m. ET; Regular: 2027-01-06 11:59 p.m. ET"
-        },
-        "program_start_date": {
-          "value": "2027-06-20",
-          "evidence": "labelled",
-          "quote": "Summer 2027: Session I 2027-06-20 to 07-02; II 07-04 to 07-16; III 07-18 to 07-30"
-        },
-        "program_end_date": null,
-        "cost_type": "Unknown",
-        "cost_note": null,
-        "location_type": "Unknown",
-        "location_note": null,
-        "essay_prompts": [],
-        "required_documents": [],
-        "application_link": "https://globalscholars.yale.edu/",
-        "summary": "Academic summer program. A selective residential academic program where students study global topics through university-style seminars, lectures, discussions, and collaborative projects.",
-        "eligibility": "High-school sophomores/juniors or international equivalents; age rules apply Must be age 16-18 by the program dates, be a current high-school sophomore or junior or international equivalent, and be attending high school during application. English proficiency is required.",
-        "rolling": false,
-        "not_a_program": false,
-        "notes": [
-          "Organization guessed from the application link's domain (\"yale.edu\") — the sheet has no organization column.",
-          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
-          "Sheet's \"Format\" column (\"Academic summer program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
-          "Sheet \"Status\" says \"Open\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
-          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
-          "Sheet gives one \"Program Date\"; the site tracks a separate start and end date. Used it as the start date only — add an end date on review if the program runs more than one day."
-        ]
-      },
-      "confidence": {
-        "score": 70,
-        "band": "medium",
-        "siteConfidence": "confirmed",
-        "signals": {
-          "humanEntered": 70
-        }
-      },
-      "matchedProgramId": "yale-young-global-scholars",
-      "changes": [
-        {
-          "field": "app_deadline",
-          "before": "2026-10-15",
-          "after": "2027-01-06",
-          "evidence": "n/a",
-          "autoApplicable": false
-        }
-      ],
-      "disposition": "needs-review",
-      "reasons": [
-        "Date change detected — app_deadline: 2026-10-15 → 2027-01-06. Dates never auto-publish.",
-        "Confidence 70/100.",
-        "Source: Master Tracker Google Sheet."
       ]
     },
     {
@@ -586,58 +405,6 @@
         "Looks like an existing listing under a different name.",
         "Source: Master Tracker Google Sheet.",
         "Possible duplicate of \"Duke of Edinburgh's International Award\" — title 100% similar, same domain."
-      ]
-    },
-    {
-      "id": "1f79ce80e42bf8b5",
-      "fingerprint": "academy aerospace ascend camp honeywell space|com honeywellaerospace|honeywellaerospace.com",
-      "url": "https://honeywellaerospace.com/us/en/company/newsroom/2026/09/honeywell-aerospace-launches-ascend-academy",
-      "domain": "honeywellaerospace.com",
-      "contentHash": "11f28a9b6611c87317592639c937773c826aab2b72d5d30338efdae087ad4c64",
-      "fetchedAt": "2026-10-21T22:58:30.100Z",
-      "extracted": {
-        "title": "Honeywell Aerospace Ascend Academy at Space Camp",
-        "organization": "honeywellaerospace.com",
-        "category": "STEM",
-        "country": "CA",
-        "grade_levels": [],
-        "app_open_date": null,
-        "app_deadline": null,
-        "program_start_date": null,
-        "program_end_date": null,
-        "cost_type": "Unknown",
-        "cost_note": null,
-        "location_type": "Unknown",
-        "location_note": null,
-        "essay_prompts": [],
-        "required_documents": [],
-        "application_link": "https://www.honeywellaerospace.com/us/en/company/newsroom/2026/09/honeywell-aerospace-launches-ascend-academy",
-        "summary": "In-person. A week-long immersive STEM education and leadership development program at Space Camp, where high school students practice incident command scenarios and simulated space missions in a space shuttle simulator. It continues the Honeywell Leadership Challenge Academy, which ran at Space Camp for 15 years.",
-        "eligibility": "High school students ages 16-18. The 2026 cohort was drawn from applications by children of Honeywell Aerospace employees and members of Honeywell's non-profit STEM partners (e.g., Boys and Girls Clubs of Greater Scottsdale, Operation Breakthrough, Gentlemen's Quest of Tampa). Honeywell does not state whether students outside those groups can apply.",
-        "rolling": false,
-        "not_a_program": false,
-        "notes": [
-          "Organization guessed from the application link's domain (\"honeywellaerospace.com\") — the sheet has no organization column.",
-          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
-          "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
-          "Sheet \"Status\" says \"Needs verification\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
-          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
-          "Sheet's Program Date (\"2027 TBA (2026 session ran October 4-9, 2026)\") isn't in a recognizable yyyy-mm-dd form and was left blank."
-        ]
-      },
-      "confidence": {
-        "score": 70,
-        "band": "medium",
-        "siteConfidence": "unposted",
-        "signals": {
-          "humanEntered": 70
-        }
-      },
-      "changes": [],
-      "disposition": "needs-review",
-      "reasons": [
-        "New listing (confidence 70/100, medium).",
-        "Source: Master Tracker Google Sheet."
       ]
     },
     {
