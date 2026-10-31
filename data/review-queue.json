@@ -1,14 +1,580 @@
 {
-  "generatedAt": "2026-10-22T21:55:33.222Z",
-  "runId": "2026-10-22-9a6c1b6a",
+  "generatedAt": "2026-10-31T07:53:01.787Z",
+  "runId": "2026-10-31-e7a340c9",
   "items": [
+    {
+      "id": "bf3e13b3b1360fcc",
+      "fingerprint": "civic leadership|gov house|house.gov",
+      "url": "http://khanna.house.gov/services/student-civic-leadership-program",
+      "domain": "house.gov",
+      "contentHash": "098b6db7d1224056d10060297e4da369da36158861a6cee61375f386d79766f3",
+      "fetchedAt": "2026-10-22T19:41:43.133Z",
+      "extracted": {
+        "title": "Student Civic Leadership Program",
+        "organization": "house.gov",
+        "category": "Leadership",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "http://khanna.house.gov/services/student-civic-leadership-program",
+        "summary": "The 17th District's Student Civic Leadership Program is a year-long community betterment program spearheaded and self-designed by high school juniors and seniors from CA-17. In small groups, students will choose a policy focus area and develop proposed interventions to address them, allowing them to better understand the legislative process and the issues that affect their community.",
+        "eligibility": "Participation is open to juniors and seniors. Eligible participants must reside and go to school within the 17th Congressional District.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"house.gov\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "New listing (confidence 70/100, medium).",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "e18d4ee987253d18",
+      "fingerprint": "ontario prosper|org prosperontario|prosperontario.org",
+      "url": "https://prosperontario.org/",
+      "domain": "prosperontario.org",
+      "contentHash": "6f2ddeb06104cbedf2e483e5f51803323bd18568a802107c5181b63a7eec9382",
+      "fetchedAt": "2026-10-31T07:52:02.463Z",
+      "extracted": {
+        "title": "Prosper Ontario",
+        "organization": "prosperontario.org",
+        "category": "Business",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.prosperontario.org/",
+        "summary": "Business case competition. Prosper is Canada's largest high school student organized youth business conference, providing Canadian youths an opportunity to interact with the business world and connect with other like-minded students.",
+        "eligibility": "High-school teams, usually up to 5 Typically requires a high-school team and may require a teacher advisor. Confirm team size, Ontario residency, and school affiliation for the current cycle.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"prosperontario.org\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Business case competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Spring 2027 expected\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "prosper-ontario-case-competition",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Prosper Ontario Case Competition\" — title 100% similar, same domain."
+      ]
+    },
+    {
+      "id": "3c579308d496a8fd",
+      "fingerprint": "academy business excellence schulich|ca yorku|yorku.ca",
+      "url": "https://schulich.yorku.ca/future-students/business-excellence-academy",
+      "domain": "yorku.ca",
+      "contentHash": "41e7db9e88bca437e0fb4c62ab4217c33ce13c9adf011ed370b12124f17337b4",
+      "fetchedAt": "2026-10-31T07:52:05.340Z",
+      "extracted": {
+        "title": "Schulich Business Excellence Academy",
+        "organization": "yorku.ca",
+        "category": "Business",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://schulich.yorku.ca/future-students/business-excellence-academy/",
+        "summary": "Business academy + case competition. The Schulich Business Excellence Academy is a free summer business education and mentorship program supporting Grade 10, 11, and 12 high school students across Ontario. The program targets all students from equity-deserving groups including Black, Indigenous, BIPOC, 2SLGBTQIA+ individuals, and people with disabilities.",
+        "eligibility": "Grade 10, 11, and 12 high school students across Ontario, from equity-deserving groups including Black, Indigenous, BIPOC, 2SLGBTQIA+ individuals, and people with disabilities. Applicants must meet the grade requirement and may need strong academics, extracurricular involvement, and written application responses. Travel to York University may be required.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"yorku.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Business academy + case competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "schulich-summer-business-academy",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Schulich Summer Business Academy\" — title 100% similar, same domain."
+      ]
+    },
+    {
+      "id": "dcb5b62667f98caa",
+      "fingerprint": "f ivey john leadership wood|ca uwo|uwo.ca",
+      "url": "https://ivey.uwo.ca/summerleadership",
+      "domain": "uwo.ca",
+      "contentHash": "e3d82dfc7ce1d9beaca58e3dddb88162877854cdecf3334141ad6b5f989b11e8",
+      "fetchedAt": "2026-10-31T07:52:05.754Z",
+      "extracted": {
+        "title": "Ivey John F. Wood Summer Leadership Program",
+        "organization": "uwo.ca",
+        "category": "Business",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.ivey.uwo.ca/summerleadership/",
+        "summary": "Residential leadership/business program. The John F. Wood Summer Leadership Program (SLP) is an academic experience for high school students who want to build leadership skills, explore new ideas, and experience life at Ivey Business School and Western University. Students learn through hands-on activities, case based discussions, and team challenges that help them think critically and collaborate with confidence.",
+        "eligibility": "High school students currently in Grades 9, 10, and 11 who are curious, motivated, and excited to learn about leadership, business, and innovation. Must be a current high-school student in the specified grades. Selection may consider leadership involvement, written responses, and ability to attend the full residential program.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"uwo.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Residential leadership/business program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Summer 2027 (TBA)\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "ivey-summer-leadership-program",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Ivey Summer Leadership Program\" — title 100% similar, same domain."
+      ]
+    },
+    {
+      "id": "10f6da4bf72ac88d",
+      "fingerprint": "futures justice ojen|ca ojen|ojen.ca",
+      "url": "https://ojen.ca/en/program/futures-in-justice",
+      "domain": "ojen.ca",
+      "contentHash": "760888d612e14c5cc2d1e3112023a8f5302c6bcbf60f91fe88cb5ed4230283cc",
+      "fetchedAt": "2026-10-31T07:52:07.195Z",
+      "extracted": {
+        "title": "OJEN Futures in Justice",
+        "organization": "ojen.ca",
+        "category": "Law & Civics",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://ojen.ca/en/program/futures-in-justice",
+        "summary": "Justice career program. Futures in Justice is a program that helps young people of all backgrounds \"see themselves in law\" by introducing them to legal professionals with whom they share similar experiences. The goal of these programs is to show that there is a place for everyone in the legal profession.",
+        "eligibility": "Youth who identify as women between the ages of 16 and 20 who are interested in pursuing a career in justice Ontario-focused program. Applicants may need to demonstrate interest in law or justice and commit to all scheduled sessions; some cohorts may prioritize underrepresented youth.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"ojen.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Justice career program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"2026-27\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "ojen-futures-in-justice-ojen-ca",
+      "changes": [
+        {
+          "field": "summary",
+          "before": "Justice career program. For many young people, a career in law may feel out of their reach. Futures in Justice (previously named Braiding Diversity into Justice) and other OJEN career modelling programs help young people of all backgrounds “see themselves in law” by introducing them to legal professionals with whom they share similar experiences.",
+          "after": "Justice career program. Futures in Justice is a program that helps young people of all backgrounds \"see themselves in law\" by introducing them to legal professionals with whom they share similar experiences. The goal of these programs is to show that there is a place for everyone in the legal profession.",
+          "evidence": "n/a",
+          "autoApplicable": false
+        },
+        {
+          "field": "eligibility",
+          "before": "Varies by local committee; Waterloo version historically for youth who identify as women, ages 16-20 Ontario-focused program. Applicants may need to demonstrate interest in law or justice and commit to all scheduled sessions; some cohorts may prioritize underrepresented youth.",
+          "after": "Youth who identify as women between the ages of 16 and 20 who are interested in pursuing a career in justice Ontario-focused program. Applicants may need to demonstrate interest in law or justice and commit to all scheduled sessions; some cohorts may prioritize underrepresented youth.",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
+      "reasons": [
+        "Changes needing review: summary, eligibility.",
+        "Confidence 70/100.",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "37368150ee219dee",
+      "fingerprint": "canadians forum young|ca forum|forum.ca",
+      "url": "https://forum.ca/forum-for-young-canadians-national-summit",
+      "domain": "forum.ca",
+      "contentHash": "81de18471830b1da27703a7a3cb98e566df0be0cf481767b9698309123f9f90f",
+      "fetchedAt": "2026-10-31T07:52:08.146Z",
+      "extracted": {
+        "title": "Forum for Young Canadians",
+        "organization": "forum.ca",
+        "category": "Law & Civics",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": {
+          "value": "2027-02-07",
+          "evidence": "labelled",
+          "quote": "2027-02-07 to 2027-02-12; 2027-02-28 to 2027-03-05; 2027-04-18 to 2027-04-23"
+        },
+        "program_end_date": {
+          "value": "2027-02-12",
+          "evidence": "labelled",
+          "quote": "2027-02-07 to 2027-02-12; 2027-02-28 to 2027-03-05; 2027-04-18 to 2027-04-23"
+        },
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://forum.ca/forum-for-young-canadians-national-summit/",
+        "summary": "National civic leadership summit. The Forum for Young Canadians National Summit is a chance to dive into the heart of Canadian civic engagement, meet top decision-makers, and make your voice heard on issues that matter. In February and April 2027, Ottawa will host 300 students aged 15 to 18 for an immersive, hands-on experience. You’ll learn about how decisions are made in Canada, meet Senators, Members of Parliament, and other influential leaders, and gain the tools you need to make a real difference in your community.",
+        "eligibility": "Ages 15-18 Canadian students in the eligible grade/age range. A school nomination or educator endorsement may be requested, and participants must arrange or fund travel unless support is awarded.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"forum.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"National civic leadership summit\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Open\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "forum-for-young-canadians",
+      "changes": [
+        {
+          "field": "summary",
+          "before": "National civic leadership summit. The Forum for Young Canadians National Summit is an immersive experience where students aged 15 to 18 learn about Canadian civic engagement, meet decision-makers, and gain tools to make a difference in their community.",
+          "after": "National civic leadership summit. The Forum for Young Canadians National Summit is a chance to dive into the heart of Canadian civic engagement, meet top decision-makers, and make your voice heard on issues that matter. In February and April 2027, Ottawa will host 300 students aged 15 to 18 for an immersive, hands-on experience. You’ll learn about how decisions are made in Canada, meet Senators, Members of Parliament, and other influential leaders, and gain the tools you need to make a real difference in your community.",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
+      "reasons": [
+        "Changes needing review: summary.",
+        "Confidence 70/100.",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "3d836f933769121f",
+      "fingerprint": "stanford sumac|edu stanford|stanford.edu",
+      "url": "https://sumac.spcs.stanford.edu/sumac-admissions",
+      "domain": "stanford.edu",
+      "contentHash": "6709dd07f6026eb5d2dadcca9f388d431342c73e4944117a5507b30158f8e9ce",
+      "fetchedAt": "2026-10-31T07:52:14.291Z",
+      "extracted": {
+        "title": "Stanford SUMaC",
+        "organization": "stanford.edu",
+        "category": "STEM",
+        "country": "US",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://sumac.spcs.stanford.edu/sumac-admissions",
+        "summary": "Advanced mathematics camp. SUMaC invites students who seek to be challenged in mathematics beyond high school subject matter and who would enjoy intensive, in-depth mathematical pursuits to apply.",
+        "eligibility": "Students in grades 10 and 11 at the time of application submission and that are at least 15 years old during the program are eligible to apply. Participants who will be 18 years or older during the program are not eligible for SUMaC residential but are eligible for SUMaC online. Applicants worldwide may apply, but advanced mathematical maturity is required. Application includes proof-based math questions, transcript, recommendation, and English proficiency where applicable.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"stanford.edu\") — the sheet has no organization column.",
+          "Country guessed as \"US\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"Advanced mathematics camp\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "stanford-university-mathematics-camp-sumac",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Stanford University Mathematics Camp (SUMaC)\" — title 100% similar, same domain."
+      ]
+    },
+    {
+      "id": "b655a5845f8d7562",
+      "fingerprint": "energymag internships|energymag net|energymag.net",
+      "url": "https://energymag.net/internships",
+      "domain": "energymag.net",
+      "contentHash": "cdad324d0b0d22c98a4eb42e8b404fb6e8a4e28585918a6d4c9e81a0b0b7bfb2",
+      "fetchedAt": "2026-10-31T07:52:16.641Z",
+      "extracted": {
+        "title": "EnergyMag internships",
+        "organization": "energymag.net",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://energymag.net/internships/",
+        "summary": "Internship directory. EnergyMag offers virtual internships to college and high school students who want to make the world a better place by increasing the share of renewable energy in the world, learn about the energy storage industry, and get work experience.",
+        "eligibility": "College students: GPA above 3.0; High school students: sophomores, juniors, and seniors with at least one honors science or honors English class (exceptions made in appropriate cases) and a GPA over 3.25 Requirements vary by employer. Confirm country, age, work authorization, paid/unpaid status, remote eligibility, and whether the listing accepts high-school students.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Could not confidently map the sheet's Category (\"Jobs / Remote\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
+          "Organization guessed from the application link's domain (\"energymag.net\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"Internship directory\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Needs verification\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Varies\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "energymag-internship-directory",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"EnergyMag Internship Directory\" — title 76% similar, same domain."
+      ]
+    },
+    {
+      "id": "eca04c9d1adef8bc",
+      "fingerprint": "arts exploration sciences|edu osu|osu.edu",
+      "url": "https://artsandsciences.osu.edu/future-students/arts-and-sciences-summer-exploration-program",
+      "domain": "osu.edu",
+      "contentHash": "9796ed3611739af12298d7f4c302e82175ca88ac0063235e48fb6e24f37029da",
+      "fetchedAt": "2026-10-31T07:52:20.144Z",
+      "extracted": {
+        "title": "Arts and Sciences Summer Exploration Program",
+        "organization": "osu.edu",
+        "category": "Leadership",
+        "country": "US",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://artsandsciences.osu.edu/future-students/arts-and-sciences-summer-exploration-program",
+        "summary": "In-person. The Arts and Sciences Summer Exploration Program offers one-week intensive academic enrichment courses for middle and high school students, taught by Ohio State faculty, staff, and graduate students.",
+        "eligibility": "Students entering 7th–9th grades in the fall of 2027 are eligible for middle school courses, and students entering 10th–12th grades in the fall of 2027 are eligible for high school courses.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"osu.edu\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"null\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "New listing (confidence 70/100, medium).",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "67f2509a985e7174",
+      "fingerprint": "000 40 bigfuture scholarship|com fastweb|fastweb.com",
+      "url": "https://fastweb.com/college-scholarships/articles/scholarships-for-high-school-seniors",
+      "domain": "fastweb.com",
+      "contentHash": "57c9b2f1eee72618e90149afb1ccd8bd1000fb2d30055025b8a431a3da6e3726",
+      "fetchedAt": "2026-10-31T07:52:20.848Z",
+      "extracted": {
+        "title": "BigFuture $40,000 Scholarship",
+        "organization": "fastweb.com",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.fastweb.com/college-scholarships/articles/scholarships-for-high-school-seniors",
+        "summary": "Win up to $40,000 — no essay required. BigFuture Scholarships are open to high school students who qualify by completing college and career planning steps on their BigFuture dashboard.",
+        "eligibility": "open to high school students who qualify by completing college and career planning steps on their BigFuture dashboard",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Could not confidently map the sheet's Category (\"General\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
+          "Organization guessed from the application link's domain (\"fastweb.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet \"Status\" says \"Expired\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "The application link in the sheet did not respond — check it still works."
+        ]
+      },
+      "confidence": {
+        "score": 50,
+        "band": "low",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70,
+          "applyLinkDead": -20
+        }
+      },
+      "matchedProgramId": "bigfuture-40-000-scholarship-fastweb-com",
+      "changes": [
+        {
+          "field": "application_link",
+          "before": "https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027",
+          "after": "https://www.fastweb.com/college-scholarships/articles/scholarships-for-high-school-seniors",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
+      "reasons": [
+        "Changes needing review: application_link.",
+        "Confidence 50/100.",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
     {
       "id": "ae914b67a04e2e31",
       "fingerprint": "agricultural canadian council|ca canada|canada.ca",
       "url": "https://agriculture.canada.ca/en/department/initiatives/canadian-agricultural-youth-council",
       "domain": "canada.ca",
       "contentHash": "da3dfead4fb76528e57dd4aed2c6b72d02b2e4a9c93ec0411798afbff3f066ee",
-      "fetchedAt": "2026-10-22T19:41:13.528Z",
+      "fetchedAt": "2026-10-31T07:52:21.501Z",
       "extracted": {
         "title": "Canadian Agricultural Youth Council",
         "organization": "canada.ca",
@@ -50,10 +616,7 @@
       },
       "changes": [],
       "disposition": "needs-review",
-      "reasons": [
-        "New listing (confidence 50/100, low).",
-        "Source: Master Tracker Google Sheet."
-      ]
+      "reasons": ["New listing (confidence 50/100, low).", "Source: Master Tracker Google Sheet."]
     },
     {
       "id": "ef60e8e125659173",
@@ -61,7 +624,7 @@
       "url": "https://uwaterloo.ca/chemistry/community-outreach/chemistry-high-school-exams",
       "domain": "uwaterloo.ca",
       "contentHash": "23c0c30584e43ca8c5cb44c1b37697fb50c43b29f14509639f418167fd526416",
-      "fetchedAt": "2026-10-22T19:41:13.780Z",
+      "fetchedAt": "2026-10-31T07:52:22.037Z",
       "extracted": {
         "title": "Canadian Chemistry Contest and Olympiad",
         "organization": "uwaterloo.ca",
@@ -104,9 +667,59 @@
       },
       "changes": [],
       "disposition": "needs-review",
+      "reasons": ["New listing (confidence 50/100, low).", "Source: Master Tracker Google Sheet."]
+    },
+    {
+      "id": "b010dab00415cdbd",
+      "fingerprint": "canadian competition computing|ca uwaterloo|uwaterloo.ca",
+      "url": "https://cemc.uwaterloo.ca/contests/ccc",
+      "domain": "uwaterloo.ca",
+      "contentHash": "b9fc4db637d897730c4259863c843d6fa8d9b46f41a3f227b4bd7852b2f0b4d1",
+      "fetchedAt": "2026-10-31T07:52:22.226Z",
+      "extracted": {
+        "title": "Canadian Computing Competition",
+        "organization": "uwaterloo.ca",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://cemc.uwaterloo.ca/contests/ccc",
+        "summary": "Programming contest. The Canadian Computing Competition (CCC) is a fun challenge for participants with an interest in programming. Designed to be both accessible to participants with some programming experience and to challenge the keenest programmers at the secondary school level, the CCC helps participants build confidence and grow their ability to understand, design, and implement algorithms.",
+        "eligibility": "Participants have the option to compete at either the Junior or Senior level. Junior level - any participant with beginner to intermediate programming skills. Senior level - any participant with intermediate to advanced programming skills. — Must write under an approved school supervisor and use a permitted programming language. Senior results can lead to further selection.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"uwaterloo.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Programming contest\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Annual\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"February 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "canadian-computing-competition-ccc",
+      "changes": [],
+      "disposition": "needs-review",
       "reasons": [
-        "New listing (confidence 50/100, low).",
-        "Source: Master Tracker Google Sheet."
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Canadian Computing Competition (CCC)\" — title 100% similar, same domain."
       ]
     },
     {
@@ -115,7 +728,7 @@
       "url": "https://thecha.org/resident-programs-services/unlock-your-college-potential/cha-scholarship-program",
       "domain": "thecha.org",
       "contentHash": "5a118a79379c4bf0bae02c924cf96c2bb09cb5c1d73f11a20180c2869f24d402",
-      "fetchedAt": "2026-10-22T19:41:13.999Z",
+      "fetchedAt": "2026-10-31T07:52:23.124Z",
       "extracted": {
         "title": "CHA Scholarship Program",
         "organization": "thecha.org",
@@ -159,12 +772,66 @@
       ]
     },
     {
+      "id": "fb291c37de5f441c",
+      "fingerprint": "competition cyber cybertitan defence national|ca etalentcanada|etalentcanada.ca",
+      "url": "https://etalentcanada.ca/for-educators/programs/cybertitan",
+      "domain": "etalentcanada.ca",
+      "contentHash": "bbbd9533cae7516cb6853cf489528ef625e86dfaba88acdb636dfb97c2c81fbd",
+      "fetchedAt": "2026-10-31T07:52:25.578Z",
+      "extracted": {
+        "title": "CyberTitan National Youth Cyber Defence Competition",
+        "organization": "etalentcanada.ca",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://etalentcanada.ca/for-educators/programs/cybertitan",
+        "summary": "Team competition. Equipping middle and secondary school students with critical skills for a digital-based economy. The growth in cyber attacks on Canadian companies highlights the need for more comprehensive cybersecurity training, particularly for young people.",
+        "eligibility": "You are a current educator in the middle and secondary Canadian school system",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Could not confidently map the sheet's Category (\"Cybersecurity\") to one of the site's six tracks — defaulted to \"STEM\". Please correct.",
+          "Organization guessed from the application link's domain (\"etalentcanada.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Team competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Needs verification\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Online rounds Nov 2026-Feb/Mar 2027; national finals spring 2027 (2026 finals were Mar 23-24)\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "cybertitan-national-youth-cyber-defence-challenge",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"CyberTitan National Youth Cyber Defence Challenge\" — title 82% similar, same domain."
+      ]
+    },
+    {
       "id": "1b8fee21caad65a1",
       "fingerprint": "fhgfh|com popop|popop.com",
       "url": "https://popop.com/",
       "domain": "popop.com",
       "contentHash": "8ef31a740c22fc08c77be47a3446be190185d17e1c034da521d6f54f5633357b",
-      "fetchedAt": "2026-10-22T19:41:20.167Z",
+      "fetchedAt": "2026-10-31T07:52:25.880Z",
       "extracted": {
         "title": "fhgfh",
         "organization": "popop.com",
@@ -203,8 +870,125 @@
       },
       "changes": [],
       "disposition": "needs-review",
+      "reasons": ["New listing (confidence 50/100, low).", "Source: Master Tracker Google Sheet."]
+    },
+    {
+      "id": "04f4561e0f71507e",
+      "fingerprint": "competition first robotics|firstinspires org|firstinspires.org",
+      "url": "https://firstinspires.org/robotics/frc",
+      "domain": "firstinspires.org",
+      "contentHash": "a1da2968f57affbf894822bcd88e002694a6ec097dc134a2f8ecc2f8b2d5c1ae",
+      "fetchedAt": "2026-10-31T07:52:26.198Z",
+      "extracted": {
+        "title": "FIRST Robotics Competition",
+        "organization": "firstinspires.org",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.firstinspires.org/robotics/frc",
+        "summary": "Team competition. FIRST Robotics Competition Starting with a Kit of Parts, teams of high school students design, program, and build industrial-sized robots to play an action-packed game, released in January. They compete on a themed field as part of a three-team alliance in the spirit of Coopertition. In 360-degree learning guided by adult mentors, each FIRST Robotics Competition team also creates a team identity, raises funds to meet its goals, and advances appreciation for STEM in its community.",
+        "eligibility": "Grades 9-12 Ages 14-18",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"firstinspires.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"Team competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Annual\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"January-April 2027 season\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "first-robotics-competition-firstinspires-org",
+      "changes": [
+        {
+          "field": "summary",
+          "before": "Team competition. FIRST Robotics Competition Starting with a Kit of Parts, teams of high school students design, program, and build industrial-sized robots to play an action-packed game, released in January. They compete on a themed field as part of a three-team alliance in the spirit of Coopertition ® . In 360-degree learning guided by adult mentors, each FIRST ® Robotics Competition team also creates a team identity, raises funds to meet its goals, and advances appreciation for STEM in its community.",
+          "after": "Team competition. FIRST Robotics Competition Starting with a Kit of Parts, teams of high school students design, program, and build industrial-sized robots to play an action-packed game, released in January. They compete on a themed field as part of a three-team alliance in the spirit of Coopertition. In 360-degree learning guided by adult mentors, each FIRST Robotics Competition team also creates a team identity, raises funds to meet its goals, and advances appreciation for STEM in its community.",
+          "evidence": "n/a",
+          "autoApplicable": false
+        },
+        {
+          "field": "eligibility",
+          "before": "High-school students on a registered FIRST team — Must join or create a registered team. Significant time commitment, adult mentors, workspace, fundraising, and travel may be required.",
+          "after": "Grades 9-12 Ages 14-18",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
       "reasons": [
-        "New listing (confidence 50/100, low).",
+        "Changes needing review: summary, eligibility.",
+        "Confidence 70/100.",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "e065b13c5c2cf32d",
+      "fingerprint": "auto ford philanthropy scholarship tech|collegewhale com|collegewhale.com",
+      "url": "https://collegewhale.com/high-school",
+      "domain": "collegewhale.com",
+      "contentHash": "f9e50f43d9c52adb9e8d724ee965ee770031fc08e06c61de495a8bf4e03ab3c6",
+      "fetchedAt": "2026-10-31T07:52:27.248Z",
+      "extracted": {
+        "title": "Ford Philanthropy Auto Tech Scholarship",
+        "organization": "collegewhale.com",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://collegewhale.com/high-school",
+        "summary": "null. High school is the best time to build a long-term scholarship strategy. Many awards open as early as freshman and sophomore year, and some are available well before you start applying to colleges.",
+        "eligibility": "null",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"collegewhale.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"null\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"null\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "New listing (confidence 70/100, medium).",
         "Source: Master Tracker Google Sheet."
       ]
     },
@@ -214,7 +998,7 @@
       "url": "https://girlswhocode.com/programs/summer-immersion-program",
       "domain": "girlswhocode.com",
       "contentHash": "b5403bf5b831fe290995e7b953baa3df5883fdef728ad58b68aa710e7a23564c",
-      "fetchedAt": "2026-10-22T19:41:21.108Z",
+      "fetchedAt": "2026-10-31T07:52:28.118Z",
       "extracted": {
         "title": "Girls Who Code Summer Programs",
         "organization": "girlswhocode.com",
@@ -257,8 +1041,300 @@
       },
       "changes": [],
       "disposition": "needs-review",
+      "reasons": ["New listing (confidence 50/100, low).", "Source: Master Tracker Google Sheet."]
+    },
+    {
+      "id": "d774a6b9eacb2efb",
+      "fingerprint": "google|hphsnyc org|hphsnyc.org",
+      "url": "https://hphsnyc.org/apps/news/article/438122",
+      "domain": "hphsnyc.org",
+      "contentHash": "ff0994fcef1e6c3d5503b1d7ed79ae18f5305a29de2151dc2bf9dfb61e3c5622",
+      "fetchedAt": "2026-10-31T07:52:28.572Z",
+      "extracted": {
+        "title": "Google Summer Program",
+        "organization": "hphsnyc.org",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.hphsnyc.org/apps/news/article/438122",
+        "summary": "In-person. A three-week introduction to computer science for graduating high school seniors with a passion for technology, especially students from historically underrepresented groups in the field.",
+        "eligibility": "Graduating HS seniors, NYC HS Students, HS Students, 9-11th Grade, 10th & 11th Grade Girls, 9th grade girls, 9-11th grade, HS Students, 16-21",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"hphsnyc.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet's Program Date (\"three-week program\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "google-summer-program-hphsnyc-org",
+      "changes": [
+        {
+          "field": "eligibility",
+          "before": "Graduating HS seniors, NYC HS Students, 9-11th Grade, 10th & 11th Grade Girls, 9th grade girls, HS Students, 16-21",
+          "after": "Graduating HS seniors, NYC HS Students, HS Students, 9-11th Grade, 10th & 11th Grade Girls, 9th grade girls, 9-11th grade, HS Students, 16-21",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
       "reasons": [
-        "New listing (confidence 50/100, low).",
+        "Changes needing review: eligibility.",
+        "Confidence 70/100.",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "a6e0d8137d4d9885",
+      "fingerprint": "atlanta civic hands leadership|handsonatlanta org|handsonatlanta.org",
+      "url": "https://handsonatlanta.org/civic-leadership",
+      "domain": "handsonatlanta.org",
+      "contentHash": "7471f68129404a77ce70a169ee462c654b7b224d0e0adb697014748a1ff0a449",
+      "fetchedAt": "2026-10-31T07:52:28.965Z",
+      "extracted": {
+        "title": "Hands On Atlanta Civic Leadership Program",
+        "organization": "handsonatlanta.org",
+        "category": "Leadership",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.handsonatlanta.org/civic-leadership",
+        "summary": "In-person. The Hands On Atlanta Civic Leadership Program (CLP), powered by Constellation, is a dynamic leadership development initiative designed to cultivate the next generation of changemakers in metro Atlanta.",
+        "eligibility": "Have volunteered for at least three (3) service projects in the past year (Hands On Atlanta or other volunteer service), Be at least 25 years of age, Pass a criminal background check, Demonstrate a passion for creating positive change in the community, Confidently lead and engage volunteers from diverse backgrounds",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"handsonatlanta.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet's Program Date (\"2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "hands-on-atlanta-civic-leadership-program",
+      "changes": [
+        {
+          "field": "summary",
+          "before": "In-person. The Hands On Atlanta Civic Leadership Program is a leadership development initiative that cultivates the next generation of changemakers in metro Atlanta. Through a blend of interactive workshops, targeted trainings, and hands-on community engagement, Civic Fellows gain real-world experience while making a tangible impact.",
+          "after": "In-person. The Hands On Atlanta Civic Leadership Program (CLP), powered by Constellation, is a dynamic leadership development initiative designed to cultivate the next generation of changemakers in metro Atlanta.",
+          "evidence": "n/a",
+          "autoApplicable": false
+        },
+        {
+          "field": "eligibility",
+          "before": "Have volunteered for at least three (3) service projects in the past year, be at least 25 years of age, pass a criminal background check, and demonstrate a passion for creating positive change in the community",
+          "after": "Have volunteered for at least three (3) service projects in the past year (Hands On Atlanta or other volunteer service), Be at least 25 years of age, Pass a criminal background check, Demonstrate a passion for creating positive change in the community, Confidently lead and engage volunteers from diverse backgrounds",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
+      "reasons": [
+        "Changes needing review: summary, eligibility.",
+        "Confidence 70/100.",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "64ed11c16d60be42",
+      "fingerprint": "bee brain canadian competition international local|brainbee ca|brainbee.ca",
+      "url": "https://brainbee.ca/",
+      "domain": "brainbee.ca",
+      "contentHash": "40a5123f6c641eca2807ec3d66f7e7dafd68397c540dd9810aaa2003e9eea276",
+      "fetchedAt": "2026-10-31T07:52:31.161Z",
+      "extracted": {
+        "title": "International Brain Bee — Local Canadian Competition",
+        "organization": "brainbee.ca",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://brainbee.ca/",
+        "summary": "Academic competition. The Canadian National Brain Bee is a neuroscience competition for high school students, grades 9 through 12. Students study brain and neuroscience research topics including memory, sleep, intelligence, emotion, perception, stress, aging, brain imaging, neurology, neurotransmitters, genetics, brain disease, and more.",
+        "eligibility": "To compete in the Canadian National, students must first compete in a regional brain bee competition in Canada.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"brainbee.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Academic competition\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Spring 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "international-brain-bee-canadian-chapters",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"International Brain Bee — Canadian Chapters\" — title 80% similar, same domain."
+      ]
+    },
+    {
+      "id": "cbb198f473ef4340",
+      "fingerprint": "achievement investment junior strategies|investja org|investja.org",
+      "url": "https://investja.org/",
+      "domain": "investja.org",
+      "contentHash": "05e4a3dfb94f3baf2ef5d9bbe3f8b2d2a5f1ff12eb0bec20ca0f38c84b0208cb",
+      "fetchedAt": "2026-10-31T07:52:32.060Z",
+      "extracted": {
+        "title": "Junior Achievement Investment Strategies Program",
+        "organization": "investja.org",
+        "category": "Business",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://investja.org/",
+        "summary": "Financial literacy program. Students learn investing, markets, risk, diversification, and financial decision-making through practical activities.",
+        "eligibility": "Grade 8-12 students; delivered through classrooms (ISP Classroom) or self-directed via JA Digital Campus (ISP Student-Led)",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"investja.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"Financial literacy program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Recurring\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"2026-2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "ja-investment-strategies-program",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"JA Investment Strategies Program\" — title 73% similar, same domain."
+      ]
+    },
+    {
+      "id": "3be188cc93781ecb",
+      "fingerprint": "experience immersive mcmaster stem|ca mcmaster|mcmaster.ca",
+      "url": "https://eng.mcmaster.ca/community/outreach-programs/summer-camp",
+      "domain": "mcmaster.ca",
+      "contentHash": "e347b9fac44e0fd3eb5e3b55f91c88b9aa49ee907ebb285e8460c3bd11093ff4",
+      "fetchedAt": "2026-10-31T07:52:37.459Z",
+      "extracted": {
+        "title": "McMaster STEM Immersive Experience",
+        "organization": "mcmaster.ca",
+        "category": "STEM",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.eng.mcmaster.ca/community/outreach-programs/summer-camp/",
+        "summary": "In-person day program. Our engineering camps offer campers the chance to explore a wide range of engineering themes through hands-on, engaging projects designed for curious creators.",
+        "eligibility": "Students entering Grade 2 – 8 as of September 2026 should enroll in this program. Students entering Grade 9, 10, 11 or 12 as of September 2026 should enrol in this program",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"mcmaster.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"In-person day program\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"July-August 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "mcmaster-stem-immersive-experience",
+      "changes": [
+        {
+          "field": "eligibility",
+          "before": "Students entering Grade 2 – 8 as of September 2026 should enroll in Engineering Camps: Fireball AND/OR Flare. Students entering Grade 9, 10, 11 or 12 as of September 2026 should enrol in Engineering Immersive Experience AND/OR Engineering Design Studio.",
+          "after": "Students entering Grade 2 – 8 as of September 2026 should enroll in this program. Students entering Grade 9, 10, 11 or 12 as of September 2026 should enrol in this program",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
+      "reasons": [
+        "Changes needing review: eligibility.",
+        "Confidence 70/100.",
         "Source: Master Tracker Google Sheet."
       ]
     },
@@ -267,8 +1343,8 @@
       "fingerprint": "internship nasa programs|gov nasa|nasa.gov",
       "url": "https://nasa.gov/learning-resources/internship-programs",
       "domain": "nasa.gov",
-      "contentHash": "843ca18112e79dc3ff21b84ac9bbb32722a0100456c4d19282f51bb6cf1fa68b",
-      "fetchedAt": "2026-10-22T19:41:29.755Z",
+      "contentHash": "1a006f8f75800a255c890f95f9465a5264ee238a612d41a0ee46ba5bcefdc2b2",
+      "fetchedAt": "2026-10-31T07:52:37.748Z",
       "extracted": {
         "title": "NASA Internship Programs",
         "organization": "nasa.gov",
@@ -286,29 +1362,94 @@
         "essay_prompts": [],
         "required_documents": [],
         "application_link": "https://www.nasa.gov/learning-resources/internship-programs",
-        "summary": "At NASA, we offer students challenging projects and on-the-job experiences, building confidence, essential technical skills, and career readiness.",
-        "eligibility": "NASA Internship Programs are open to students who are at least 16 years old and are currently pursuing a degree in a STEM field.",
+        "summary": "At NASA, we explore the extraordinary every day and our work is more than just a profession—it’s a lifelong pursuit and a passion. NASA offers students challenging projects and on-the-job experiences, building confidence, essential technical skills, and career readiness, all essential for the nation’s workforce.",
+        "eligibility": "NASA offers two major internship programs for students: Office of STEM Engagement (OSTEM) Internships and",
         "rolling": false,
         "not_a_program": false,
         "notes": [
           "Organization guessed from the application link's domain (\"nasa.gov\") — the sheet has no organization column.",
-          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
-          "The application link in the sheet did not respond — check it still works."
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country."
         ]
       },
       "confidence": {
-        "score": 50,
-        "band": "low",
+        "score": 70,
+        "band": "medium",
         "siteConfidence": "unposted",
         "signals": {
-          "humanEntered": 70,
-          "applyLinkDead": -20
+          "humanEntered": 70
         }
       },
       "changes": [],
       "disposition": "needs-review",
       "reasons": [
-        "New listing (confidence 50/100, low).",
+        "New listing (confidence 70/100, medium).",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
+      "id": "05e18a534f8ff31d",
+      "fingerprint": "academy nyc|com nytedu|nytedu.com",
+      "url": "https://nytedu.com/pre-college/summer-academy/nyc",
+      "domain": "nytedu.com",
+      "contentHash": "b044425262c77cc98a9421dae7afe226b8b713281afffee28a24eb6f39dbd101",
+      "fetchedAt": "2026-10-31T07:52:37.973Z",
+      "extracted": {
+        "title": "NYC Summer Academy",
+        "organization": "nytedu.com",
+        "category": "Law & Civics",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://nytedu.com/pre-college/summer-academy/nyc",
+        "summary": "Residential. Summer Academy is a pre-college program open to rising high school students (grades 10-12) and graduating seniors. Students must be 15-18 years old by the first day of the program. The program empowers students with their next decision in life, whether they choose to apply for college or start their careers straight from high school.",
+        "eligibility": "Summer Academy is a pre-college program open to rising high school students (grades 10-12) and graduating seniors. Students must be 15-18 years old by the first day of the program.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"nytedu.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"Residential\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet's Program Date (\"Term 1: June 7–19, Term 2: June 21–July 3, Term 3: July 5–17, Term 4: July 19–31\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "nyc-summer-academy-nytedu-com",
+      "changes": [
+        {
+          "field": "summary",
+          "before": "Residential. The NYC Summer Academy is a pre-college program that empowers students with their next decision in life, whether they choose to apply for college or start their careers straight from high school. Students will investigate the forces shaping fields such as media, culture, sports, fashion, business, and law with the guidance of seasoned journalists, editors, and media professionals.",
+          "after": "Residential. Summer Academy is a pre-college program open to rising high school students (grades 10-12) and graduating seniors. Students must be 15-18 years old by the first day of the program. The program empowers students with their next decision in life, whether they choose to apply for college or start their careers straight from high school.",
+          "evidence": "n/a",
+          "autoApplicable": false
+        },
+        {
+          "field": "eligibility",
+          "before": "Rising high school students (grades 10-12) and graduating seniors who are 15-18 years old by the first day of the program.",
+          "after": "Summer Academy is a pre-college program open to rising high school students (grades 10-12) and graduating seniors. Students must be 15-18 years old by the first day of the program.",
+          "evidence": "n/a",
+          "autoApplicable": false
+        }
+      ],
+      "disposition": "needs-review",
+      "reasons": [
+        "Changes needing review: summary, eligibility.",
+        "Confidence 70/100.",
         "Source: Master Tracker Google Sheet."
       ]
     },
@@ -318,7 +1459,7 @@
       "url": "https://ocean.org/learn-explore/youth-programs/youth-to-sea",
       "domain": "ocean.org",
       "contentHash": "7bf70ff8276a38ba8ecd56b6b6dd48db010534cadf5dca6f09f0c1bf31bd5554",
-      "fetchedAt": "2026-10-22T19:41:31.420Z",
+      "fetchedAt": "2026-10-31T07:52:39.668Z",
       "extracted": {
         "title": "Ocean Wise Youth to Sea",
         "organization": "ocean.org",
@@ -389,7 +1530,7 @@
       "url": "https://ojen.ca/en/program/mock-trials",
       "domain": "ojen.ca",
       "contentHash": "0d09b17d94937cbced694e76321ebba3c0011e12598b1cf5ae4a8bbe296383f9",
-      "fetchedAt": "2026-10-22T19:41:31.848Z",
+      "fetchedAt": "2026-10-31T07:52:40.326Z",
       "extracted": {
         "title": "Ontario Justice Education Network Mock Trial Tournament",
         "organization": "ojen.ca",
@@ -461,12 +1602,65 @@
       ]
     },
     {
+      "id": "b269571f4f5c79ee",
+      "fingerprint": "employment ontario opportunities public service|ca gov on|gov.on.ca",
+      "url": "https://gojobs.gov.on.ca/Pages/SEP.aspx",
+      "domain": "gov.on.ca",
+      "contentHash": "818092b1270869a6f474d42691fab49976e819a3889322838f75c4621e9a9d3e",
+      "fetchedAt": "2026-10-31T07:52:40.650Z",
+      "extracted": {
+        "title": "Ontario Public Service Summer Employment Opportunities",
+        "organization": "gov.on.ca",
+        "category": "Law & Civics",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.gojobs.gov.on.ca/Pages/SEP.aspx",
+        "summary": "Paid summer employment. Paid summer jobs across Ontario ministries in administration, policy, parks, science, communications, and other fields.",
+        "eligibility": "Students generally ages 15-24, or up to 29 with a disability — Must be legally entitled to work in Canada and meet each posting’s age, student-status, location, and skill requirements.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"gov.on.ca\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"Paid summer employment\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Status\" says \"Watch\". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Summer 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "matchedProgramId": "ontario-public-service-summer-employment",
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "Looks like an existing listing under a different name.",
+        "Source: Master Tracker Google Sheet.",
+        "Possible duplicate of \"Ontario Public Service Summer Employment\" — title 100% similar, same domain."
+      ]
+    },
+    {
       "id": "32c9d2d9ddb60e68",
       "fingerprint": "foundation hut pizza scholarship|com fastweb|fastweb.com",
       "url": "https://fastweb.com/college-scholarships/articles/scholarships-for-high-school-seniors.amp",
       "domain": "fastweb.com",
       "contentHash": "9ae6847b567fb00615cf958d6ae86a6b6cebe1384a01c31a6105815e0293730c",
-      "fetchedAt": "2026-10-22T19:41:32.780Z",
+      "fetchedAt": "2026-10-31T07:52:42.076Z",
       "extracted": {
         "title": "Pizza Hut Foundation Scholarship",
         "organization": "fastweb.com",
@@ -506,10 +1700,7 @@
       },
       "changes": [],
       "disposition": "needs-review",
-      "reasons": [
-        "New listing (confidence 50/100, low).",
-        "Source: Master Tracker Google Sheet."
-      ]
+      "reasons": ["New listing (confidence 50/100, low).", "Source: Master Tracker Google Sheet."]
     },
     {
       "id": "16204b276da17130",
@@ -517,7 +1708,7 @@
       "url": "https://queensu.ca/academics/youth-programs",
       "domain": "queensu.ca",
       "contentHash": "a2f26473d50dc6482ea38a672f68dec4a229c37214bb75faca01cfc1e9c0c4a9",
-      "fetchedAt": "2026-10-22T19:41:38.130Z",
+      "fetchedAt": "2026-10-31T07:52:44.652Z",
       "extracted": {
         "title": "Queen’s SEEDS in Residence",
         "organization": "queensu.ca",
@@ -587,7 +1778,7 @@
       "url": "https://biogenius.ca/",
       "domain": "biogenius.ca",
       "contentHash": "3173ab7aa2103ad433129384e0452f898a12e5ee11389d34014570e780a3511b",
-      "fetchedAt": "2026-10-22T19:41:39.881Z",
+      "fetchedAt": "2026-10-31T07:52:48.568Z",
       "extracted": {
         "title": "Sanofi Biogenius Canada",
         "organization": "biogenius.ca",
@@ -662,7 +1853,7 @@
       "url": "https://siths.org/apps/news/category/16105",
       "domain": "siths.org",
       "contentHash": "66021385aed8098e75a7221cab9d483173b3d049978efc7d0fccb85cce347022",
-      "fetchedAt": "2026-10-22T19:41:40.236Z",
+      "fetchedAt": "2026-10-31T07:52:49.033Z",
       "extracted": {
         "title": "Service in Schools Leadership Institute",
         "organization": "siths.org",
@@ -707,12 +1898,62 @@
       ]
     },
     {
+      "id": "bcf3dfa79767a41f",
+      "fingerprint": "institute leaders sorensen|com extracurricularhub|extracurricularhub.com",
+      "url": "https://extracurricularhub.com/extracurriculars/virginia-high-school-leaders-program",
+      "domain": "extracurricularhub.com",
+      "contentHash": "b4b4047b1e7d30d6280138562f23003ea8b00e4ddbed67760dabb3cf170ed94d",
+      "fetchedAt": "2026-10-31T07:52:49.913Z",
+      "extracted": {
+        "title": "Sorensen Institute High School Leaders Program",
+        "organization": "extracurricularhub.com",
+        "category": "Leadership",
+        "country": "US",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://extracurricularhub.com/extracurriculars/virginia-high-school-leaders-program",
+        "summary": "In person. The Sorensen Institute for Civic Leadership's High School Leaders Program (HSLP) is an intensive two-week residential civic-leadership program at the University of Virginia in Charlottesville.",
+        "eligibility": "Grades 10–12",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"extracurricularhub.com\") — the sheet has no organization column.",
+          "Sheet's \"Format\" column (\"In person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"July 10-24, 2027\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "New listing (confidence 70/100, medium).",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
       "id": "e1fed53c815fbeab",
       "fingerprint": "medical science smysp stanford|collegevine com|collegevine.com",
       "url": "https://blog.collegevine.com/high-school-summer-programs-in-california",
       "domain": "collegevine.com",
       "contentHash": "96a5b1e78e7996ca8566d8c4e7effcfe160e6f1f7b629220da1f988999cb8408",
-      "fetchedAt": "2026-10-22T19:41:40.634Z",
+      "fetchedAt": "2026-10-31T07:52:50.476Z",
       "extracted": {
         "title": "Stanford Medical Youth Science Program (SMYSP)",
         "organization": "collegevine.com",
@@ -762,7 +2003,7 @@
       "url": "https://collegesofdistinction.com/advice/the-mega-list-of-scholarships-you-should-apply-for",
       "domain": "collegesofdistinction.com",
       "contentHash": "e9a3a80aebd44d4524eaa43590b6e971d056a7261dbfa20bd86c38ee8826feaa",
-      "fetchedAt": "2026-10-22T19:41:42.494Z",
+      "fetchedAt": "2026-10-31T07:52:52.191Z",
       "extracted": {
         "title": "Starbucks College Achievement Plan",
         "organization": "collegesofdistinction.com",
@@ -813,7 +2054,7 @@
       "url": "https://civicseal.org/",
       "domain": "civicseal.org",
       "contentHash": "7c8b4a10f510aeba30dd9501a3271f44c365dc3e3009eafd7d2e6e0d64c732af",
-      "fetchedAt": "2026-10-22T19:41:42.691Z",
+      "fetchedAt": "2026-10-31T07:52:52.577Z",
       "extracted": {
         "title": "State Seal of Civic Engagement",
         "organization": "civicseal.org",
@@ -856,16 +2097,16 @@
       ]
     },
     {
-      "id": "bf3e13b3b1360fcc",
-      "fingerprint": "civic leadership|gov house|house.gov",
-      "url": "http://khanna.house.gov/services/student-civic-leadership-program",
-      "domain": "house.gov",
-      "contentHash": "098b6db7d1224056d10060297e4da369da36158861a6cee61375f386d79766f3",
-      "fetchedAt": "2026-10-22T19:41:43.133Z",
+      "id": "8bf03735660aff19",
+      "fingerprint": "internship paid stem|collaborative org|collaborative.org",
+      "url": "https://collaborative.org/youth-and-families/workforce-development/stem-paid-internships",
+      "domain": "collaborative.org",
+      "contentHash": "e96203bcb48fde15f01dfefba2c4353e0d25394551771f79069c3e887ee98b47",
+      "fetchedAt": "2026-10-31T07:52:53.239Z",
       "extracted": {
-        "title": "Student Civic Leadership Program",
-        "organization": "house.gov",
-        "category": "Leadership",
+        "title": "STEM Paid Internship Program",
+        "organization": "collaborative.org",
+        "category": "STEM",
         "country": "CA",
         "grade_levels": [],
         "app_open_date": null,
@@ -878,31 +2119,32 @@
         "location_note": null,
         "essay_prompts": [],
         "required_documents": [],
-        "application_link": "http://khanna.house.gov/services/student-civic-leadership-program",
-        "summary": "The 17th District's Student Civic Leadership Program is a year-long community betterment program spearheaded and self-designed by high school juniors and seniors from CA-17. In small groups, students will choose a policy focus area and develop proposed interventions to address them, allowing them to better understand the legislative process and the issues that affect their community.",
-        "eligibility": "Participation is open to juniors and seniors. Eligible participants must reside and go to school within the 17th Congressional District.",
+        "application_link": "https://www.collaborative.org/youth-and-families/workforce-development/stem-paid-internships",
+        "summary": "null. The STEM Paid Internship Program places high school students in high-quality STEM internships of 100-240 total hours, depending on the placement, and pays students the state minimum wage or better.",
+        "eligibility": "Only students served by school districts in Hampshire and Hampden counties in western Massachusetts are eligible for this program.",
         "rolling": false,
         "not_a_program": false,
         "notes": [
-          "Organization guessed from the application link's domain (\"house.gov\") — the sheet has no organization column.",
+          "Organization guessed from the application link's domain (\"collaborative.org\") — the sheet has no organization column.",
           "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
-          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website."
+          "Sheet's \"Format\" column (\"null\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"Summer of 2026 (closed)\") isn't in a recognizable yyyy-mm-dd form and was left blank.",
+          "The application link in the sheet did not respond — check it still works."
         ]
       },
       "confidence": {
-        "score": 70,
-        "band": "medium",
+        "score": 50,
+        "band": "low",
         "siteConfidence": "unposted",
         "signals": {
-          "humanEntered": 70
+          "humanEntered": 70,
+          "applyLinkDead": -20
         }
       },
       "changes": [],
       "disposition": "needs-review",
-      "reasons": [
-        "New listing (confidence 70/100, medium).",
-        "Source: Master Tracker Google Sheet."
-      ]
+      "reasons": ["New listing (confidence 50/100, low).", "Source: Master Tracker Google Sheet."]
     },
     {
       "id": "74d0101d5474206a",
@@ -910,7 +2152,7 @@
       "url": "https://summerdiscovery.com/",
       "domain": "summerdiscovery.com",
       "contentHash": "6ec7c686d39f7b1f449517914b8f541d692ec55bb9c74fe38cd0fce29f7c0e8c",
-      "fetchedAt": "2026-10-22T19:41:43.240Z",
+      "fetchedAt": "2026-10-31T07:52:54.010Z",
       "extracted": {
         "title": "Summer Discovery",
         "organization": "summerdiscovery.com",
@@ -960,7 +2202,7 @@
       "url": "https://vtsp.com/post/summer-internships-2027",
       "domain": "vtsp.com",
       "contentHash": "3ba6741a6fc08b585ed727359664f89a9b7cc396035f2ca93ebc2004e410c1d2",
-      "fetchedAt": "2026-10-22T19:41:43.424Z",
+      "fetchedAt": "2026-10-31T07:52:54.232Z",
       "extracted": {
         "title": "Summer Internships 2027",
         "organization": "vtsp.com",
@@ -1027,7 +2269,7 @@
       "url": "https://chs.srvusd.net/School-Info/Departments/College-and-Career-Center/Summer-Opportunities/index.html",
       "domain": "srvusd.net",
       "contentHash": "b0722acce175df4a23fe77bc3e944416b3c343c422e49fd14754f35d9dce2cea",
-      "fetchedAt": "2026-10-22T19:41:43.931Z",
+      "fetchedAt": "2026-10-31T07:52:54.517Z",
       "extracted": {
         "title": "Summer SAGE (Science Accelerating Girls Engagement) in STEM",
         "organization": "srvusd.net",
@@ -1071,12 +2313,62 @@
       ]
     },
     {
+      "id": "c49be5ecf9170806",
+      "fingerprint": "summerworks|kentuckianaworks org|kentuckianaworks.org",
+      "url": "https://kentuckianaworks.org/summerworks",
+      "domain": "kentuckianaworks.org",
+      "contentHash": "62d8c5ed45b8152d6429a26ebe96c70582f10764dbe9f6f313dd22429399544b",
+      "fetchedAt": "2026-10-31T07:52:54.824Z",
+      "extracted": {
+        "title": "SummerWorks",
+        "organization": "kentuckianaworks.org",
+        "category": "Leadership",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://www.kentuckianaworks.org/summerworks",
+        "summary": "In-person. SummerWorks is a free program that helps 16-19 year olds in Jefferson County gain business experience, build skills, and earn a paycheck through a summer job. Participants receive training, job placement, and ongoing support.",
+        "eligibility": "16-19 years old, live in Jefferson County",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"kentuckianaworks.org\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"In-person\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet's Program Date (\"6 weeks (mid-June through late July)\") isn't in a recognizable yyyy-mm-dd form and was left blank."
+        ]
+      },
+      "confidence": {
+        "score": 70,
+        "band": "medium",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70
+        }
+      },
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": [
+        "New listing (confidence 70/100, medium).",
+        "Source: Master Tracker Google Sheet."
+      ]
+    },
+    {
       "id": "7b9c9bdaab69923a",
       "fingerprint": "ai bootcamp cairem healthcare t|ca utoronto|utoronto.ca",
       "url": "https://tcairem.utoronto.ca/event/t-cairems-2026-ai-healthcare-summer-bootcamp-high-school-students",
       "domain": "utoronto.ca",
       "contentHash": "42a8521525356125601396332053e3ea57b9ecf631c5d5c50e40d819260da24a",
-      "fetchedAt": "2026-10-22T19:41:44.165Z",
+      "fetchedAt": "2026-10-31T07:52:55.827Z",
       "extracted": {
         "title": "T-CAIREM AI in Healthcare Summer Bootcamp",
         "organization": "utoronto.ca",
@@ -1151,7 +2443,7 @@
       "url": "https://tagedonline.org/high-school-summer-internship-program",
       "domain": "tagedonline.org",
       "contentHash": "0608d2b66d87f10db045fc9f8a6bfb54bf8e657479011b4b986656e53870a024",
-      "fetchedAt": "2026-10-22T19:41:44.676Z",
+      "fetchedAt": "2026-10-31T07:52:57.102Z",
       "extracted": {
         "title": "TAG-Ed High School Summer Internship Program",
         "organization": "tagedonline.org",
@@ -1201,7 +2493,7 @@
       "url": "https://technovationchallenge.org/",
       "domain": "technovationchallenge.org",
       "contentHash": "c157ba77ac8c3e9b2f61624b8a6a8018cdc049cfd0585604d075d1ae8d7ec15d",
-      "fetchedAt": "2026-10-22T19:41:45.064Z",
+      "fetchedAt": "2026-10-31T07:52:57.387Z",
       "extracted": {
         "title": "Technovation Girls",
         "organization": "technovationchallenge.org",
@@ -1277,7 +2569,7 @@
       "url": "https://scholarships.com/financial-aid/college-scholarships/scholarship-directory/school-year/high-school-senior",
       "domain": "scholarships.com",
       "contentHash": "df759fca0f3da6ec79912a5a9a92f492bd6d75bbbcf6d82961addc7f189cc612",
-      "fetchedAt": "2026-10-22T19:41:45.329Z",
+      "fetchedAt": "2026-10-31T07:52:57.850Z",
       "extracted": {
         "title": "The Gates Scholarship",
         "organization": "scholarships.com",
@@ -1326,7 +2618,7 @@
       "url": "https://accessscholarships.com/1k-too-cool-to-pay-for-school",
       "domain": "accessscholarships.com",
       "contentHash": "1d56dafacc2aceb6e0e5a19b457508ca92c4e306668e88827fd598a609c9876b",
-      "fetchedAt": "2026-10-22T19:41:46.916Z",
+      "fetchedAt": "2026-10-31T07:52:59.512Z",
       "extracted": {
         "title": "Too Cool to Pay for School Scholarship",
         "organization": "accessscholarships.com",
@@ -1378,7 +2670,7 @@
       "url": "https://outreach.engineering.utoronto.ca/pre-university-programs/high-school-program/create",
       "domain": "utoronto.ca",
       "contentHash": "e63ae5be0d258df185f12f3cf5bf6f7aab6888862fb7942b030180fa8633c58c",
-      "fetchedAt": "2026-10-22T19:41:46.981Z",
+      "fetchedAt": "2026-10-31T07:52:59.766Z",
       "extracted": {
         "title": "U of T CREATE Engineering Design Challenges",
         "organization": "utoronto.ca",
@@ -1460,7 +2752,7 @@
       "url": "https://outreach.engineering.utoronto.ca/pre-university-programs/high-school-program/deep",
       "domain": "utoronto.ca",
       "contentHash": "7d9dafa429127be8c21fc3b6d76354c82ff068a7dff7af961e7412190eeaf557",
-      "fetchedAt": "2026-10-22T19:41:47.052Z",
+      "fetchedAt": "2026-10-31T07:52:59.790Z",
       "extracted": {
         "title": "U of T DEEP Summer Academy",
         "organization": "utoronto.ca",
@@ -1535,7 +2827,7 @@
       "url": "https://temertymedicine.utoronto.ca/summer-mentorship-program",
       "domain": "utoronto.ca",
       "contentHash": "bd8ef6d02041277bef4ae82cb35780d228201b6d5f70add7e75c2e48601afe52",
-      "fetchedAt": "2026-10-22T19:41:47.286Z",
+      "fetchedAt": "2026-10-31T07:53:00.107Z",
       "extracted": {
         "title": "U of T Summer Mentorship Program",
         "organization": "utoronto.ca",
@@ -1586,7 +2878,7 @@
       "url": "https://ysp.utoronto.ca/",
       "domain": "utoronto.ca",
       "contentHash": "467147f4f9be13e7db1fa602d372a609141d8270d7d6f45d3e1cab95586af2b8",
-      "fetchedAt": "2026-10-22T19:41:47.427Z",
+      "fetchedAt": "2026-10-31T07:53:00.335Z",
       "extracted": {
         "title": "University of Toronto Law Youth Summer Program",
         "organization": "utoronto.ca",
@@ -1637,7 +2929,7 @@
       "url": "https://utmun.org/",
       "domain": "utmun.org",
       "contentHash": "1c4d123d1e56bb1d412b4c71b8ca8577bbc2ca3045603df4c70a53b97b2c5d2e",
-      "fetchedAt": "2026-10-22T19:41:47.619Z",
+      "fetchedAt": "2026-10-31T07:53:00.513Z",
       "extracted": {
         "title": "University of Toronto Model United Nations — UTMUN",
         "organization": "utmun.org",
@@ -1688,7 +2980,7 @@
       "url": "https://uwaterloo.ca/engineering-outreach/youth-programs-0/stempowered/stempowered-summer-camps/leader-training",
       "domain": "uwaterloo.ca",
       "contentHash": "6f39138b01652b4ebfd11a5fce159bb0105dc57297c9cc4e1911bc75f69f6844",
-      "fetchedAt": "2026-10-22T19:41:47.767Z",
+      "fetchedAt": "2026-10-31T07:53:00.764Z",
       "extracted": {
         "title": "Waterloo STEMpowered Leader in Training",
         "organization": "uwaterloo.ca",
@@ -1739,7 +3031,7 @@
       "url": "https://uwaterloo.ca/engineering-outreach/youth-programs-0/stempowered/stempowered-summer-camps",
       "domain": "uwaterloo.ca",
       "contentHash": "77cd9bebde7883500a0767b1238f9436f090604f7b9b57d1802b870e2659b257",
-      "fetchedAt": "2026-10-22T19:41:47.893Z",
+      "fetchedAt": "2026-10-31T07:53:01.049Z",
       "extracted": {
         "title": "Waterloo STEMpowered Summer Camp — Grades 10-12",
         "organization": "uwaterloo.ca",
@@ -1785,12 +3077,62 @@
       ]
     },
     {
+      "id": "60585e1766a1290d",
+      "fingerprint": "civic engagement|com nwasianweekly|nwasianweekly.com",
+      "url": "https://nwasianweekly.com/2025/01/students-apply-by-jan-16-to-new-youth-civic-engagement-program-for-teens",
+      "domain": "nwasianweekly.com",
+      "contentHash": "8ffb0cb7a55281bcc4f8b31d64b47973ef2bbcc3c75aaebf7f2e8b51ff715f38",
+      "fetchedAt": "2026-10-31T07:53:01.706Z",
+      "extracted": {
+        "title": "Youth Civic Engagement Program",
+        "organization": "nwasianweekly.com",
+        "category": "Leadership",
+        "country": "CA",
+        "grade_levels": [],
+        "app_open_date": null,
+        "app_deadline": null,
+        "program_start_date": null,
+        "program_end_date": null,
+        "cost_type": "Unknown",
+        "cost_note": null,
+        "location_type": "Unknown",
+        "location_note": null,
+        "essay_prompts": [],
+        "required_documents": [],
+        "application_link": "https://nwasianweekly.com/2025/01/students-apply-by-jan-16-to-new-youth-civic-engagement-program-for-teens",
+        "summary": "null. The City of Seattle Office for Civil Rights launched a new Youth Civic Engagement Program, designed to equip high school students with knowledge and skills to drive powerful change in their communities. In this program, students will learn how a bill becomes a law, expand their knowledge of the local policy landscape, meet with local elected officials, forge connections amongst peers and young leaders in Seattle, and strengthen advocacy and civic engagement skills around an issue they care deeply about with support from the Seattle Office for Civil Rights.",
+        "eligibility": "All students in grades 9-12 who attend high school within Seattle city limits are eligible to apply.",
+        "rolling": false,
+        "not_a_program": false,
+        "notes": [
+          "Organization guessed from the application link's domain (\"nwasianweekly.com\") — the sheet has no organization column.",
+          "Country guessed as \"CA\" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.",
+          "Sheet's \"Format\" column (\"null\") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.",
+          "Sheet \"Priority\"/\"Planning Note\" are Discord-bot-only fields and are not carried to the website.",
+          "Sheet's Program Date (\"February to July 2025\") isn't in a recognizable yyyy-mm-dd form and was left blank.",
+          "The application link in the sheet did not respond — check it still works."
+        ]
+      },
+      "confidence": {
+        "score": 50,
+        "band": "low",
+        "siteConfidence": "unposted",
+        "signals": {
+          "humanEntered": 70,
+          "applyLinkDead": -20
+        }
+      },
+      "changes": [],
+      "disposition": "needs-review",
+      "reasons": ["New listing (confidence 50/100, low).", "Source: Master Tracker Google Sheet."]
+    },
+    {
       "id": "c5802d0f046000b1",
       "fingerprint": "apprenticeships brain brainyac columbia institute new research s york zuckerman|education immerse|immerse.education",
       "url": "https://immerse.education/knowledge-base/15-summer-internships-in-nyc-for-high-school-students",
       "domain": "immerse.education",
       "contentHash": "195564370d94812ad10935eb573145f845fc98d1f6bd711bc70bd49096971076",
-      "fetchedAt": "2026-10-22T19:41:47.960Z",
+      "fetchedAt": "2026-10-31T07:53:01.784Z",
       "extracted": {
         "title": "Zuckerman Institute’s Brain Research Apprenticeships in New York at Columbia (BRAINYAC)",
         "organization": "immerse.education",

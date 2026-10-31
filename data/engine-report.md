@@ -1,6 +1,6 @@
-## Data engine run `2026-10-22-9a6c1b6a`
+## Data engine run `2026-10-31-e7a340c9`
 
-Crawled **101** pages · **0** model calls · ~**$0.00** · **0** auto-applied · **66** need review · **0** to archive
+Crawled **108** pages · **0** model calls · ~**$0.00** · **0** auto-applied · **55** need review · **0** to archive
 
 ### Dates in this PR
 
@@ -36,11 +36,6 @@ Source: https://schulich.yorku.ca/future-students/business-excellence-academy
 - Source: Master Tracker Google Sheet.
 - Possible duplicate of "Schulich Summer Business Academy" — title 100% similar, same domain.
 
-| field | change |
-| --- | --- |
-| summary | summary: `Business academy + case competition. A business-enrichment academy offering work` → `Business academy + case competition. The Schulich Business Excellence Academy is` |
-| eligibility | eligibility: `Ontario Grades 10-12; equity-deserving groups Applicants must meet the grade req` → `Grade 10, 11, and 12 high school students across Ontario, from equity-deserving ` |
-
 Extractor notes:
 - Organization guessed from the application link's domain ("yorku.ca") — the sheet has no organization column.
 - Sheet's "Format" column ("Business academy + case competition") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
@@ -67,25 +62,49 @@ Extractor notes:
 
 </details>
 
-<details><summary><strong>SPRINT — Summer Psychology Research Initiative</strong> — google.com (70/100)</summary>
+<details><summary><strong>OJEN Futures in Justice</strong> — ojen.ca (70/100)</summary>
 
-Source: https://sites.google.com/view/uoftsprint
+Source: https://ojen.ca/en/program/futures-in-justice
 
-- Changes needing review: category.
+- Changes needing review: summary, eligibility.
 - Confidence 70/100.
 - Source: Master Tracker Google Sheet.
 
 | field | change |
 | --- | --- |
-| category | category: `Medicine` → `STEM` |
+| summary | summary: `Justice career program. For many young people, a career in law may feel out of t` → `Justice career program. Futures in Justice is a program that helps young people ` |
+| eligibility | eligibility: `Varies by local committee; Waterloo version historically for youth who identify ` → `Youth who identify as women between the ages of 16 and 20 who are interested in ` |
 
 Extractor notes:
-- Organization guessed from the application link's domain ("google.com") — the sheet has no organization column.
-- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's "Format" column ("Psychology research program") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Organization guessed from the application link's domain ("ojen.ca") — the sheet has no organization column.
+- Sheet's "Format" column ("Justice career program") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("Late Jul 2027 (2026 ran Jul 20-31), U of T St. George; expanding to UTSC") isn't in a recognizable yyyy-mm-dd form and was left blank.
+- Sheet's Program Date ("2026-27") isn't in a recognizable yyyy-mm-dd form and was left blank.
+
+</details>
+
+<details><summary><strong>Forum for Young Canadians</strong> — forum.ca (70/100)</summary>
+
+Source: https://forum.ca/forum-for-young-canadians-national-summit
+
+- Changes needing review: summary.
+- Confidence 70/100.
+- Source: Master Tracker Google Sheet.
+
+| field | change |
+| --- | --- |
+| summary | summary: `National civic leadership summit. The Forum for Young Canadians National Summit ` → `National civic leadership summit. The Forum for Young Canadians National Summit ` |
+
+Evidence:
+- **program_start_date** = `2027-02-07` (labelled) — “2027-02-07 to 2027-02-12; 2027-02-28 to 2027-03-05; 2027-04-18 to 2027-04-23”
+- **program_end_date** = `2027-02-12` (labelled) — “2027-02-07 to 2027-02-12; 2027-02-28 to 2027-03-05; 2027-04-18 to 2027-04-23”
+
+Extractor notes:
+- Organization guessed from the application link's domain ("forum.ca") — the sheet has no organization column.
+- Sheet's "Format" column ("National civic leadership summit") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet "Status" says "Open". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
 
 </details>
 
@@ -96,11 +115,6 @@ Source: https://sumac.spcs.stanford.edu/sumac-admissions
 - Looks like an existing listing under a different name.
 - Source: Master Tracker Google Sheet.
 - Possible duplicate of "Stanford University Mathematics Camp (SUMaC)" — title 100% similar, same domain.
-
-| field | change |
-| --- | --- |
-| summary | summary: `Advanced mathematics camp. A highly selective mathematics program where students` → `Advanced mathematics camp. SUMaC invites students who seek to be challenged in m` |
-| eligibility | eligibility: `Grades 10-11 at application; age 15+ during program Applicants worldwide may app` → `Students in grades 10 and 11 at the time of application submission and that are ` |
 
 Extractor notes:
 - Organization guessed from the application link's domain ("stanford.edu") — the sheet has no organization column.
@@ -131,35 +145,18 @@ Extractor notes:
 
 </details>
 
-<details><summary><strong>AEOP High School Internship STEM Research Program</strong> — charlotte.edu (70/100)</summary>
+<details><summary><strong>Arts and Sciences Summer Exploration Program</strong> — osu.edu (70/100)</summary>
 
-Source: https://cstem.charlotte.edu/pk-20-students/stem-research-experience-program
-
-- New listing (confidence 70/100, medium).
-- Source: Master Tracker Google Sheet.
-
-Extractor notes:
-- Organization guessed from the application link's domain ("charlotte.edu") — the sheet has no organization column.
-- Country guessed as "US" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's "Format" column ("In-person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("June 29, 2026 – July 24, 2026") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>After-School STEM Lab Internship</strong> — uchicago.edu (70/100)</summary>
-
-Source: https://pme.uchicago.edu/academics/stem-education-community-outreach/k-12-student-programs/after-school-stem-lab-internship
+Source: https://artsandsciences.osu.edu/future-students/arts-and-sciences-summer-exploration-program
 
 - New listing (confidence 70/100, medium).
 - Source: Master Tracker Google Sheet.
 
 Extractor notes:
-- Organization guessed from the application link's domain ("uchicago.edu") — the sheet has no organization column.
-- Country guessed as "US" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Organization guessed from the application link's domain ("osu.edu") — the sheet has no organization column.
 - Sheet's "Format" column ("In-person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("6-week summer research program") isn't in a recognizable yyyy-mm-dd form and was left blank.
+- Sheet's Program Date ("null") isn't in a recognizable yyyy-mm-dd form and was left blank.
 
 </details>
 
@@ -228,12 +225,6 @@ Source: https://cemc.uwaterloo.ca/contests/ccc
 - Source: Master Tracker Google Sheet.
 - Possible duplicate of "Canadian Computing Competition (CCC)" — title 100% similar, same domain.
 
-| field | change |
-| --- | --- |
-| application_link | application_link: `https://www.cemc.uwaterloo.ca/contests/computing.html` → `https://cemc.uwaterloo.ca/contests/ccc` |
-| summary | summary: `National programming contest and the entry point to Canada's IOI team.` → `Programming contest. The Canadian Computing Competition (CCC) is a fun challenge` |
-| eligibility | eligibility: `Any secondary school student. Your school must register you as a contest centre.` → `Participants have the option to compete at either the Junior or Senior level. Ju` |
-
 Extractor notes:
 - Organization guessed from the application link's domain ("uwaterloo.ca") — the sheet has no organization column.
 - Sheet's "Format" column ("Programming contest") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
@@ -257,59 +248,6 @@ Extractor notes:
 
 </details>
 
-<details><summary><strong>Civic Leadership Program</strong> — learntoearndayton.org (70/100)</summary>
-
-Source: https://learntoearndayton.org/post/applications-now-open-for-civic-leadership-program-2026-2027
-
-- New listing (confidence 70/100, medium).
-- Source: Master Tracker Google Sheet.
-
-Extractor notes:
-- Organization guessed from the application link's domain ("learntoearndayton.org") — the sheet has no organization column.
-- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("August 2026 - April 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>CIVIC RESPONSIBILITY FOR YOUNG LEADERS SUMMER PROGRAM</strong> — npuatlanta.org (70/100)</summary>
-
-Source: https://npuatlanta.org/dnucp1005
-
-- New listing (confidence 70/100, medium).
-- Source: Master Tracker Google Sheet.
-
-Extractor notes:
-- Organization guessed from the application link's domain ("npuatlanta.org") — the sheet has no organization column.
-- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's "Format" column ("In-person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("null") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>COMC — Canadian Open Mathematics Challenge</strong> — math.ca (70/100)</summary>
-
-Source: https://cms.math.ca/competitions/comc
-
-- Changes needing review: summary, eligibility.
-- Confidence 70/100.
-- Source: Master Tracker Google Sheet.
-
-| field | change |
-| --- | --- |
-| summary | summary: `National problem-solving contest and a gateway to advanced Canadian math opportu` → `Math contest. The Canadian Open Mathematics Challenge (COMC) is Canada’s premier` |
-| eligibility | eligibility: `Students in Canada and internationally; school or individual registration option` → `Students in Canada and internationally; school or individual registration option` |
-
-Extractor notes:
-- Organization guessed from the application link's domain ("math.ca") — the sheet has no organization column.
-- Sheet's "Format" column ("Math contest") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Status" says "Upcoming". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("October/November 2026") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
 <details><summary><strong>CyberTitan National Youth Cyber Defence Competition</strong> — etalentcanada.ca (70/100)</summary>
 
 Source: https://etalentcanada.ca/for-educators/programs/cybertitan
@@ -325,22 +263,6 @@ Extractor notes:
 - Sheet "Status" says "Needs verification". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
 - Sheet's Program Date ("Online rounds Nov 2026-Feb/Mar 2027; national finals spring 2027 (2026 finals were Mar 23-24)") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>Designing Mitochondria for the Future</strong> — utoronto.ca (70/100)</summary>
-
-Source: https://outreach.engineering.utoronto.ca/event/designing-mitochondria-for-the-future-youth-summer-program/2026-07-13
-
-- New listing (confidence 70/100, medium).
-- Source: Master Tracker Google Sheet.
-
-Extractor notes:
-- Organization guessed from the application link's domain ("utoronto.ca") — the sheet has no organization column.
-- Sheet's "Format" column ("In-person workshop") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("Summer 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
 
 </details>
 
@@ -362,8 +284,14 @@ Extractor notes:
 
 Source: https://firstinspires.org/robotics/frc
 
-- New listing (confidence 70/100, medium).
+- Changes needing review: summary, eligibility.
+- Confidence 70/100.
 - Source: Master Tracker Google Sheet.
+
+| field | change |
+| --- | --- |
+| summary | summary: `Team competition. FIRST Robotics Competition Starting with a Kit of Parts, teams` → `Team competition. FIRST Robotics Competition Starting with a Kit of Parts, teams` |
+| eligibility | eligibility: `High-school students on a registered FIRST team — Must join or create a register` → `Grades 9-12 Ages 14-18` |
 
 Extractor notes:
 - Organization guessed from the application link's domain ("firstinspires.org") — the sheet has no organization column.
@@ -375,17 +303,19 @@ Extractor notes:
 
 </details>
 
-<details><summary><strong>GatorLabs Precollege Scholars (Virtual)</strong> — ufl.edu (70/100)</summary>
+<details><summary><strong>Ford Philanthropy Auto Tech Scholarship</strong> — collegewhale.com (70/100)</summary>
 
-Source: https://cpet.ufl.edu/students/summer-programs
+Source: https://collegewhale.com/high-school
 
 - New listing (confidence 70/100, medium).
 - Source: Master Tracker Google Sheet.
 
 Extractor notes:
-- Organization guessed from the application link's domain ("ufl.edu") — the sheet has no organization column.
-- Sheet's "Format" column ("Virtual") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet's Program Date ("July 13 - July 17, 2026") isn't in a recognizable yyyy-mm-dd form and was left blank.
+- Organization guessed from the application link's domain ("collegewhale.com") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Sheet's "Format" column ("null") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
+- Sheet's Program Date ("null") isn't in a recognizable yyyy-mm-dd form and was left blank.
 
 </details>
 
@@ -411,8 +341,13 @@ Extractor notes:
 
 Source: https://hphsnyc.org/apps/news/article/438122
 
-- New listing (confidence 70/100, medium).
+- Changes needing review: eligibility.
+- Confidence 70/100.
 - Source: Master Tracker Google Sheet.
+
+| field | change |
+| --- | --- |
+| eligibility | eligibility: `Graduating HS seniors, NYC HS Students, 9-11th Grade, 10th & 11th Grade Girls, 9` → `Graduating HS seniors, NYC HS Students, HS Students, 9-11th Grade, 10th & 11th G` |
 
 Extractor notes:
 - Organization guessed from the application link's domain ("hphsnyc.org") — the sheet has no organization column.
@@ -426,31 +361,20 @@ Extractor notes:
 
 Source: https://handsonatlanta.org/civic-leadership
 
-- New listing (confidence 70/100, medium).
+- Changes needing review: summary, eligibility.
+- Confidence 70/100.
 - Source: Master Tracker Google Sheet.
+
+| field | change |
+| --- | --- |
+| summary | summary: `In-person. The Hands On Atlanta Civic Leadership Program is a leadership develop` → `In-person. The Hands On Atlanta Civic Leadership Program (CLP), powered by Const` |
+| eligibility | eligibility: `Have volunteered for at least three (3) service projects in the past year, be at` → `Have volunteered for at least three (3) service projects in the past year (Hands` |
 
 Extractor notes:
 - Organization guessed from the application link's domain ("handsonatlanta.org") — the sheet has no organization column.
 - Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
 - Sheet's "Format" column ("In-person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet's Program Date ("2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>High School Internship Opportunities</strong> — austintexas.gov (70/100)</summary>
-
-Source: https://austintexas.gov/economic-development/programs/high-school-internship-opportunities
-
-- New listing (confidence 70/100, medium).
-- Source: Master Tracker Google Sheet.
-
-Extractor notes:
-- Could not confidently map the sheet's Category ("General") to one of the site's six tracks — defaulted to "STEM". Please correct.
-- Organization guessed from the application link's domain ("austintexas.gov") — the sheet has no organization column.
-- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's "Format" column ("In-person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("June 1, 2026 – July 10, 2026") isn't in a recognizable yyyy-mm-dd form and was left blank.
 
 </details>
 
@@ -462,40 +386,12 @@ Source: https://brainbee.ca/
 - Source: Master Tracker Google Sheet.
 - Possible duplicate of "International Brain Bee — Canadian Chapters" — title 80% similar, same domain.
 
-| field | change |
-| --- | --- |
-| summary | summary: `Neuroscience competition on brain anatomy, neurological disease and research.` → `Academic competition. The Canadian National Brain Bee is a neuroscience competit` |
-| eligibility | eligibility: `High-school students; local chapter rules apply. You must qualify through a loca` → `To compete in the Canadian National, students must first compete in a regional b` |
-
 Extractor notes:
 - Organization guessed from the application link's domain ("brainbee.ca") — the sheet has no organization column.
 - Sheet's "Format" column ("Academic competition") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
 - Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
 - Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
 - Sheet's Program Date ("Spring 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>JA Titan Business Challenge</strong> — jacanada.org (70/100)</summary>
-
-Source: https://jacanada.org/program/ja-titan
-
-- Changes needing review: summary, eligibility.
-- Confidence 70/100.
-- Source: Master Tracker Google Sheet.
-
-| field | change |
-| --- | --- |
-| summary | summary: `Teams run a simulated company, setting price, production, marketing and investme` → `Business simulation competition. Through an interactive business simulation, you` |
-| eligibility | eligibility: `High-school students; local JA availability varies. May require school registrat` → `Grades 8-12` |
-
-Extractor notes:
-- Organization guessed from the application link's domain ("jacanada.org") — the sheet has no organization column.
-- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's "Format" column ("Business simulation competition") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("2026-2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
 
 </details>
 
@@ -517,95 +413,17 @@ Extractor notes:
 
 </details>
 
-<details><summary><strong>Kode With Klossy Summer Camp</strong> — kodewithklossy.com (70/100)</summary>
-
-Source: https://kodewithklossy.com/programs
-
-- Changes needing review: summary, eligibility.
-- Confidence 70/100.
-- Source: Master Tracker Google Sheet.
-
-| field | change |
-| --- | --- |
-| summary | summary: `Free two-week coding camp in web development, mobile apps or data science.` → `Virtual or in-person coding camp. Kode With Klossy provides FREE technical skill` |
-| eligibility | eligibility: `Typically ages 13–18. Location and age eligibility vary by camp, and full attend` → `No prior experience is required for our FREE onboarding programs that serve scho` |
-
-Extractor notes:
-- Organization guessed from the application link's domain ("kodewithklossy.com") — the sheet has no organization column.
-- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's "Format" column ("Virtual or in-person coding camp") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("Summer 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>Leadership Grow Program</strong> — leadershippbc.org (70/100)</summary>
-
-Source: https://leadershippbc.org/grow
-
-- New listing (confidence 70/100, medium).
-- Source: Master Tracker Google Sheet.
-
-Extractor notes:
-- Organization guessed from the application link's domain ("leadershippbc.org") — the sheet has no organization column.
-- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's "Format" column ("In-person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("September 2026 through April 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>Leadership High School</strong> — lonestar.edu (70/100)</summary>
-
-Source: https://lonestar.edu/leadership-highschool.htm
-
-- Changes needing review: country, application_link, summary, eligibility.
-- Confidence 70/100.
-- Source: Master Tracker Google Sheet.
-
-| field | change |
-| --- | --- |
-| country | country: `CA` → `US` |
-| application_link | application_link: `https://myneighborhoodnews.com/lone-star-college-leadership-high-school-program-` → `https://www.lonestar.edu/leadership-highschool.htm` |
-| summary | summary: `Hybrid (monthly experiential learning sessions). The Leadership High School prog` → `Leadership High School is Lone Star College's premier leadership development pro` |
-| eligibility | eligibility: `Public high school sophomores or juniors attending a school within the LSCS serv` → `Open to sophomore and junior students attending public high schools within the L` |
-
-Extractor notes:
-- Organization guessed from the application link's domain ("lonestar.edu") — the sheet has no organization column.
-- Country guessed as "US" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's Program Date ("Saturday, October 17, 2026 - Saturday, April 10, 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
-<details><summary><strong>Library and Archives Canada Youth Advisory Council</strong> — canada.ca (70/100)</summary>
-
-Source: https://canada.ca/en/library-archives/corporate/about-us/partners/youth-advisory-council.html
-
-- New listing (confidence 70/100, medium).
-- Source: Master Tracker Google Sheet.
-
-Extractor notes:
-- Organization guessed from the application link's domain ("canada.ca") — the sheet has no organization column.
-- Sheet's "Format" column ("Paid national advisory council") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("2026-2027 or 2027-2028 term") isn't in a recognizable yyyy-mm-dd form and was left blank.
-
-</details>
-
 <details><summary><strong>McMaster STEM Immersive Experience</strong> — mcmaster.ca (70/100)</summary>
 
 Source: https://eng.mcmaster.ca/community/outreach-programs/summer-camp
 
-- Changes needing review: summary, eligibility.
+- Changes needing review: eligibility.
 - Confidence 70/100.
 - Source: Master Tracker Google Sheet.
 
 | field | change |
 | --- | --- |
-| summary | summary: `A week of university-style activities across science, technology, engineering an` → `In-person day program. Our engineering camps offer campers the chance to explore` |
-| eligibility | eligibility: `Students entering Grades 9–12. A program fee applies and daily travel to Hamilto` → `Students entering Grade 2 – 8 as of September 2026 should enroll in Engineering ` |
+| eligibility | eligibility: `Students entering Grade 2 – 8 as of September 2026 should enroll in Engineering ` → `Students entering Grade 2 – 8 as of September 2026 should enroll in this program` |
 
 Extractor notes:
 - Organization guessed from the application link's domain ("mcmaster.ca") — the sheet has no organization column.
@@ -616,17 +434,16 @@ Extractor notes:
 
 </details>
 
-<details><summary><strong>NASA Internship Programs</strong> — nasa.gov (50/100)</summary>
+<details><summary><strong>NASA Internship Programs</strong> — nasa.gov (70/100)</summary>
 
 Source: https://nasa.gov/learning-resources/internship-programs
 
-- New listing (confidence 50/100, low).
+- New listing (confidence 70/100, medium).
 - Source: Master Tracker Google Sheet.
 
 Extractor notes:
 - Organization guessed from the application link's domain ("nasa.gov") — the sheet has no organization column.
 - Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- The application link in the sheet did not respond — check it still works.
 
 </details>
 
@@ -634,8 +451,14 @@ Extractor notes:
 
 Source: https://nytedu.com/pre-college/summer-academy/nyc
 
-- New listing (confidence 70/100, medium).
+- Changes needing review: summary, eligibility.
+- Confidence 70/100.
 - Source: Master Tracker Google Sheet.
+
+| field | change |
+| --- | --- |
+| summary | summary: `Residential. The NYC Summer Academy is a pre-college program that empowers stude` → `Residential. Summer Academy is a pre-college program open to rising high school ` |
+| eligibility | eligibility: `Rising high school students (grades 10-12) and graduating seniors who are 15-18 ` → `Summer Academy is a pre-college program open to rising high school students (gra` |
 
 Extractor notes:
 - Organization guessed from the application link's domain ("nytedu.com") — the sheet has no organization column.
@@ -701,12 +524,6 @@ Source: https://gojobs.gov.on.ca/Pages/SEP.aspx
 - Source: Master Tracker Google Sheet.
 - Possible duplicate of "Ontario Public Service Summer Employment" — title 100% similar, same domain.
 
-| field | change |
-| --- | --- |
-| category | category: `Leadership` → `Law & Civics` |
-| summary | summary: `Paid summer jobs across Ontario ministries — policy, parks, science, communicati` → `Paid summer employment. Paid summer jobs across Ontario ministries in administra` |
-| eligibility | eligibility: `Students generally aged 15–24, legally entitled to work in Canada, meeting each ` → `Students generally ages 15-24, or up to 29 with a disability — Must be legally e` |
-
 Extractor notes:
 - Organization guessed from the application link's domain ("gov.on.ca") — the sheet has no organization column.
 - Sheet's "Format" column ("Paid summer employment") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
@@ -716,43 +533,214 @@ Extractor notes:
 
 </details>
 
-<details><summary><strong>Ontario Summer Company</strong> — ontario.ca (70/100)</summary>
+<details><summary><strong>Pizza Hut Foundation Scholarship</strong> — fastweb.com (50/100)</summary>
 
-Source: https://ontario.ca/page/start-summer-company-students
+Source: https://fastweb.com/college-scholarships/articles/scholarships-for-high-school-seniors.amp
+
+- New listing (confidence 50/100, low).
+- Source: Master Tracker Google Sheet.
+
+Extractor notes:
+- Could not confidently map the sheet's Category ("General") to one of the site's six tracks — defaulted to "STEM". Please correct.
+- Organization guessed from the application link's domain ("fastweb.com") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- The application link in the sheet did not respond — check it still works.
+
+</details>
+
+<details><summary><strong>Queen’s SEEDS in Residence</strong> — queensu.ca (50/100)</summary>
+
+Source: https://queensu.ca/academics/youth-programs
+
+- Changes needing review: summary, eligibility.
+- Confidence 50/100.
+- Source: Master Tracker Google Sheet.
+
+| field | change |
+| --- | --- |
+| summary | summary: `Residential science and engineering enrichment with labs and campus life.` → `Residential summer program. A residential science and engineering enrichment exp` |
+| eligibility | eligibility: `High-school students in specified grades — verify the current range. Program fee` → `Typically high-school students in specified grades — Program fee, residence part` |
+
+Extractor notes:
+- Organization guessed from the application link's domain ("queensu.ca") — the sheet has no organization column.
+- Sheet's "Format" column ("Residential summer program") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
+- Sheet's Program Date ("Summer 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
+- The application link in the sheet did not respond — check it still works.
+
+</details>
+
+<details><summary><strong>Sanofi Biogenius Canada</strong> — biogenius.ca (70/100)</summary>
+
+Source: https://biogenius.ca/
+
+- Changes needing review: application_link, summary, eligibility.
+- Confidence 70/100.
+- Source: Master Tracker Google Sheet.
+
+| field | change |
+| --- | --- |
+| application_link | application_link: `https://sanofibiogenius.ca/` → `https://biogenius.ca/` |
+| summary | summary: `Biotech research competition where students work in a real mentor lab.` → `Mentored research competition. Sanofi is an R&D driven, AI-powered biopharma com` |
+| eligibility | eligibility: `Secondary students who secure a research mentor. Mentor matching support is avai` → `Canadian high-school students; regional availability varies — A research mentor,` |
+
+Extractor notes:
+- Organization guessed from the application link's domain ("biogenius.ca") — the sheet has no organization column.
+- Sheet's "Format" column ("Mentored research competition") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet "Status" says "Watch". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
+- Sheet's Program Date ("2026-2027 season") isn't in a recognizable yyyy-mm-dd form and was left blank.
+
+</details>
+
+<details><summary><strong>Service in Schools Leadership Institute</strong> — siths.org (70/100)</summary>
+
+Source: https://siths.org/apps/news/category/16105
 
 - New listing (confidence 70/100, medium).
 - Source: Master Tracker Google Sheet.
 
 Extractor notes:
-- Organization guessed from the application link's domain ("ontario.ca") — the sheet has no organization column.
-- Sheet's "Format" column ("Entrepreneurship grant/program") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
-- Sheet "Status" says "Expected annual". The website computes its own live status from the dates below on every page load, so this is shown only for your own cross-check, not written anywhere.
-- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
-- Sheet's Program Date ("Summer 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
+- Organization guessed from the application link's domain ("siths.org") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Sheet's "Format" column ("In-person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet's Program Date ("April 6-10, 2026 (in-person institute), May 7, 2026 (after-school work session)") isn't in a recognizable yyyy-mm-dd form and was left blank.
 
 </details>
 
-<details><summary><strong>Penn SAS High School Summer Programs</strong> — upenn.edu (70/100)</summary>
+<details><summary><strong>Sorensen Institute High School Leaders Program</strong> — extracurricularhub.com (70/100)</summary>
 
-Source: https://hs.sas.upenn.edu/summer-programs
+Source: https://extracurricularhub.com/extracurriculars/virginia-high-school-leaders-program
+
+- New listing (confidence 70/100, medium).
+- Source: Master Tracker Google Sheet.
+
+Extractor notes:
+- Organization guessed from the application link's domain ("extracurricularhub.com") — the sheet has no organization column.
+- Sheet's "Format" column ("In person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
+- Sheet's Program Date ("July 10-24, 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
+
+</details>
+
+<details><summary><strong>Stanford Medical Youth Science Program (SMYSP)</strong> — collegevine.com (70/100)</summary>
+
+Source: https://blog.collegevine.com/high-school-summer-programs-in-california
+
+- New listing (confidence 70/100, medium).
+- Source: Master Tracker Google Sheet.
+
+Extractor notes:
+- Organization guessed from the application link's domain ("collegevine.com") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Sheet's "Format" column ("In-person") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet's Program Date ("June 22–July 26") isn't in a recognizable yyyy-mm-dd form and was left blank.
+
+</details>
+
+<details><summary><strong>Starbucks College Achievement Plan</strong> — collegesofdistinction.com (70/100)</summary>
+
+Source: https://collegesofdistinction.com/advice/the-mega-list-of-scholarships-you-should-apply-for
+
+- New listing (confidence 70/100, medium).
+- Source: Master Tracker Google Sheet.
+
+Extractor notes:
+- Organization guessed from the application link's domain ("collegesofdistinction.com") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Sheet's "Format" column ("null") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
+- Sheet's Program Date ("null") isn't in a recognizable yyyy-mm-dd form and was left blank.
+
+</details>
+
+<details><summary><strong>State Seal of Civic Engagement</strong> — civicseal.org (70/100)</summary>
+
+Source: https://civicseal.org/
+
+- New listing (confidence 70/100, medium).
+- Source: Master Tracker Google Sheet.
+
+Extractor notes:
+- Organization guessed from the application link's domain ("civicseal.org") — the sheet has no organization column.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
+
+</details>
+
+<details><summary><strong>STEM Paid Internship Program</strong> — collaborative.org (50/100)</summary>
+
+Source: https://collaborative.org/youth-and-families/workforce-development/stem-paid-internships
+
+- New listing (confidence 50/100, low).
+- Source: Master Tracker Google Sheet.
+
+Extractor notes:
+- Organization guessed from the application link's domain ("collaborative.org") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Sheet's "Format" column ("null") describes the kind of opportunity, not delivery mode — folded into the summary since the site has no separate field for it.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
+- Sheet's Program Date ("Summer of 2026 (closed)") isn't in a recognizable yyyy-mm-dd form and was left blank.
+- The application link in the sheet did not respond — check it still works.
+
+</details>
+
+<details><summary><strong>Summer Discovery</strong> — summerdiscovery.com (70/100)</summary>
+
+Source: https://summerdiscovery.com/
 
 - New listing (confidence 70/100, medium).
 - Source: Master Tracker Google Sheet.
 
 Extractor notes:
 - Could not confidently map the sheet's Category ("General") to one of the site's six tracks — defaulted to "STEM". Please correct.
-- Organization guessed from the application link's domain ("upenn.edu") — the sheet has no organization column.
-- Country guessed as "US" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
-- Sheet's Program Date ("June 30 - August 8, 2026 (Pre-College Residential Program)") isn't in a recognizable yyyy-mm-dd form and was left blank.
+- Organization guessed from the application link's domain ("summerdiscovery.com") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Sheet's Program Date ("Summer 2027") isn't in a recognizable yyyy-mm-dd form and was left blank.
 
 </details>
 
-_…and 26 more in `data/review-queue.json`._
+<details><summary><strong>Summer Internships 2027</strong> — vtsp.com (70/100)</summary>
+
+Source: https://vtsp.com/post/summer-internships-2027
+
+- Changes needing review: application_link, summary.
+- Confidence 70/100.
+- Source: Master Tracker Google Sheet.
+
+| field | change |
+| --- | --- |
+| application_link | application_link: `https://www.extern.com/post/internships-for-high-school-students-2027` → `https://www.vtsp.com/post/summer-internships-2027` |
+| summary | summary: `Internships for high school students in 2027, with 30+ verified programs across ` → `A guide for high school students to explore summer internships, which can help t` |
+
+Extractor notes:
+- Could not confidently map the sheet's Category ("General") to one of the site's six tracks — defaulted to "STEM". Please correct.
+- Organization guessed from the application link's domain ("vtsp.com") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Sheet "Priority"/"Planning Note" are Discord-bot-only fields and are not carried to the website.
+
+</details>
+
+<details><summary><strong>Summer SAGE (Science Accelerating Girls Engagement) in STEM</strong> — srvusd.net (70/100)</summary>
+
+Source: https://chs.srvusd.net/School-Info/Departments/College-and-Career-Center/Summer-Opportunities/index.html
+
+- New listing (confidence 70/100, medium).
+- Source: Master Tracker Google Sheet.
+
+Extractor notes:
+- Organization guessed from the application link's domain ("srvusd.net") — the sheet has no organization column.
+- Country guessed as "CA" from the application link's domain — the sheet has no location column. Please correct if this one runs in the other country.
+- Sheet's Program Date ("June 2025") isn't in a recognizable yyyy-mm-dd form and was left blank.
+
+</details>
+
+_…and 15 more in `data/review-queue.json`._
 
 <details><summary>Discovery log</summary>
 
 ```
-Google Sheet sync: 101 row(s) read, no model calls.
+Google Sheet sync: 108 row(s) read, no model calls.
 ```
 
 </details>
